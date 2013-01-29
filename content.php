@@ -1,8 +1,11 @@
 <div class="entry-body">
-
-	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+	<?php if(is_single()) { ?>
+		<h1 class="title"><?php the_title(); ?></h1>
+    <?php } else {?>
+    	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 		<h1 class="title"><?php the_title(); ?></h1>
 	</a>
+    <?php } ?>
     
     <div class="entry-meta">
 

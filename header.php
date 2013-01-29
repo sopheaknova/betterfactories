@@ -22,7 +22,7 @@
     <?php wp_head(); ?>
     
     <script type="text/javascript">
-	$(function() {
+	jQuery(document).ready(function($) {
 		//featured home
 		$('.featured-home').cycle({
 			fx:       'fade',
@@ -38,6 +38,9 @@
 			slideExpr: '.cat-slide-items',
 			timeout:   5000,
 			delay: 5000,
+			slideResize: 0,
+			after: feature_media_after,
+			before: feature_media_before,
 			pager: 'ul.slider-nav',
 			pagerAnchorBuilder: function(idx, slide) { 
 				// return selector string for existing anchor 
@@ -45,6 +48,32 @@
 			} 
 			
 		});
+		
+		function feature_media_after() {
+			$('#featured-media .caption').stop().animate({opacity:1, bottom:0},{queue:false,duration:300 });
+		}
+		   
+		function feature_media_before() {
+			$('#featured-media .caption').stop().animate({opacity:1, bottom:'-120px'},{queue:false,duration:300});
+		}
+		
+		//slider nav
+		$('.slider-nav li:not(.activeSlide) a').click( 
+				function () {
+					$('.slider-nav li a').css('opacity', 0.7);
+					$(this).css('opacity', 1);
+				}
+			);
+			
+		
+		$('.slider-nav li:not(.slider-nav) a').hover( 
+				function () {
+					$(this).stop(true, true).animate({opacity: 1}, 300);
+				}, function () {
+					$(this).stop(true, true).animate({opacity: 0.7}, 300);
+				}
+			);
+		
 	});
 	</script>
     

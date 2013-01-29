@@ -26,13 +26,13 @@
     
     <!--START HOME SIDEBAR-->
     <div id="home-sidebar">
-    <aside class="home-sidebar-1">
+    <aside class="one_third">
         <div class="widget">
         <?php 
 			$category_id = 12;
 			$category_link = get_category_link( $category_id ); 
 			?>
-				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php echo get_cat_name( $category_id ); ?></a></h3>
+				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
         <?php
 		$args = array (
 					'cat' 				=> $category_id,
@@ -66,13 +66,13 @@
             
         </div><!-- end .widget -->   
 	</aside><!-- end #home-sidebar-1 -->      
-    <aside class="home-sidebar-2">
+    <aside class="one_third">
             <div class="widget">
             <?php 
 			$category_id = 8;
 			$category_link = get_category_link( $category_id ); 
 			?>
-				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php echo get_cat_name( $category_id ); ?></a></h3>
+				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
             <?php
 			$args = array (
 						'cat' 				=> $category_id,
@@ -99,20 +99,18 @@
             ?>
             <?php _e( 'Video are coming soon.', 'sptheme' ); ?>
             <?php	  
-            endif;
-            // Reset QP_Query()
-            //wp_reset_postdata(); 
+            endif; 
             ?>    
             </div>
      </aside><!-- end #home-sidebar-2 --> 
         
-     <aside class="home-sidebar-3 last">
+     <aside class="one_third last">
         <div class="widget">
         <?php 
 		$category_id = 11;
 		$category_link = get_category_link( $category_id ); 
 		?>
-            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php echo get_cat_name( $category_id ); ?></a></h3>
+            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
             <ul class="latest-news">
             <?php
 			$args = array (
