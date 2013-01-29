@@ -56,6 +56,48 @@ if( !function_exists('sp_theme_setup') ) {
 }
 add_action('after_setup_theme', 'sp_theme_setup');
 
+// Determine whether WP-prettyPhoto plugin is acivated and assign the result to a constant
+defined('WP_PRETTY_PHOTO_PLUGIN_ACTIVE')
+        || define('WP_PRETTY_PHOTO_PLUGIN_ACTIVE', class_exists( 'WP_prettyPhoto' ) );
+
+
+// if the WP-prettyPhoto plugin is not active handle rel="wp-prettyPhoto" in links for the prettyPhoto integrated script (if enabled)
+if ( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
+    /**
+     * Insert rel="wp-prettyPhoto" to all links for images, movie, YouTube and iFrame. 
+     * This function will ignore links where you have manually entered your own rel reference.
+     * @param string $content Post/page contents
+     * @return string Prettified post/page contents
+     * @link http://0xtc.com/2008/05/27/auto-lightbox-function.xhtml
+     * @access public
+      */
+    function autoinsert_rel_prettyPhoto ($content) {
+        global $post;
+        $rel = 'wp-prettyPhoto';
+        $image_match = '\.bmp|\.gif|\.jpg|\.jpeg|\.png';
+        $movie_match = '\.mov.*?';
+        $swf_match = '\.swf.*?';
+        $youtube_match = 'http:\/\/www\.youtube\.com\/watch\?v=[A-Za-z0-9]*';
+        $iframe_match = '.*iframe=true.*';
+        $pattern[0] = "/<a(.*?)href=('|\")([A-Za-z0-9\/_\.\~\:-]*?)(".$image_match."|".$movie_match."|".$swf_match."|".$youtube_match."|".$iframe_match.")('|\")([^\>]*?)>/i";
+        $pattern[1] = "/<a(.*?)href=('|\")([A-Za-z0-9\/_\.\~\:-]*?)(".$image_match."|".$movie_match."|".$swf_match."|".$youtube_match."|".$iframe_match.")('|\")(.*?)(rel=('|\")".$rel."(.*?)('|\"))([ \t\r\n\v\f]*?)((rel=('|\")".$rel."(.*?)('|\"))?)([ \t\r\n\v\f]?)([^\>]*?)>/i";
+        $replacement[0] = '<a$1href=$2$3$4$5$6 rel="'.$rel.'['.$post->ID.']">';
+        $replacement[1] = '<a$1href=$2$3$4$5$6$7>';
+        $content = preg_replace($pattern, $replacement, $content);
+        return $content;
+    }
+    add_filter('the_content', 'autoinsert_rel_prettyPhoto');
+    add_filter('the_excerpt', 'autoinsert_rel_prettyPhoto');
+
+
+    // Add the 'wp-prettyPhoto' rel attribute to the default WP gallery links
+    function gallery_prettyPhoto ($content) {
+            // add checks if you want to add prettyPhoto on certain places (archives etc).
+            return str_replace("<a", "<a rel='wp-prettyPhoto[gallery]'", $content);
+    }
+    add_filter( 'wp_get_attachment_link', 'gallery_prettyPhoto');
+}
+
 /* ---------------------------------------------------------------------- */
 /*	Insert Custom Sized Image Into Post Using Media Gallery
 /* ---------------------------------------------------------------------- */
@@ -127,6 +169,10 @@ function sp_register_styles() {
 		wp_register_style( 'sp-theme-styles', SP_BASE_URL . 'style.css', array(), THEME_VERSION );
 		wp_register_style( 'video-js',         SP_BASE_URL . 'css/video-js.min.css', array(), '3.2.0' );
 		wp_register_style( 'audioplayerv1',    SP_BASE_URL . 'css/audioplayerv1.min.css', array(), '1.1.3' );
+		//addon style 'PrettyPhoto'
+		if ( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
+			wp_register_style('pretty_photo', SP_BASE_URL . 'js/prettyPhoto/css/prettyPhoto.css', array(), '3.1.3', 'screen');
+		}
 	}
 
 }
@@ -139,6 +185,9 @@ function sp_enqueue_styles() {
 		wp_enqueue_style('sp-theme-styles');
 		wp_enqueue_style('video-js');
 		wp_enqueue_style('audioplayerv1');
+		if ( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
+			wp_enqueue_style('pretty_photo');
+		}
 	}
 
 }
@@ -163,6 +212,11 @@ function sp_register_scripts() {
 	wp_register_script( 'audioplayerv1',     SP_BASE_URL . 'js/audioplayerv1.min.js', array('jquery'), '1.0', true ); 
 	wp_register_script( 'cycle',  			 SP_BASE_URL . 'js/jquery.cycle.all.min.js', array(), '1.3.2', true );
 	wp_register_script( 'easing',            SP_BASE_URL . 'js/jquery.easing-1.3.min.js', array('jquery'), '1.3', true );
+	// PrettyPhoto script
+	if( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
+		wp_register_script('pretty_photo_lib', SP_BASE_URL . "js/prettyPhoto/js/jquery.prettyPhoto.js", array('jquery'), '3.1.3', false);
+		wp_register_script('custom_pretty_photo', SP_BASE_URL . "js/prettyPhoto/custom_params.js", array('pretty_photo_lib'), '3.1.3', false);
+	}
 	wp_register_script( 'custom_scripts',    SP_BASE_URL . 'js/custom.js', array('jquery'), THEME_VERSION, true );
 	}
 
@@ -184,7 +238,12 @@ function sp_enqueue_scripts() {
 		
 		wp_enqueue_script('cycle');
 		wp_enqueue_script('easing');
-		wp_enqueue_script('audioplayerv1');		
+		wp_enqueue_script('audioplayerv1');	
+		// PrettyPhoto script
+		if( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
+			wp_enqueue_script('pretty_photo_lib');
+			wp_enqueue_script('custom_pretty_photo');	
+		}	
 		wp_enqueue_script('custom_scripts');
 	}
 }
