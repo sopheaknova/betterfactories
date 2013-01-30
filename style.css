@@ -26,7 +26,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
 	background: #fcfcfc;
 	color: #808080;/*#7c7c7c;*/
-	font: 13px/1.5 Arial, Arial, Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	font: 13px/1.5 Arial, Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
@@ -1247,6 +1247,15 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	}
 	
 	.hentry .entry-audio { padding-top: 5px; }
+	
+	.entry-link a.newspaper{
+		background:url(images/icon-newspaper.png) no-repeat;
+		height:32px;
+		line-height:32px;
+		display:block;	
+		padding-left:40px;
+	}
+	.entry-link span.news-source{font-size:11px;}
 	
 	.post-format {
 			background-color: #ddd;

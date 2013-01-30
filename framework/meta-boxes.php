@@ -65,7 +65,8 @@ $meta_boxes[] = array(
 		array(
 			'name' => __('Upload heading image', 'sptheme'),
 			'id'   => $prefix . 'heading_image',
-			'type' => 'thickbox_image',
+			'type' => 'plupload_image',
+			'max_file_uploads' => 1,
 			'std'  => '',
 			'desc' => 'Good size 980px by 157px.'
 		)
@@ -243,11 +244,19 @@ $meta_boxes[] = array(
 	'priority' => 'high',
 	'fields'   => array(
 		array(
-			'name' => __('URL', 'sptheme'),
-			'id'   => $prefix . 'news_url',
+			'name' => __('Attach file', 'sptheme'),
+			'id'   => $prefix . 'news_file',
+			'type' => 'plupload_image',
+			'max_file_uploads' => 1,
+			'std'  => '',
+			'desc' => __('Upload news file (.gif, .png, .pdf) that you have scanned from newspaper or from other media.', 'sptheme')
+		),
+		array(
+			'name' => __('Source', 'sptheme'),
+			'id'   => $prefix . 'news_source',
 			'type' => 'text',
 			'std'  => '',
-			'desc' => __('Enter link/url of this story/post.', 'sptheme')
+			'desc' => __('Where is this new come from. e.g: Cambodia Daily or Phnom Penh Post...', 'sptheme')
 		)
 	)
 );
