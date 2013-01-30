@@ -162,17 +162,27 @@ $of_options[] = array( "name" => "Disable post meta",
 $of_options[] = array( "name" => "Contact",
 					"type" => "heading");
 					
+$of_options[] = array( "name" => "Disable value bellow in contact page",
+					"desc" => "If Yes, these data bellow will not use in contact page and will use your own text/custom text instead.",
+					"id" => "disable_contact_data",
+					"std" => "no",
+					"type" => "radio",
+					"options" => array(
+						'yes' => 'Yes',
+						'no' => 'No')
+					);					
+					
 $of_options[] = array( "name" => "Latitude",
 					"desc" => "Latitude of google map see <a href='http://itouchmap.com'>itouchmap.com</a>",
 					"id" => "map_lat",
-					"std" => "13.36074",
+					"std" => "11.551327",
 					"type" => "text"
 					);
 
 $of_options[] = array( "name" => "Longitude",
 					"desc" => "Longitude of google map see <a href='http://itouchmap.com'>itouchmap.com</a>",
 					"id" => "map_long",
-					"std" => "103.85662",
+					"std" => "104.928328",
 					"type" => "text"
 					);										
 					

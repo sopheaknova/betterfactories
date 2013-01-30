@@ -1,3 +1,4 @@
+<?php if ( !is_page_template('page-contact.php') ) { ?>
 <div class="container clearfix">
     <hr class="dotted-3">
     <div id="email-subscribe">
@@ -9,6 +10,7 @@
     </form> 
     </div><!--end #email-subscribe -->
 </div><!--end .container .clearfix-->
+<?php } ?>
 
 <footer id="footer-cols" class="clearfix">
     <div class="container">

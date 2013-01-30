@@ -25,8 +25,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* BASIC HTML */
 body {
 	background: #fcfcfc;
-	color: #7c7c7c;
-	font: 14px/1.5 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+	color: #808080;/*#7c7c7c;*/
+	font: 13px/1.5 Arial, Arial, Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
@@ -326,21 +326,21 @@ div.aligncenter {
 }
 
 .success, .wpcf7-mail-sent-ok {
-	background: #e3ebc6 url(images//icon-box-success.png) no-repeat 12px 8px;
+	background: #e3ebc6 url(images/icon-box-success.png) no-repeat 12px 8px;
 	border: 1px solid #c2d288;
 	border-left-width: 4px;
 	color: #8fa442;
 }
 
 .info {
-	background: #d8ecf5 url(images//icon-box-info.png) no-repeat 10px 8px;
+	background: #d8ecf5 url(images/icon-box-info.png) no-repeat 10px 8px;
 	border: 1px solid #9ac9df;
 	border-left-width: 4px;
 	color: #528da9;
 }
 
 .notice {
-	background: #fcf7d9 url(images//icon-box-notice.png) no-repeat 10px 9px;
+	background: #fcf7d9 url(images/icon-box-notice.png) no-repeat 10px 9px;
 	border: 1px solid #f5dc7d;
 	border-left-width: 4px;
 	color: #c4a21b;
@@ -705,6 +705,39 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 			opacity: 1 !important;
 		}
 		.slider-nav img { border: none; display: block }
+		
+	/* -------------------------------------------------- */
+	/*	Contact
+	/* -------------------------------------------------- */
+	#map-wide{
+		height:510px;
+	}
+	#c-map{
+		width:inherit;
+		height:510px;
+	}
+	form.contact-page .error{
+		background:none;
+		border:none;
+		padding:10px 0 0;	
+	}
+	form.contact-page{margin-bottom:50px;}
+	form.contact-page label{
+		margin-top:20px;
+		font-size:12px;	
+	}	
+	form.contact-page .name, form.contact-page .email, form.contact-page .message, form.contact-page .button{
+		-webkit-border-radius: 6px;
+		   -moz-border-radius: 6px;
+				border-radius: 6px;
+	}
+	form.contact-page .name, form.contact-page .email{
+		width:282px;	
+	}
+	form.contact-page .button{
+		width:150px;
+		margin:20px 0 0;	
+	}
 	
 	/* -------------------------------------------------- */
 	/*	Main
@@ -751,7 +784,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	/* -------------------------------------------------- */
 
 	#sidebar .widget { margin: 0 0 30px;}
-	.widget{ font-size:0.9em; }
+	/*.widget{ font-size:0.9em; }*/
 
 		#sidebar .widget h5, #home-sidebar .widget h5{
 			font-size:16px;

@@ -42,7 +42,6 @@ Template Name: Media Center Page
       <?php
 	  endwhile;
 	  endif;
-	  wp_reset_query(); 
 	  ?>   
         <ul class="slider-nav">
         <?php
@@ -95,7 +94,6 @@ Template Name: Media Center Page
             <?php _e( 'Latest news are coming soon.', 'sptheme' ); ?>
             <?php	  
             endif;
-			wp_reset_query();
             ?> 
             </ul>
             </div>            
@@ -149,7 +147,6 @@ Template Name: Media Center Page
         <?php
         endwhile;
         endif;
-        wp_reset_query();
         ?>
             </ul>
         <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_id ); ?> »</a>   
@@ -202,7 +199,6 @@ Template Name: Media Center Page
         <?php
         endwhile;
         endif;
-        wp_reset_query();
         ?>
             </ul>
         <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_id ); ?> »</a>   
@@ -255,7 +251,6 @@ Template Name: Media Center Page
         <?php
         endwhile;
         endif;
-        wp_reset_query();
         ?>
             </ul>
         <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_id ); ?> »</a>   

@@ -134,8 +134,6 @@
             <?php _e( 'Latest news are coming soon.', 'sptheme' ); ?>
             <?php	  
             endif;
-            // Reset QP_Query()
-            //wp_reset_postdata(); 
             ?>    
             </ul>
         </div>
