@@ -15,8 +15,8 @@
 	
     <div class="entry-link">
 	<?php 
-	$source_meta = get_post_meta( $post->ID, 'sp_news_source', true );
-	$link_meta = get_post_meta( $post->ID, 'sp_news_file', true );
+	$source_meta = sp_get_custom_field( 'sp_news_source', $post->ID );
+	$link_meta = sp_get_custom_field( 'sp_news_file', $post->ID );
 	$file_url = wp_get_attachment_image_src($link_meta, 'full'); 
 	?>
     <?php if ($file_url[0] != '') :?>

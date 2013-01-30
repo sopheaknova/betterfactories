@@ -6,13 +6,7 @@
 
 	<div class="container clearfix">
 
-		<header class="page-header">
-
-			<h1 class="page-title"><?php echo the_title(); ?></h1>
-            
-		</header><!-- end .page-header -->
-        
-        <?php if( $has_sidebar ): ?>
+		<?php if( $has_sidebar ): ?>
 
 			<section id="main">
 
@@ -20,10 +14,14 @@
 		
 
 		<?php if (have_posts()) while ( have_posts() ): the_post(); ?>
-
+        <div class="entry-body">
+        	
+            <h1 class="page-title"><?php echo the_title(); ?></h1>
+            
 			<?php the_content(); ?>
 			
 			<p><?php edit_post_link( __( 'Edit', 'sptheme' ), '', '' ); ?></p>
+        </div>    
 
 		<?php endwhile; ?>
 		

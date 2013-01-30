@@ -86,7 +86,7 @@ hr {
 	p + hr { margin: 25px 0 20px; }
 
 blockquote {
-	background: #f8f8f8 url(images/quote.png) no-repeat 17px 21px;
+	background: #fcfcfc url(images/quote.png) no-repeat 17px 21px;
 	font-style: italic;
 	font-size: 15px;
 	line-height: 1.6;
@@ -147,22 +147,24 @@ div.aligncenter {
 
 .wp-caption {
     border: 1px solid #ddd;
-    text-align: center;
-    background-color: #f3f3f3;
+    text-align: left;
+    background-color: #fcfcfc;
     padding-top: 4px;
-    margin: 5px 10px 10px;
+    /*margin: 5px 10px 10px;*/
 }
 
 .wp-caption img {
 	margin: 0;
 	padding: 0;
+	padding-left:5px;
 	border: 0 none;
 }
 
 .wp-caption p.wp-caption-text {
-    font-size: 11px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
     line-height: 17px;
-    padding: 0 4px 5px;
+    padding: 0 4px 5px 5px;
     margin: 0;
 }
 
@@ -497,13 +499,13 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		   top:0;
 	}
 
-#search{
+#searchform{
 	float:right;
 }
-	.search{		
+	.searchtxt{		
 		width:160px;
 		padding:0 30px 0 10px;
-		background:#f2f2f2 url(images/search.png) no-repeat 180px 4px;
+		background:#ffffff url(images/search.png) no-repeat 180px 4px;
 		-moz-box-shadow: 0 1px 1px 0 #333;
 	    -webkit-box-shadow: 0 1px 1px 0 #333;
 	    box-shadow: 0 1px 1px 0 #333;
@@ -1211,16 +1213,16 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 /* ---------------------------------------------------------------------- */
 /*	Blog / Category / Article
 /* ---------------------------------------------------------------------- */
-	.category .page-header{
+	.category .page-header, .page-template-archives-php .page-header, .archive .page-header, .search .page-header{
 		margin-bottom:30px;	
 	}
-	.category .page-title span{color:#ff6633;}
-	.category .entry-body h1{
+	.category .page-title span, .archive .page-title span, .search .page-title span{color:#ff6633;}
+	.category .entry-body h1, .archive .entry-body h1, .search .entry-body h1{
 		font-size:18px;	
 		margin-bottom:0;
 	}
 		
-		.entry-body{
+		.entry-body, .page-header{
 			padding:15px 20px; 
 			background:#f9f9f9;
 			background:url(images/bg-footer-cols.gif);
@@ -1343,7 +1345,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 /*	Pagination
 /* -------------------------------------------------- */
 
-.pagination { margin: 0 }
+.pagination { margin: 0; text-align:center; }
 
 .comments-pagination {
 	margin-bottom: 30px;

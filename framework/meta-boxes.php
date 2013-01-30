@@ -145,7 +145,7 @@ $meta_boxes[] = array(
 
 $meta_boxes[] = array(
 	'id'       => 'post-video-settings',
-	'title'    => __('Video Settings', 'sptheme'),
+	'title'    => __('External Video Settings', 'sptheme'),
 	'pages'    => array('post'),
 	'context'  => 'normal',
 	'priority' => 'high',
@@ -184,7 +184,7 @@ $meta_boxes[] = array(
 			'type' => 'text',
 			'std'  => '1.7',
 			'desc' => __('Video width / video height. (default: 1.7)', 'sptheme')
-		),*/
+		),
 		array(
 			'name' => __('Video Embedded Code', 'sptheme'),
 			'id'   => $prefix . 'video_external',
@@ -193,6 +193,13 @@ $meta_boxes[] = array(
 			'desc' => __('If you are not using self hosted video then you can include embedded code here. Best viewed at 600px wide.', 'sptheme'),
 			'cols' => '40',
 			'rows' => '8'
+		)*/
+		array(
+			'name' => __('Video id', 'sptheme'),
+			'id'   => $prefix . 'video_id',
+			'type' => 'text',
+			'std'  => '',
+			'desc' => __('ex: http://www.youtube.com/watch?v=sdUUx5FdySs the id is "sdUUx5FdySs".', 'sptheme'),
 		)
 	)
 );

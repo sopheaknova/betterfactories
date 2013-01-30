@@ -172,15 +172,17 @@ Template Name: Media Center Page
         while ( $video_query->have_posts() ) : $video_query->the_post();
         ?>
         <?php
-        if( sp_get_custom_field( 'sp_video_external', $post->ID ) ) {
-
-            echo do_shortcode( sp_get_custom_field( 'sp_video_external', $post->ID ) ); // work with files style.css, video-js.min.css, video-js.min.js, custom.js and video-js.swf
-    
-        }
-        ?>
-            <div class="entry-meta">
-                <?php echo sp_post_meta(); ?>
-            </div><!-- end .entry-meta -->
+		if( sp_get_custom_field( 'sp_video_id', $post->ID ) ) {
+		?>
+		<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+		<img src="http://img.youtube.com/vi/<?php echo sp_get_custom_field( 'sp_video_id', $post->ID ); ?>/0.jpg" width="300" height="225"	/>
+		</a>
+		<h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
+		<?php } ?>
+        
+		<div class="entry-meta">
+			<?php echo sp_post_meta(); ?>
+		</div><!-- end .entry-meta -->
             
         <?php
         endwhile;

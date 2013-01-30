@@ -411,18 +411,19 @@ echo '<link rel="icon" type="image/x-icon" href="'.SP_BASE_URL.'favicon.ico" />'
 add_action( 'admin_head', 'sp_adminfavicon' );
 
 // unregister all default WP Widgets
-/*function sp_unregister_default_wp_widgets() {
-    unregister_widget('WP_Widget_Pages');
+function sp_unregister_default_wp_widgets() {
+    /*unregister_widget('WP_Widget_Pages');
     unregister_widget('WP_Widget_Calendar');
     unregister_widget('WP_Widget_Archives');
-    unregister_widget('WP_Widget_Meta');
-    unregister_widget('WP_Widget_Search');
-    unregister_widget('WP_Widget_Text');
-    unregister_widget('WP_Widget_Categories');
+	unregister_widget('WP_Widget_Text');
+	unregister_widget('WP_Widget_Categories');
     unregister_widget('WP_Widget_Recent_Posts');
+    unregister_widget('WP_Nav_Menu_Widget');
+	*/
     unregister_widget('WP_Widget_Recent_Comments');
     unregister_widget('WP_Widget_Tag_Cloud');
 	unregister_widget('WP_Widget_RSS');
-    unregister_widget('WP_Nav_Menu_Widget');
+	unregister_widget('WP_Widget_Meta');
+    unregister_widget('WP_Widget_Search');
 }
-add_action('widgets_init', 'sp_unregister_default_wp_widgets', 1);*/
+add_action('widgets_init', 'sp_unregister_default_wp_widgets', 1);
