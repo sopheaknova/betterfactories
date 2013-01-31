@@ -29,7 +29,6 @@ jQuery(document).ready(function($) {
 	});
 	
 	//MISC
-	$(".search-submit").hide();
 	$(".menu-item:last").html($(".menu-item:last").html().replace("</a> -","</a>"));
 	
 	/* ---------------------------------------------------------------------- */

@@ -439,7 +439,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		list-style: none;
 		margin-left:0;
 		float:left;
-		padding:0 20px;
+		padding:0 15px;
 		position:relative;
 		border-left:1px solid #464e57;
 		border-right:1px solid #9aacb5;
@@ -503,6 +503,8 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 #searchform{
 	float:right;
 }
+	#searchform .search-submit {width:0px; text-indent:-9999px;padding:0;background:none;}
+	
 	.searchtxt{		
 		width:160px;
 		padding:0 30px 0 10px;

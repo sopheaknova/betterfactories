@@ -23,6 +23,7 @@
     
     <script type="text/javascript">
 	jQuery(document).ready(function($) {
+		
 		//featured home
 		$('.featured-home').cycle({
 			fx:       'fade',
@@ -106,7 +107,7 @@
     <div class="featured-home">
     <?php 
 	  $args = array (
-					'cat' 				=> 10,
+					'category_name'  	=> $data['bfc_voice_cat'],
 					'posts_per_page'	=> 5
 				);
 	  $slide_query = new WP_Query($args);
