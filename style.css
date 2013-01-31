@@ -71,8 +71,8 @@ a, a > * {
 a:hover, a > *:hover { color: #f15a23; }
 
 hr {
-	background: #efefef;
-	color: #efefef;
+	background: #d0d0d0;
+	color: #d0d0d0;
 	margin: 5px 0 25px;
 }
 
@@ -1146,7 +1146,42 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 						height: 70px;
 						width: 70px;
 					}
-	
+
+/* ---------------------------------------------------------------------- */
+/*	Job
+/* ---------------------------------------------------------------------- */
+table {
+    font-size: 12px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+	border/*\**/: 1px solid #cdd4d9\9;
+	border: 1px solid rgba(128,128,128,0.4);
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(128,128,128,0.2);
+}
+table th {
+    border-bottom: 2px solid #999;
+    padding: 12px;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight:bold;
+}
+table td {
+    padding: 9px 12px;
+    border-top: 1px solid #fff;
+}
+table tfoot td {
+    font-size: 11px;
+}
+table tbody td {
+    background-color:none;
+	border-bottom:1px solid #cdd4d9;
+}
+table tbody tr:hover td {
+    background-color:#efefef;
+}
 		
 
 /* ---------------------------------------------------------------------- */

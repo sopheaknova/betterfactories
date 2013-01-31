@@ -78,7 +78,7 @@ $meta_boxes[] = array(
 /*	Slider
 /* ---------------------------------------------------------------------- */
 
-$meta_boxes[] = array(
+/*$meta_boxes[] = array(
 	'id'       => 'slider-slides-settings',
 	'title'    => __('Slides', 'sptheme'),
 	'pages'    => array('slider'),
@@ -93,13 +93,13 @@ $meta_boxes[] = array(
 			'desc' => ''
 		)
 	)
-);
+);*/
 
 /* ---------------------------------------------------------------------- */
 /*	Gallery
 /* ---------------------------------------------------------------------- */
 
-$meta_boxes[] = array(
+/*$meta_boxes[] = array(
 	'id'       => 'album-images',
 	'title'    => __('Album Images', 'sptheme'),
 	'pages'    => array('gallery'),
@@ -112,6 +112,55 @@ $meta_boxes[] = array(
 			'type' => 'plupload_image',
 			'std'  => '',
 			'desc' => ''
+		)
+	)
+);*/
+
+/* ---------------------------------------------------------------------- */
+/*	Job/ Career Opportunities
+/* ---------------------------------------------------------------------- */
+
+$meta_boxes[] = array(
+	'id'       => 'job-setting',
+	'title'    => __('Job/Career setting', 'sptheme'),
+	'pages'    => array('job'),
+	'context'  => 'side',
+	'priority' => 'default',
+	'fields'   => array(
+		array(
+			'name' => __('Project title', 'sptheme'),
+			'id'   => $prefix . 'project_title',
+			'type' => 'text',
+			'std'  => '',
+			'desc' => 'e.g: Better Factories Cambodia'
+		),
+		array(
+			'name' => __('Post level', 'sptheme'),
+			'id'   => $prefix . 'post_level',
+			'type' => 'text',
+			'std'  => '',
+			'desc' => 'e.g: GS‐4 (Approximately US$ 600 net per month)'
+		),
+		array(
+			'name' => __('Contract type', 'sptheme'),
+			'id'   => $prefix . 'contract_type',
+			'type' => 'text',
+			'std'  => '',
+			'desc' => 'e.g: Fixed‐term Contract'
+		),
+		array(
+			'name' => __('Duration of contract', 'sptheme'),
+			'id'   => $prefix . 'contract_duration',
+			'type' => 'text',
+			'std'  => '',
+			'desc' => 'e.g: Twelve months with the possibility of extension'
+		),
+		array(
+			'name' => __('Duty station', 'sptheme'),
+			'id'   => $prefix . 'duty_station',
+			'type' => 'text',
+			'std'  => '',
+			'desc' => 'e.g: Phnom Penh, Cambodia'
 		)
 	)
 );
