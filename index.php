@@ -19,7 +19,7 @@
     	<div class="services-signup">
     	<h4>Please join us!</h4>
         <p>If you are a buyer or factory that would like to join our program or sign up for a training course, please</p>
-        <a class="button large" href="#">REGISTER TODAY</a>
+        <a class="button large" href="http://localhost:8888/betterfactory/?page_id=467">REGISTER TODAY</a>
         </div>
     </div>
     <div class="clear"></div>
@@ -29,13 +29,13 @@
     <aside class="one_third">
         <div class="widget">
         <?php 
-			$category_id = 12;
-			$category_link = get_category_link( $category_id ); 
+			$category_name = $data['infocus_cat'];
+			$category_link = get_category_link( get_cat_ID($category_name) ); 
 			?>
-				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
 		$args = array (
-					'cat' 				=> $category_id,
+					'category_name' 	=> $category_name,
 					'posts_per_page'	=> 1
 				);
 		$focus_query = new WP_Query($args);
@@ -71,13 +71,13 @@
     <aside class="one_third">
             <div class="widget">
             <?php 
-			$category_id = 8;
-			$category_link = get_category_link( $category_id ); 
+			$category_name = $data['video_cat'];
+			$category_link = get_category_link( get_cat_ID($category_name) ); 
 			?>
-				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <?php
 			$args = array (
-						'cat' 				=> $category_id,
+						'category_name' 	=> $category_name,
 						'posts_per_page'	=> 1
 					);
 			$video_query = new WP_Query($args);
@@ -87,8 +87,9 @@
             <?php
 			if( sp_get_custom_field( 'sp_video_id', $post->ID ) ) {
 			?>
-            <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+            <a class="hover-1" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 			<img src="http://img.youtube.com/vi/<?php echo sp_get_custom_field( 'sp_video_id', $post->ID ); ?>/0.jpg" width="300" height="225"	/>
+            <span class="block-over"></span>
             </a>
             <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
 			<?php } ?>
@@ -110,14 +111,14 @@
      <aside class="one_third last">
         <div class="widget">
         <?php 
-		$category_id = 11;
-		$category_link = get_category_link( $category_id ); 
+		$category_name = $data['latest_news_cat'];
+		$category_link = get_category_link( get_cat_ID($category_name) ); 
 		?>
-            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <ul class="latest-news">
             <?php
 			$args = array (
-						'cat' 				=> $category_id,
+						'category_name' 	=> $category_name,
 						'posts_per_page'	=> 5
 					);
 			$news_query = new WP_Query($args);

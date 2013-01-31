@@ -131,12 +131,45 @@ $of_options[] = array( "name" => "Custom favicon upload",
 $of_options[] = array( "name" => "Post Setting",
 					"type" => "heading");
 					
-$of_options[] = array( "name" => "Excerpt",
-					"desc" => "Lenght of words to be show in News/Event category",
-					"id" => "post_excerpt",
-					"std" => 40,
-					"type" => "text"
-					);		
+$of_options[] = array( "name" => "Select BFC Voice",
+					"desc" => "Select BFC Voice category",
+					"id" => "bfc_voice_cat",
+					"std" => "Select a category:",
+					"type" => "select",
+					"options" => $of_categories
+					);	
+										
+$of_options[] = array( "name" => "Select In focus",
+					"desc" => "Select In focus category",
+					"id" => "infocus_cat",
+					"std" => "Select a category:",
+					"type" => "select",
+					"options" => $of_categories
+					);
+
+$of_options[] = array( "name" => "Select Latest news",
+					"desc" => "Select Latest news category",
+					"id" => "latest_news_cat",
+					"std" => "Select a category:",
+					"type" => "select",
+					"options" => $of_categories
+					);	
+					
+$of_options[] = array( "name" => "Select Press release",
+					"desc" => "Select Press release category",
+					"id" => "press_release_cat",
+					"std" => "Select a category:",
+					"type" => "select",
+					"options" => $of_categories
+					);
+					
+$of_options[] = array( "name" => "Select Video",
+					"desc" => "Select Video category",
+					"id" => "video_cat",
+					"std" => "Select a category:",
+					"type" => "select",
+					"options" => $of_categories
+					);																			
 
 $of_options[] = array( "name" => "Disable Share button",
 					"desc" => "Show or hide Share button for each news/events and latest offer",
@@ -156,7 +189,7 @@ $of_options[] = array( "name" => "Disable post meta",
 					"options" => array(
 						'yes' => 'Yes',
 						'no' => 'No')
-					);	
+					);						
 
 // Contact
 $of_options[] = array( "name" => "Contact",

@@ -4,19 +4,18 @@ Template Name: Media Center Page
 */
 ?>
 <?php get_header(); ?>
-
 <section id="content" class="clearfix ">
 	<div class="container">
     
     <div id="featured-media">
     <?php 
-	$category_id = 12;
-	$category_link = get_category_link( $category_id ); 
+	$category_name = $data['infocus_cat'];;
+	$category_link = get_category_link( get_cat_ID($category_name) ); 
 	?>
-    	<h3 class="featured-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+    	<h3 class="featured-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
     <?php
 	$args = array (
-				'cat' 				=> $category_id,
+				'category_name' 	=> $category_name,
 				'posts_per_page'	=> 5
 			);
 	$media_query = new WP_Query($args);
@@ -67,15 +66,15 @@ Template Name: Media Center Page
     	<div class="widget">
         	<div class="widget-custom">
             <?php 
-			$category_id = 11;
-			$category_link = get_category_link( $category_id ); 
+			$category_name = $data['latest_news_cat'];
+			$category_link = get_category_link( get_cat_ID($category_name) ); 
 			?>
-            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <ul class="latest-news">
             <?php
 			$args = array (
-						'cat' 				=> $category_id,
-						'posts_per_page'	=> 6
+						'category_name' 	=> $category_name,
+						'posts_per_page'	=> 7
 					);
 			$media_query = new WP_Query($args);
 			if ($media_query->have_posts()) :
@@ -107,13 +106,13 @@ Template Name: Media Center Page
     <aside class="one_third">
         <div class="widget">
 		<?php 
-        $category_id = 10;
-        $category_link = get_category_link( $category_id ); 
+        $category_name = $data['bfc_voice_cat'];
+        $category_link = get_category_link( get_cat_ID($category_name) ); 
         ?>
-				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
 		$args = array (
-					'cat' 				=> $category_id,
+					'category_name' 	=> $category_name,
 					'posts_per_page'	=> 1
 				);
 		$media_query = new WP_Query($args);
@@ -141,7 +140,7 @@ Template Name: Media Center Page
         ?>
         <div class="more-posts">
             <ul>
-        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'cat' => $category_id)); ?>	
+        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'category_name' => $category_name)); ?>	
         <?php if ($media_query->have_posts()) : while ( $media_query->have_posts() ) : $media_query->the_post(); ?>
         <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
         <?php
@@ -149,7 +148,7 @@ Template Name: Media Center Page
         endif;
         ?>
             </ul>
-        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_id ); ?> »</a>   
+        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_name ); ?> »</a>   
         </div><!-- end .more-posts-->
             
         </div>
@@ -158,13 +157,13 @@ Template Name: Media Center Page
     <aside class="one_third">
         <div class="widget">
 		<?php 
-        $category_id = 8;
-        $category_link = get_category_link( $category_id ); 
+        $category_name = $data['video_cat'];
+        $category_link = get_category_link( get_cat_ID($category_name) ); 
         ?>
-            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+            <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
         $args = array (
-                    'cat' 				=> $category_id,
+                    'category_name' 	=> $category_name,
                     'posts_per_page'	=> 1
                 );
         $video_query = new WP_Query($args);
@@ -195,7 +194,7 @@ Template Name: Media Center Page
         
         <div class="more-posts">
             <ul>
-        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'cat' => $category_id)); ?>	
+        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'category_name' => $category_name)); ?>	
         <?php if ($media_query->have_posts()) : while ( $media_query->have_posts() ) : $media_query->the_post(); ?>
         <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
         <?php
@@ -203,7 +202,7 @@ Template Name: Media Center Page
         endif;
         ?>
             </ul>
-        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_id ); ?> »</a>   
+        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_name ); ?> »</a>   
         </div><!-- end .more-posts-->
             
         </div>
@@ -212,13 +211,13 @@ Template Name: Media Center Page
      <aside class="one_third last">
         <div class="widget">
         <?php 
-        $category_id = 9;
-        $category_link = get_category_link( $category_id ); 
+        $category_name = $data['press_release_cat'];
+        $category_link = get_category_link( get_cat_ID($category_name) ); 
         ?>
-				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo get_cat_name( $category_id ); ?></a></h3>
+				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
 		$args = array (
-					'cat' 				=> $category_id,
+					'category_name' 	=> $category_name,
 					'posts_per_page'	=> 1
 				);
 		$media_query = new WP_Query($args);
@@ -247,7 +246,7 @@ Template Name: Media Center Page
         
         <div class="more-posts">
             <ul>
-        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'cat' => $category_id)); ?>	
+        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'category_name' => $category_name)); ?>	
         <?php if ($media_query->have_posts()) : while ( $media_query->have_posts() ) : $media_query->the_post(); ?>
         <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
         <?php
@@ -255,7 +254,7 @@ Template Name: Media Center Page
         endif;
         ?>
             </ul>
-        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_id ); ?> »</a>   
+        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_name ); ?> »</a>   
         </div><!-- end .more-posts-->
         
         </div>

@@ -48,10 +48,10 @@ require_once( $path_to_wp.'/wp-load.php' );
 							<option value="info-box"><?php _e('Info Box', 'sptheme'); ?></option>
 							<option value="list"><?php _e('List', 'sptheme'); ?></option>
 							<option value="quote"><?php _e('Quote', 'sptheme'); ?></option>
-							<!--<option value="lightbox"><?php _e('Lightbox', 'sptheme'); ?></option>-->
-							<option value="accordion-content"><?php _e('Accordion Content', 'sptheme'); ?></option>
 							<option value="content-tabs"><?php _e('Content Tabs', 'sptheme'); ?></option>
-							<!--<option value="pricing-tables"><?php _e('Pricing Tables', 'sptheme'); ?></option>
+                            <!--<option value="lightbox"><?php _e('Lightbox', 'sptheme'); ?></option>
+							<option value="accordion-content"><?php _e('Accordion Content', 'sptheme'); ?></option>
+							<option value="pricing-tables"><?php _e('Pricing Tables', 'sptheme'); ?></option>
 							<option value="video-player"><?php _e('Video Player', 'sptheme'); ?></option>
 							<option value="audio-player"><?php _e('Audio Player', 'sptheme'); ?></option>-->
 						</optgroup>

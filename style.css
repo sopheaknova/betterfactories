@@ -481,6 +481,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		   line-height:16px !important;
 		   padding-top:5px;
 		   padding-bottom:5px;
+		   padding-left:5px;
 		   margin-left:0;
 		   margin-right:0 !important;
 		   border:none;
@@ -1221,6 +1222,9 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		font-size:18px;	
 		margin-bottom:0;
 	}
+		.page-title, h1.title{
+			text-shadow:0 2px 0px #ffffff;	
+		}
 		
 		.entry-body, .page-header{
 			padding:15px 20px; 
