@@ -384,7 +384,7 @@ class Options_Machine {
 					$output .= '<div class="slider"><ul id="'.$value['id'].'" rel="'.$int.'">';
 					$slides = $data[$value['id']];
 					$count = count($slides);
-					if ($count < 2) {
+					/*if ($count < 2) {
 						$oldorder = 1;
 						$order = 1;
 						$output .= Options_Machine::optionsframework_sidebar_function($value['id'],$value['std'],$oldorder,$order,$int);
@@ -396,7 +396,15 @@ class Options_Machine {
 							$order = $i;
 							$output .= Options_Machine::optionsframework_sidebar_function($value['id'],$value['std'],$oldorder,$order,$int);
 						}
-					}			
+					}*/	
+					$i = 0;
+					foreach ($slides as $slide) {
+						$oldorder = $slide['order'];
+						$i++;
+						$order = $i;
+						$output .= Options_Machine::optionsframework_sidebar_function($value['id'],$value['std'],$oldorder,$order,$int);
+					}
+							
 					$output .= '</ul>';
 					$output .= '<a href="#" class="button sidebar_add_button">Add New Sidebar</a></div>';
 				break;
