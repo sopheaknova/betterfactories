@@ -30,6 +30,7 @@ jQuery(document).ready(function($) {
 	
 	//MISC
 	$(".menu-item:last").html($(".menu-item:last").html().replace("</a> -","</a>"));
+	$("#footer-cols .widget:last").addClass("last")
 	
 	/* ---------------------------------------------------------------------- */
 	/*	Detect touch device

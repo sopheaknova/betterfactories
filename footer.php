@@ -14,55 +14,8 @@
 
 <footer id="footer-cols" class="clearfix">
     <div class="container">
-    <!--<div class="one_fifth">
-    <h5><a href="#">About BFC</a></h5>
-    <ul>
-        <li><a href="#">Our mission</a></li>
-        <li><a href="#">Our teams</a></li>
-        <li><a href="#">Our funders</a></li>
-        <li><a href="#">Vacancies</a></li>
-        <li><a href="#">Contact us</a></li>
-    </ul>
-    </div>
-    <div class="one_fifth">
-    <h5><a href="#">What we do</a></h5>
-    <ul>
-        <li><a href="#">Monitoring</a></li>
-        <li><a href="#">Training</a></li>
-        <li><a href="#">Advisory</a></li>
-        <li><a href="#">Soicial change initiatives</a></li>
-        <li><a href="#">Research</a></li>
-    </ul>
-    </div>
-    <div class="one_fifth">
-    <h5><a href="#">Training</a></h5>
-    <ul>
-        <li><a href="#">Training courses</a></li>
-        <li><a href="#">Training schedules</a></li>
-        <li><a href="#">Register for training</a></li>
-    </ul>
-    </div>
-    <div class="one_fifth">
-    <h5><a href="#">How we work</a></h5>
-    <ul>
-        <li><a href="#">Tripartite cooperation</a></li>
-        <li><a href="#">Better work</a></li>
-        <li><a href="#">Private and social parnters</a></li>
-        <li><a href="#">Susstainability</a></li>
-    </ul>
-    </div>
-    <div class="one_fifth last">
-    <h5><a href="#">Download</a></h5>
-    <ul>
-        <li><a href="#">Third party access form</a></li>
-        <li><a href="#">MOU</a></li>
-        <li><a href="#">Buyer subscription form</a></li>
-        <li><a href="#">Training registration form</a></li>
-        <li><a href="#">Advisory services form</a></li>
-    </ul>
-    </div>-->
     
-    <?php 
+	<?php 
 	if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Footer sidebar') ) :	
 	endif;
 	?>
