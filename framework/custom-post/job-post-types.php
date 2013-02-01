@@ -46,7 +46,77 @@ function sp_register_post_type_job() {
 } 
 add_action('init', 'sp_register_post_type_job');
 
+// Custom colums for 'Job'
+function sp_edit_job_columns() {
 
+	$columns = array(
+		'cb'          => '<input type="checkbox" />',
+		'title'       => __( 'Name', 'sptheme' ),
+		'project_title'   => __( 'Project Title', 'sptheme' ),
+		'post_level' => __( 'Post level', 'sptheme' ),
+		'contract_type'   => __( 'Contract type', 'sptheme' ),
+		'duration'	=> __('Duration of contract', 'sptheme'),
+		'work_place'	=> __('Duty station', 'sptheme')
+	);
+
+	return $columns;
+
+}
+add_action('manage_edit-job_columns', 'sp_edit_job_columns');
+
+// Custom colums content for 'Job'
+function sp_manage_job_columns( $column, $post_id ) {
+
+	global $post;
+
+	switch ( $column ) {
+
+		case 'project_title':
+			
+			echo sp_get_custom_field( 'sp_project_title', $post_id );
+
+			break;
+
+		case 'post_level':
+			
+			echo sp_get_custom_field( 'sp_post_level', $post_id );
+
+			break;
+
+		case 'contract_type':
+			
+			echo sp_get_custom_field( 'sp_contract_type', $post_id );
+
+			break;
+			
+		case 'duration':
+			
+			echo sp_get_custom_field( 'sp_contract_duration', $post_id );
+
+			break;
+			
+		case 'work_place':
+			
+			echo sp_get_custom_field( 'sp_duty_station', $post_id );
+
+			break;		
+		
+		default:
+			break;
+	}
+
+}
+add_action('manage_job_posts_custom_column', 'sp_manage_job_columns', 10, 2);
+
+// Sortable custom columns for 'Job'
+function sp_sortable_job_columns( $columns ) {
+
+	$columns['project_title'] = 'project_title';
+
+	return $columns;
+
+}
+add_action('manage_edit-job_sortable_columns', 'sp_sortable_job_columns');
 
 // Change default title for 'job'
 function sp_change_job_title( $title ){

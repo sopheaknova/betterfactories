@@ -258,13 +258,6 @@ $of_options[] = array( "name" => "Email",
 $of_options[] = array( "name" => "Footer",
 					"type" => "heading");
 					
-$of_options[] = array( "name" => "test",
-					"desc" => "",
-					"id" => "_test",
-					"std" => "",
-					"type" => "sorter"
-					);						
-	
 $of_options[] = array( "name" => "Facebook URL",
 					"desc" => "Enter Facebook url/link",
 					"id" => "fb_url",
