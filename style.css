@@ -31,8 +31,8 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-::-moz-selection { background: #f15a23; color: #fff; text-shadow: none; }
-::selection { background: #f15a23; color: #fff; text-shadow: none; }
+::-moz-selection { background: #ff6633; color: #fff; text-shadow: none; }
+::selection { background: #ff6633; color: #fff; text-shadow: none; }
 
 /* Some basic settings */
 h1, h1 .button { font-size: 32px; }
@@ -68,7 +68,7 @@ a, a > * {
 	        transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
 }
 
-a:hover, a > *:hover { color: #f15a23; }
+a:hover, a > *:hover { color: #ff6633; }
 
 hr {
 	background: #d0d0d0;
@@ -215,7 +215,7 @@ div.aligncenter {
 /* ---------------------------------------------------------------------- */
 
 .button, input[type="submit"], button {
-	background: #f15a23;
+	background: #ff6633;
 	border: none;
 	color: #fff;
 	cursor: pointer;	
@@ -231,7 +231,7 @@ div.aligncenter {
 	width: auto;
 }
 
-	.button:hover, input[type="submit"]:hover, button:hover {
+	.button:hover, input[type="submit"]:hover, button:hover, #email-subscribe form .subscribe-btn:hover {
 		background: #3a3a3a;
 		color: #fff;
 	}
@@ -254,7 +254,7 @@ div.aligncenter {
 
 		.button.no-bg:hover {
 			background: none;
-			color: #f15a23;
+			color: #ff6633;
 		}
 
 	.button .icon, .button .arrow {
@@ -280,7 +280,7 @@ div.aligncenter {
 
 	.button .arrow.left { background-position: 0 -19px; }
 
-		.button:hover .arrow { background-color: #f15a23; }
+		.button:hover .arrow { background-color: #ff6633; }
 
 /* ---------------------------------------------------------------------- */
 /*	Dropcap
@@ -578,7 +578,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 					text-shadow: 0 1px 1px #333;
 				}
 				.nav-slide a.activeSlide{
-					background:#555555;
+					background:#ff6633;
 					color:#ffffff;
 				}
 			.featured-home .caption{
@@ -670,7 +670,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		}
 		#featured-media .caption h4{margin:15px 0 0 15px;}
 		#featured-media .caption p{margin-left:15px; color:#D8D8D8;font-size:12px;}
-		#featured-media .caption a:hover{color:#f15a23;}
+		#featured-media .caption a:hover{color:#ff6633;}
 		h3.featured-title{
 			font-size: 18px;
 			font-weight: 600;
@@ -871,7 +871,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 
 				.acc-trigger a:hover { background-color: #f8f8f8; }
 
-				.acc-trigger a:hover, .acc-trigger.active a, .acc-trigger.active a:hover { color: #f15a23; }
+				.acc-trigger a:hover, .acc-trigger.active a, .acc-trigger.active a:hover { color: #ff6633; }
 
 				.acc-trigger.active a:hover { background-color: transparent; }
 
@@ -936,12 +936,12 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 
 				.tabs-nav li a:hover { background: #f0f0f0; }
 
-				.tabs-nav li a:hover, .tabs-nav li.active a { color: #f15a23; }
+				.tabs-nav li a:hover, .tabs-nav li.active a { color: #ff6633; }
 				
 					.tabs-nav li.active a  {
 						background: #fff;
 						border-bottom: 2px solid #fff;
-						border-top: 1px solid #f15a23;
+						border-top: 1px solid #ff6633;
 					}
 
 		.tabs-container {
@@ -974,7 +974,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 					padding: 5px 0 5px 20px;
 				}
 					
-					.widget li a:hover { color: #f15a23; }
+					.widget li a:hover { color: #ff6633; }
 
 		/* ---------------------------------------- */
 		/*	Recent Comments
@@ -1103,7 +1103,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		}
 
 			#sidebar .tweets-feed li a, #footer .tweets-feed li a {
-				color: #f15a23;
+				color: #ff6633;
 				display: inline;
 				padding: 0;
 			}
@@ -1325,8 +1325,8 @@ table tbody tr:hover td {
 			.post-format.link { background-position: -132px 0; }
 
 			a:hover > .post-format {
-				background-color: #f15a23;
-				color: #f15a23;
+				background-color: #ff6633;
+				color: #ff6633;
 			}
 	
 	.entry-image, .entry-video, .entry-audio, .fluid-width-video-wrapper {
@@ -1367,10 +1367,10 @@ table tbody tr:hover td {
 	}
 	
 	#email-subscribe form .subscribe-btn{
-		height:40px;
+		height:38px;
 		width:80px;
 		margin-left:-5px;
-		background: #f15a23;
+		background: #ff6633;
 		color:#fff;
 	}
 	
@@ -1419,7 +1419,7 @@ table tbody tr:hover td {
 
 		.pagination a:hover, .comments-pagination a:hover {
 			border-color: #e6edef;
-			color: #f15a23;
+			color: #ff6633;
 		}
 
 	.pagination .next, .pagination .prev { border: none; }

@@ -257,6 +257,20 @@ $of_options[] = array( "name" => "Email",
 // Footer
 $of_options[] = array( "name" => "Footer",
 					"type" => "heading");	
+	
+$of_options[] = array( "name" => "Facebook URL",
+					"desc" => "Enter Facebook url/link",
+					"id" => "fb_url",
+					"std" => "",
+					"type" => "text"
+					);
+					
+$of_options[] = array( "name" => "Youtube URL",
+					"desc" => "Enter Youtube url/link",
+					"id" => "youtube_url",
+					"std" => "",
+					"type" => "text"
+					);					
 					
 $of_options[] = array( "name" => "Copyright",
 					"desc" => "footer copyrights text",

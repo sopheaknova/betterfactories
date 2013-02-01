@@ -1,3 +1,4 @@
+<?php global $data; ?>
 <?php if ( !is_page_template('page-contact.php') ) { ?>
 <div class="container clearfix">
     <hr class="dotted-3">
@@ -6,7 +7,7 @@
     <form>
         <label for="email"><?php _e( 'Email subscription', 'sptheme' ); ?></label>
         <input type="text" name="email" value="<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;" onblur="if (this.value == '') {this.value = '<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;';}" onfocus="if (this.value == '<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;') {this.value = '';}" class="youremail" />
-        <input type="button" value="signup" class="subscribe-btn" />
+        <input type="submit" value="signup" class="subscribe-btn" />
     </form> 
     </div><!--end #email-subscribe -->
 </div><!--end .container .clearfix-->
@@ -30,13 +31,18 @@
         <div class="copyright">&copy; <?php echo date('Y');?> BETTER FACTORIES CAMBODIA.</div> 
         <ul class="social-links">
         	<!--<li class="twitter"><a href="#" title="Share with us on Twitter">Twitter</a></li>-->
+        <?php if ( $data['fb_url'] != '') : ?>
             <li class="facebook"><a href="#" title="Join us on Facebook">Facebook</a></li>
+        <?php endif; ?>    
+        <?php if ( $data['youtube_url'] != '') : ?>    
             <li class="youtube"><a href="#" title="Watch our video YouTube">YouTube</a></li>
-            <li class="googleplus"><a href="#" title="Join us on Google plus">Googleplus</a></li>
-            <!--<li class="vimeo"><a href="#" title="Watch our video Vimeo">Vimeo</a></li>
+        <?php endif; ?>    
+
+            <!--<li class="googleplus"><a href="#" title="Join us on Google plus">Googleplus</a></li>
+            <li class="vimeo"><a href="#" title="Watch our video Vimeo">Vimeo</a></li>
             <li class="linkedin"><a href="#" title="Connect us Linkedin">Linkedin</a></li>
-            <li class="skype"><a href="#" title="Add our Skype">Skype</a></li>-->
-            <li class="rss"><a href="#" title="Get our latest rss">rss</a></li>
+            <li class="skype"><a href="#" title="Add our Skype">Skype</a></li>
+            <li class="rss"><a href="#" title="Get our latest rss">rss</a></li>-->
         </ul>
         </div><!--end .two_third--> 
         <div class="power-by one_half last">
