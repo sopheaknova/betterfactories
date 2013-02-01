@@ -14,7 +14,7 @@
 
 <footer id="footer-cols" class="clearfix">
     <div class="container">
-    <div class="one_fifth">
+    <!--<div class="one_fifth">
     <h5><a href="#">About BFC</a></h5>
     <ul>
         <li><a href="#">Our mission</a></li>
@@ -60,7 +60,13 @@
         <li><a href="#">Training registration form</a></li>
         <li><a href="#">Advisory services form</a></li>
     </ul>
-    </div>
+    </div>-->
+    
+    <?php 
+	if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Footer sidebar') ) :	
+	endif;
+	?>
+    
     </div><!--end .container-->
 </footer><!--end #footer-cols-->
 

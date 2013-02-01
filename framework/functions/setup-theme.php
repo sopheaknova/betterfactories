@@ -127,7 +127,7 @@ function sp_widgets_init() {
 			'description' 	=> 'Widgets in this area will be shown in the sidebar.',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h6 class="widget-title">',
+			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h6>',
 			));
 		}
@@ -137,7 +137,7 @@ function sp_widgets_init() {
 		'name'          => __('Main Sidebar', 'sptheme'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h6 class="widget-title">',
+		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h6>',
 	));
 	
@@ -147,7 +147,17 @@ function sp_widgets_init() {
 		'description'   => __('For homepage under slideshow', 'sptheme'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h6 class="widget-title">',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h6>',
+	));
+	
+	// Footer Widget Area
+	register_sidebar(array(
+		'name'          => __('Footer Sidebar', 'sptheme'),
+		'description'   => __('For place pages link in footer, can only support with Sub navigation widget', 'sptheme'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h6>',
 	));
 	
