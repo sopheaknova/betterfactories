@@ -101,14 +101,14 @@ if ( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
 /* ---------------------------------------------------------------------- */
 /*	Insert Custom Sized Image Into Post Using Media Gallery
 /* ---------------------------------------------------------------------- */
-add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
+/*add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
 function custom_image_sizes_choose( $sizes ) {
 	$custom_sizes = array(
 		'portrait-thumb' => 'Portrait',
 		'landscape-thumb' => 'Landscape'
 	);
 	return array_merge( $sizes, $custom_sizes );
-}
+}*/
 
 /* ---------------------------------------------------------------------- */
 /*	Register sidebars

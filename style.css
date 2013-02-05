@@ -788,7 +788,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	/*	Widgets
 	/* -------------------------------------------------- */
 
-	#sidebar .widget { margin: 0 0 30px;}
+	.widget { margin: 0 0 30px;}
 	/*.widget{ font-size:0.9em; }*/
 
 		#sidebar .widget h5, #home-sidebar .widget h5{
@@ -1252,7 +1252,7 @@ table tbody tr:hover td {
 /* ---------------------------------------------------------------------- */
 /*	Blog / Category / Article
 /* ---------------------------------------------------------------------- */
-	.category .page-header, .page-template-archives-php .page-header, .archive .page-header, .search .page-header{
+	.category .page-header, .page-template-archives-php .page-header, .page-template-page-publication-reports-php .page-header, .archive .page-header, .search .page-header{
 		margin-bottom:30px;	
 	}
 	.category .page-title span, .archive .page-title span, .search .page-title span{color:#ff6633;}

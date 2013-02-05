@@ -9,13 +9,14 @@ Template Name: Media Center Page
     
     <div id="featured-media">
     <?php 
-	$category_name = $data['infocus_cat'];;
+	$category_name = $data['infocus_cat'];
+	$category_id = get_cat_ID($category_name);
 	$category_link = get_category_link( get_cat_ID($category_name) ); 
 	?>
     	<h3 class="featured-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
     <?php
 	$args = array (
-				'category_name' 	=> $category_name,
+				'cat' 	=> $category_id,
 				'posts_per_page'	=> 5
 			);
 	$media_query = new WP_Query($args);
@@ -67,13 +68,14 @@ Template Name: Media Center Page
         	<div class="widget-custom">
             <?php 
 			$category_name = $data['latest_news_cat'];
+			$category_id = get_cat_ID($category_name);
 			$category_link = get_category_link( get_cat_ID($category_name) ); 
 			?>
             <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <ul class="latest-news">
             <?php
 			$args = array (
-						'category_name' 	=> $category_name,
+						'cat' 	=> $category_id,
 						'posts_per_page'	=> 7
 					);
 			$media_query = new WP_Query($args);
@@ -107,12 +109,13 @@ Template Name: Media Center Page
         <div class="widget">
 		<?php 
         $category_name = $data['bfc_voice_cat'];
+		$category_id = get_cat_ID($category_name);
         $category_link = get_category_link( get_cat_ID($category_name) ); 
         ?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
 		$args = array (
-					'category_name' 	=> $category_name,
+					'cat' 	=> $category_id,
 					'posts_per_page'	=> 1
 				);
 		$media_query = new WP_Query($args);
@@ -158,12 +161,13 @@ Template Name: Media Center Page
         <div class="widget">
 		<?php 
         $category_name = $data['video_cat'];
+		$category_id = get_cat_ID($category_name);
         $category_link = get_category_link( get_cat_ID($category_name) ); 
         ?>
             <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
         $args = array (
-                    'category_name' 	=> $category_name,
+                    'cat' 	=> $category_id,
                     'posts_per_page'	=> 1
                 );
         $video_query = new WP_Query($args);
@@ -212,12 +216,13 @@ Template Name: Media Center Page
         <div class="widget">
         <?php 
         $category_name = $data['press_release_cat'];
+		$category_id = get_cat_ID($category_name);
         $category_link = get_category_link( get_cat_ID($category_name) ); 
         ?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
 		$args = array (
-					'category_name' 	=> $category_name,
+					'cat' 	=> $category_id,
 					'posts_per_page'	=> 1
 				);
 		$media_query = new WP_Query($args);
