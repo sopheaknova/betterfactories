@@ -144,11 +144,7 @@
     </div><!-- end .featured-home -->
     <?php else: ?>
     <div class="heading-image">
-    <?php if( sp_get_custom_field( 'sp_heading_image', $post->ID ) ) : ?>
-    <?php echo wp_get_attachment_image(sp_get_custom_field( 'sp_heading_image', $post->ID ), array(980, 157)); ?>
-    <?php else: ?>
-    <img src="<?php echo SP_BASE_URL; ?>images/blank-photo-header.gif" alt="Heading image" />
-    <?php endif; ?>
+    <?php echo sp_check_heading_image(); ?>
     </div>
     <?php endif; // end is_front_page?>
     

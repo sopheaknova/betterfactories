@@ -28,7 +28,15 @@
 	<div class="container">
     	<div class="one_half">
         <?php echo sp_footer_navigation(); ?>
-        <div class="copyright">&copy; <?php echo date('Y');?> BETTER FACTORIES CAMBODIA.</div> 
+        <div class="copyright">
+        <?php if ( $data['copyrights'] != '') : ?>
+        	&copy; <?php echo date('Y');?> BETTER FACTORIES CAMBODIA.
+        <?php 
+		else: 
+        	echo $data['copyrights'];
+        endif; 
+		?>    
+        </div> 
         <ul class="social-links">
         	<!--<li class="twitter"><a href="#" title="Share with us on Twitter">Twitter</a></li>-->
         <?php if ( $data['fb_url'] != '') : ?>

@@ -20,19 +20,26 @@ Template Name: Publication Reports Page
     
 	<?php 
 	$cat_items = 1;
-	$category_name = $data['media_center_cat'];
+	$category_name = $data['publication_report_cat'];
 	$category_id = get_cat_ID($category_name);
+	$cat_image_url = SP_BASE_URL . 'images/blank-photo-300.gif';
 	
 	foreach (get_categories(array('parent' => $category_id)) as $cat) :  
-	$image = aq_resize( z_taxonomy_image_url($cat->term_id), 300, 145, true ); 
+	
+	if (function_exists('z_taxonomy_image_url'))
+		$cat_image_url = z_taxonomy_image_url($cat->term_id);
+		
+		$image = aq_resize( $cat_image_url, 300, 145, true ); 
 	?>
     <aside class="one_third <?php if ( ($cat_items % 3) ==  0) echo 'last'; ?>">
     <div class="widget">
     <h3 class="widget-title"><a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>"><?php echo $cat->name; ?></a></h3>
     <?php if ($image) : ?>
+    	<a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>">
         <img src="<?php echo $image;?>" alt="<?php the_title(); ?>" />
+        </a>
     <?php else:	?>
-        <img src="<?php echo SP_BASE_URL; ?>images/blank-photo-300.gif" alt="Blank photo" />
+        <img src="<?php echo $cat_image_url; ?>" alt="Blank photo" />
     <?php endif; ?>
     <?php
     $args = array (

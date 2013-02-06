@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 	/*	Detect touch device
 	/* ---------------------------------------------------------------------- */
 
-	(function() {
+	/*(function() {
 
 		if( Modernizr.touch ) {
 
@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
 
 		}
 
-	})();
+	})();*/
 	
 	/* ---------------------------------------------------------------------- */
 	/*	FitVids

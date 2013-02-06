@@ -253,6 +253,39 @@ if( !function_exists('sp_post_meta')) {
 }
 
 /* ---------------------------------------------------------------------- */
+/*	Show Heading image on page/post
+/* ---------------------------------------------------------------------- */
+
+if( !function_exists('sp_check_heading_image')) {
+
+	function sp_check_heading_image() {
+
+		global $post;
+		
+		if( sp_get_custom_field( 'sp_heading_image', $post->ID ) ) {
+		$image = wp_get_attachment_image_src( sp_get_custom_field( 'sp_heading_image', $post->ID ), 'full' ); 
+		$output = '<img src="' . aq_resize( $image[0], 980, 157, true ) . '" />';
+		}
+		else { 
+			//check heading of parent page
+			if ( sp_get_custom_field( 'sp_heading_image', $post->post_parent )) {
+				$image = wp_get_attachment_image_src( sp_get_custom_field( 'sp_heading_image', $post->post_parent ), 'full' ); 
+				$output = '<img src="' . aq_resize( $image[0], 980, 157, true ) . '" />';
+			} elseif ( is_single() && function_exists('z_taxonomy_image_url') ) {
+				$category = get_the_category();
+				$output = '<img src="' . aq_resize( z_taxonomy_image_url($category[0]->term_id), 980, 157, true ) . '" />';
+			} else {
+			
+			//display blank image if options above are fail
+			$output = '<img src="' . SP_BASE_URL . 'images/blank-photo-header.gif" />';
+			}
+		}
+			return $output;
+	}
+
+}
+
+/* ---------------------------------------------------------------------- */
 /*	The current post—date/time
 /* ---------------------------------------------------------------------- */
 
