@@ -1,21 +1,18 @@
 <?php
 /*
-Plugin Name: Categories Images
-Plugin URI: http://zahlan.net/blog/2012/06/categories-images/
-Description: Categories Images Plugin allow you to add an image to category or any custom term.
-Author: Muhammad Said El Zahlan
+Categories Images Plugin allow you to add an image to category or any custom term.
+URI: http://zahlan.net/blog/2012/06/categories-images/
 Version: 2.2.3
-Author URI: http://zahlan.net/
 */
 ?>
 <?php
 if ( ! defined( 'Z_PLUGIN_URL' ) )
-	define( 'Z_PLUGIN_URL', untrailingslashit( plugins_url( '', __FILE__ ) ) );
+	define( 'Z_PLUGIN_URL', SP_BASE_URL . 'framework/functions/categories-images/' );
 
-define( 'Z_IMAGE_PLACEHOLDER', Z_PLUGIN_URL . "/images/placeholder.png");
+define( 'Z_IMAGE_PLACEHOLDER', Z_PLUGIN_URL . "images/placeholder.png");
 
 // l10n
-load_plugin_textdomain( 'zci', false, 'categories-images/languages' );
+load_plugin_textdomain( 'zci', false, 'languages' );
 
 add_action('admin_init', 'z_init');
 function z_init() {

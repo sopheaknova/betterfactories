@@ -33,3 +33,6 @@ require_once( SP_BASE_DIR . 'framework/shortcodes.php' );
 
 // Add custom post type
 require_once( SP_BASE_DIR . 'framework/custom-post-types.php' );
+
+//Add Category images plugin
+require_once( SP_BASE_DIR . 'framework/functions/categories-images/categories-images.php' );
