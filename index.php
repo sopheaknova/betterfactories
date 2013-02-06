@@ -30,12 +30,13 @@
         <div class="widget">
         <?php 
 			$category_name = $data['infocus_cat'];
+			$category_id = get_cat_ID($category_name);
 			$category_link = get_category_link( get_cat_ID($category_name) ); 
 			?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
 		$args = array (
-					'category_name' 	=> $category_name,
+					'cat' 	=> $category_id,
 					'posts_per_page'	=> 1
 				);
 		$focus_query = new WP_Query($args);
@@ -70,14 +71,15 @@
 	</aside><!-- end #home-sidebar-1 -->      
     <aside class="one_third">
             <div class="widget">
-            <?php 
+            <?php
 			$category_name = $data['video_cat'];
+			$category_id = get_cat_ID($category_name);
 			$category_link = get_category_link( get_cat_ID($category_name) ); 
 			?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <?php
 			$args = array (
-						'category_name' 	=> $category_name,
+						'cat' 	=> $category_id,
 						'posts_per_page'	=> 1
 					);
 			$video_query = new WP_Query($args);
@@ -112,13 +114,14 @@
         <div class="widget">
         <?php 
 		$category_name = $data['latest_news_cat'];
+		$category_id = get_cat_ID($category_name);
 		$category_link = get_category_link( get_cat_ID($category_name) ); 
 		?>
             <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <ul class="latest-news">
             <?php
 			$args = array (
-						'category_name' 	=> $category_name,
+						'cat' 	=> $category_id,
 						'posts_per_page'	=> 5
 					);
 			$news_query = new WP_Query($args);

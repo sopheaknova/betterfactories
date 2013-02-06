@@ -20,7 +20,10 @@ Template Name: Publication Reports Page
     
 	<?php 
 	$cat_items = 1;
-	foreach (get_categories(array('parent' => 2)) as $cat) :  
+	$category_name = $data['media_center_cat'];
+	$category_id = get_cat_ID($category_name);
+	
+	foreach (get_categories(array('parent' => $category_id)) as $cat) :  
 	$image = aq_resize( z_taxonomy_image_url($cat->term_id), 300, 145, true ); 
 	?>
     <aside class="one_third <?php if ( ($cat_items % 3) ==  0) echo 'last'; ?>">

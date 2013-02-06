@@ -94,7 +94,7 @@ if (!function_exists('of_options'))
 		$of_options_image_link_to = array("image" => "The Image","post" => "The Post"); 
 		
 		//cycle Slider
-		$cycle_effects = array('blindX' => 'blindX', 'blindY' => 'blindY', 'blindZ' => 'blindZ', 'cover' => 'cover', 'curtainX' => 'curtainX','curtainY' => 'curtainY', 'fade' => 'fade', 'fadeZoom' => 'fadeZoom', 'growX' => 'growX', 'growY' => 'growY', 
+		$cycle_effects = array('fade' => 'fade', 'blindX' => 'blindX', 'blindY' => 'blindY', 'blindZ' => 'blindZ', 'cover' => 'cover', 'curtainX' => 'curtainX','curtainY' => 'curtainY', 'fadeZoom' => 'fadeZoom', 'growX' => 'growX', 'growY' => 'growY', 
 	 'none' => 'none', 'scrollUp' => 'scrollUp', 'scrollDown' => 'scrollDown', 'scrollLeft' => 'scrollLeft', 
 	 'scrollRight' => 'scrollRight', 'scrollHorz' => 'scrollHorz', 'scrollVert' => 'scrollVert',
 	'shuffle' => 'shuffle', 'slideX' => 'slideX', 'slideY' => 'slideY', 'toss' => 'toss', 
@@ -125,7 +125,50 @@ $of_options[] = array( "name" => "Custom favicon upload",
 					"id" => "theme_favico",
 					"std" => SP_BASE_URL . "favicon.ico",
 					"mod" => "min",
-					"type" => "media");	
+					"type" => "media");
+
+//Feature Slide
+
+$of_options[] = array( "name" => 'Feature Slider',
+						"type" => "heading",
+						"slug" => "feature"
+						);
+
+$of_options[] = array( "name" => 'Feature Category',
+					"id" => "feature_category",
+					"type" => "select",
+					"options" => $of_categories
+					);
+
+$of_options[] = array( "name" => 'Animation & Effects',
+					"desc" => "",
+					"id" => "introduction",
+					"std" => "<h3 style=\"margin: 0 0 10px;\">Animation & Effects</h3>",
+					"icon" => true,
+					"type" => "info",
+					);
+
+$of_options[] = array( "name" => 'Effect',
+					"desc" => 'name of transition effect',
+					"id" => "cycle_effect",
+					"std" => "fade",
+					"type" => "select",
+					"options" => $cycle_effects
+					);
+
+$of_options[] = array( "name" => 'Speed',
+					"desc" => 'speed of the transition',
+					"id" => "cycle_speed",
+					"std" => "5000",
+					"type" => "text",
+					);
+
+$of_options[] = array( "name" => 'timeout',
+					"desc" => 'milliseconds between slide transitions',
+					"id" => "cycle_timeout",
+					"std" => "5000",
+					"type" => "text",
+					);						
 					
 // Post Setting
 $of_options[] = array( "name" => "Post Setting",
@@ -154,7 +197,15 @@ $of_options[] = array( "name" => "Disable post meta",
 // Media Center Setting
 $of_options[] = array( "name" => "Media Center",
 					"type" => "heading");
-					
+
+$of_options[] = array( "name" => "Select Media Center",
+					"desc" => "Select Media Center category",
+					"id" => "media_center_cat",
+					"std" => "Select a category:",
+					"type" => "select",
+					"options" => $of_categories
+					);
+
 $of_options[] = array( "name" => "Select BFC Voice",
 					"desc" => "Select BFC Voice category",
 					"id" => "bfc_voice_cat",
@@ -198,6 +249,14 @@ $of_options[] = array( "name" => "Select Video",
 // Publication and Reports Setting
 $of_options[] = array( "name" => "Publication Report",
 					"type" => "heading");
+					
+$of_options[] = array( "name" => "Select Publication and Reports",
+					"desc" => "Select Publication and Reports category",
+					"id" => "publication_report_cat",
+					"std" => "Select a category:",
+					"type" => "select",
+					"options" => $of_categories
+					);					
 					
 // Contact
 $of_options[] = array( "name" => "Contact",

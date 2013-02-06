@@ -16,8 +16,7 @@
 	<title><?php wp_title('|', true, 'right'); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    <link rel="shortcut icon" href="<?php echo SP_BASE_URL.'favicon.ico'; ?>" type="image/x-icon" /> 
-    <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
+    <link rel="shortcut icon" href="<?php echo ($data['theme_favico'] == '') ? SP_BASE_URL.'favicon.ico' : $data['theme_favico']; ?>" type="image/x-icon" /> 
     
     <?php wp_head(); ?>
     
@@ -26,19 +25,19 @@
 		
 		//featured home
 		$('.featured-home').cycle({
-			fx:       'fade',
+			fx:       '<?php echo $data['cycle_effect']; ?>',
 			slideExpr: '.slide-items',
 			pager:  '.nav-slide',
-			timeout:   5000,
-			delay: 5000
+			timeout:   <?php echo $data['cycle_timeout']; ?>,
+			delay: <?php echo $data['cycle_speed']; ?>
 		});
 		
 		//featured media center page
 		$('#featured-media').cycle({
-			fx:       'fade',
+			fx:       '<?php echo $data['cycle_effect']; ?>',
 			slideExpr: '.cat-slide-items',
-			timeout:   5000,
-			delay: 5000,
+			timeout:   <?php echo $data['cycle_timeout']; ?>,
+			delay: <?php echo $data['cycle_speed']; ?>,
 			slideResize: 0,
 			after: feature_media_after,
 			before: feature_media_before,
@@ -120,7 +119,9 @@
 	  ?>
       <div class="slide-items">
 	  	<?php if ($image) : ?>
+        	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
             <img src="<?php echo $image;?>" alt="<?php the_title(); ?>" />
+            </a>
 		<?php else:	?>
         	<img src="<?php echo SP_BASE_URL; ?>images/featured-home-980x380.gif" alt="Featured Home" />
         <?php endif; ?>
