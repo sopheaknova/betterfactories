@@ -28,7 +28,9 @@ Template Name: Media Center Page
 	?>
     	<div class="cat-slide-items">
         <?php if ($image) : ?>
+        	<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
             <img src="<?php echo $image;?>" alt="<?php the_title(); ?>" />
+            </a>
 		<?php else:	?>
         	<img src="<?php echo SP_BASE_URL; ?>images/media-landing-image-690x317.gif" alt="Photo media slide" />
         <?php endif; ?>

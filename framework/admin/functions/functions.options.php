@@ -129,6 +129,30 @@ $of_options[] = array( "name" => "Custom favicon upload",
 					
 // Post Setting
 $of_options[] = array( "name" => "Post Setting",
+					"type" => "heading");																		
+
+$of_options[] = array( "name" => "Disable Share button",
+					"desc" => "Show or hide Share button for each news/events and latest offer",
+					"id" => "disable_share_post",
+					"std" => "no",
+					"type" => "radio",
+					"options" => array(
+						'yes' => 'Yes',
+						'no' => 'No')
+					);
+					
+$of_options[] = array( "name" => "Disable post meta",
+					"desc" => "Show or hide Posted By",
+					"id" => "disable_post_meta",
+					"std" => "no",
+					"type" => "radio",
+					"options" => array(
+						'yes' => 'Yes',
+						'no' => 'No')
+					);
+
+// Media Center Setting
+$of_options[] = array( "name" => "Media Center",
 					"type" => "heading");
 					
 $of_options[] = array( "name" => "Select BFC Voice",
@@ -169,28 +193,12 @@ $of_options[] = array( "name" => "Select Video",
 					"std" => "Select a category:",
 					"type" => "select",
 					"options" => $of_categories
-					);																			
+					);																														
 
-$of_options[] = array( "name" => "Disable Share button",
-					"desc" => "Show or hide Share button for each news/events and latest offer",
-					"id" => "disable_share_post",
-					"std" => "no",
-					"type" => "radio",
-					"options" => array(
-						'yes' => 'Yes',
-						'no' => 'No')
-					);
+// Publication and Reports Setting
+$of_options[] = array( "name" => "Publication Report",
+					"type" => "heading");
 					
-$of_options[] = array( "name" => "Disable post meta",
-					"desc" => "Show or hide Posted By",
-					"id" => "disable_post_meta",
-					"std" => "no",
-					"type" => "radio",
-					"options" => array(
-						'yes' => 'Yes',
-						'no' => 'No')
-					);						
-
 // Contact
 $of_options[] = array( "name" => "Contact",
 					"type" => "heading");
