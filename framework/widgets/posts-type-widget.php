@@ -19,7 +19,6 @@ class sp_widget_posts_type extends WP_Widget {
 		extract( $args );
 		/* User-selected settings. */
 		$title = apply_filters('widget_title', $instance['title'] );
-		$orderby = $instance['orderby'];
 		$count = $instance['count'];
 		$category = $instance['category'];
 
@@ -66,7 +65,6 @@ class sp_widget_posts_type extends WP_Widget {
 		/* Strip tags (if needed) and update the widget settings. */
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['count'] = $new_instance['count'];
-		$instance['orderby'] = $new_instance['orderby'];
 		$instance['category'] = $new_instance['category'];
 
 		return $instance;
@@ -101,17 +99,6 @@ function form( $instance ) {
 		</p>
         
        <p>
-		<label for="<?php echo $this->get_field_id( 'orderby' ); ?>"><?php _e('Show post by:', 'sptheme') ?></label>
-		<select id="<?php echo $this->get_field_id( 'orderby' ); ?>" name="<?php echo $this->get_field_name( 'orderby' ); ?>" class="widefat">
-		<option <?php if ( 'Video' == $instance['orderby'] ) echo 'selected="selected"'; ?>>Video</option>
-		<option <?php if ( 'Audio' == $instance['orderby'] ) echo 'selected="selected"'; ?>>Audio</option>
-		<option <?php if ( 'Slideshow' == $instance['orderby'] ) echo 'selected="selected"'; ?>>Slideshow</option>
-        <option <?php if ( 'Article' == $instance['orderby'] ) echo 'selected="selected"'; ?>>Article</option>
-		</select>
-		</p>
-
-
-		<p>
 		<label for="<?php echo $this->get_field_id( 'count' ); ?>"><?php _e('Number Of Posts:','sptheme'); ?></label>
 		<input id="<?php echo $this->get_field_id( 'count' ); ?>" name="<?php echo $this->get_field_name( 'count' ); ?>" value="<?php echo $instance['count']; ?>" class="widefat" />
 		</p>

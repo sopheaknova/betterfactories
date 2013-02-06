@@ -65,8 +65,8 @@ function form( $instance ) {
 		/* Set up some default widget settings. */
 		$defaults = array(
 			'title' => __('Facebook','sptheme'),
-			'page' => 'http://www.facebook.com/momizat',
-			'width' => 283,
+			'page' => 'http://www.facebook.com/novadesign.cambodia',
+			'width' => 300,
 			'height' => 258,
 			'borderc' => 'acb7d1',
 			
