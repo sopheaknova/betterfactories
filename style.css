@@ -804,6 +804,8 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		padding:10px;
 		height:220px;	
 	}
+	
+	.type-staff .profile-photo-frame{margin-top:15px;}
 		
 	/* -------------------------------------------------- */
 	/*	Contact

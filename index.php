@@ -12,14 +12,14 @@
     <div class="two_third">
     	<div class="promo-msg">
 		<h4><strong>Better Factories Cambodia</strong> monitor factories, <strong>train management</strong> and <strong>workers</strong>, and provide guidance and advice on factory improvements that help enterprises preserve profits while respecting workers' rights.</h4>
-        <p class="clients-link"><a href="#">Check it out</a> for Factories and Buyers we worked with.</p>
+        <p class="clients-link">List of all factories monitored by BFC. <a href="http://dev.novacambodia.com/?page_id=975">Check it out!</a></p>
       </div><!-- end .promo-msg -->
     </div>
     <div class="one_third last">
     	<div class="services-signup">
     	<h4>Please join us!</h4>
         <p>If you are a buyer or factory that would like to join our program or sign up for a training course, please</p>
-        <a class="button large" href="http://localhost:8888/betterfactory/?page_id=467">REGISTER TODAY</a>
+        <a class="button large" href="http://dev.novacambodia.com/?page_id=721">REGISTER TODAY</a>
         </div>
     </div>
     <div class="clear"></div>
