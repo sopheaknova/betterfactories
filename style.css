@@ -217,7 +217,7 @@ div.aligncenter {
 .button, input[type="submit"], button {
 	background: #ff6633;
 	border: none;
-	color: #fff;
+	color: #fff!important;
 	cursor: pointer;	
 	font-weight: 400;
 	height: auto;
@@ -233,7 +233,7 @@ div.aligncenter {
 
 	.button:hover, input[type="submit"]:hover, button:hover, #email-subscribe form .subscribe-btn:hover {
 		background: #3a3a3a;
-		color: #fff;
+		color: #fff!important;
 	}
 
 .button {
@@ -710,6 +710,100 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 			opacity: 1 !important;
 		}
 		.slider-nav img { border: none; display: block }
+	
+	
+	/* -------------------------------------------------- */
+	/*	Teams
+	/* -------------------------------------------------- */
+	#teams{
+		margin:10px 0;	
+	}
+	.team-info {
+		width: auto;
+		float: left; 
+		display: inline;
+		padding: 0;
+		position: relative;
+		margin:20px 10px;
+	}
+		.team-info:hover {
+			z-index: 99;
+		}
+	.team-info a, .profile-photo-frame a {display:block!important;}
+	.team-info img {
+		position: relative;
+		margin-bottom:0;
+		
+		/* Set an opacity for the default state */
+		filter: alpha(opacity=60);
+		opacity: 0.6;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+		display:block;
+	}
+	.team-info:hover img{
+		z-index: 999;
+		
+		/* Enabling a 100% opacity on mouse hover */
+		filter: alpha(opacity=100);
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	.details {
+		position: absolute;
+		left: -10px; 
+		top: -10px;
+		
+		/* The top padding is set to 220px because the height of the demo images
+		   is 200px, so we have an additional 10px on the top and at the bottom of the image */
+		padding: 205px 10px 10px 10px;
+		/* Set the following width according to the size of your images */
+		width: 195px;
+		/* Hiding the DIV */
+		display: none;
+		/* Rounded corners */
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.team-info:hover .details {
+		/* Showing on mouse hover */
+		display: block;
+	}
+	/* Styling for the orange variant */
+	.orange {
+		background: #FF6633;
+	}
+		.orange h4{
+			margin-top:5px;	
+		}
+		.orange h4 a, .orange p {
+			color: #ffffff;
+			margin-bottom:0;
+		}
+	
+	.profile-photo-frame{
+		border: 10px solid #FFFFFF;
+		border-radius: 5px;
+			-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+		box-shadow: 0 2px 4px #CCCCCC;	
+	}
+	.profile-photo-frame img{margin-bottom:0;display:block;}
+	h2.profile-name{margin:10px 0 5px;}
+	
+	#featured-staff{
+		border: 5px solid #cecece;
+		border-radius: 5px;
+			-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+		box-shadow: 0 2px 4px #CCCCCC;
+		background:#ffffff;
+		margin-bottom:30px;	
+	}
+	#featured-staff .staff-slide{
+		padding:10px;
+		height:220px;	
+	}
 		
 	/* -------------------------------------------------- */
 	/*	Contact
@@ -1228,8 +1322,8 @@ table tbody tr:hover td {
 		.entry-meta a:hover, .entry-body a:hover {color: #4e4e4e;}
 		.entry-meta a, .entry-body a {
 			color: #ff6633;
-			display: inline-block;
 		}
+		.entry-meta a{display: inline-block;}
 	
 		.entry-meta time { font-style: italic; }
 		

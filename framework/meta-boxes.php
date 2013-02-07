@@ -182,6 +182,13 @@ $meta_boxes[] = array(
 			'type' => 'text',
 			'std'  => '',
 			'desc' => ''
+		),
+		array(
+			'name' => __('Featured Staff', 'sptheme'),
+			'id'   => $prefix . 'staff_slide',
+			'type' => 'checkbox',
+			'std'  => 0,
+			'desc' => 'Check it for staff featured slideshow'
 		)
 	)
 );

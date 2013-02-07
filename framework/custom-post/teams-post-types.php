@@ -63,6 +63,7 @@ function sp_edit_staff_columns() {
 }
 add_action('manage_edit-staff_columns', 'sp_edit_staff_columns');
 
+
 // Custom colums content for 'Staff'
 function sp_manage_staff_columns( $column, $post_id ) {
 

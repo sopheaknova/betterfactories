@@ -74,6 +74,15 @@
 				}
 			);
 		
+		//Featured Staff
+		$('#featured-staff').cycle({
+			fx:       '<?php echo $data['cycle_effect']; ?>',
+			slideExpr: '.staff-slide',
+			pager:  '.nav-slide',
+			timeout:   <?php echo $data['cycle_timeout']; ?>,
+			delay: <?php echo $data['cycle_speed']; ?>
+		});
+		
 	});
 	</script>
     
