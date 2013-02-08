@@ -16,7 +16,7 @@ Template Name: Teams Page
     
     <?php
     	// Featured staff
-        $staff_query = array ('post_type' => 'staff', 'meta_key' => 'sp_staff_slide', 'meta_value' => 1, 'posts_per_page' => 3);
+		$staff_query = array ('post_type' => 'staff', 'meta_key' => 'sp_staff_slide', 'meta_value' => 1, 'posts_per_page' => 3);
         
         query_posts($staff_query);
         
@@ -36,9 +36,13 @@ Template Name: Teams Page
     <article class="staff-slide">
         <div class="one_third">
             <div class="profile-photo-frame">
+            <?php if ($image) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
             <img src="<?php echo $image;?>" alt="<?php the_title(); ?>" />
             </a>
+            <?php else:	?>
+        	<?php _e('This post have no photo', 'sptheme') ?>
+        	<?php endif; ?>
             </div>
         </div>
         <div class="two_third last">

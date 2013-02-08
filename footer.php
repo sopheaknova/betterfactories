@@ -40,10 +40,10 @@
         <ul class="social-links">
         	<!--<li class="twitter"><a href="#" title="Share with us on Twitter">Twitter</a></li>-->
         <?php if ( $data['fb_url'] != '') : ?>
-            <li class="facebook"><a href="#" title="Join us on Facebook">Facebook</a></li>
+            <li class="facebook"><a href="<?php echo $data['fb_url']; ?>" target="_blank" title="Join us on Facebook">Facebook</a></li>
         <?php endif; ?>    
         <?php if ( $data['youtube_url'] != '') : ?>    
-            <li class="youtube"><a href="#" title="Watch our video YouTube">YouTube</a></li>
+            <li class="youtube"><a href="<?php echo $data['youtube_url']; ?>" target="_blank" title="Watch our video YouTube">YouTube</a></li>
         <?php endif; ?>    
 
             <!--<li class="googleplus"><a href="#" title="Join us on Google plus">Googleplus</a></li>
@@ -54,11 +54,15 @@
         </ul>
         </div><!--end .two_third--> 
         <div class="power-by one_half last">
-        	<a href="#" target="_blank" title="International labour organization"><img src="<?php echo SP_BASE_URL; ?>images/ilo-logo.png" alt="International labour organization" /></a>
-            <a href="#" target="_blank" title="International finance corporation"><img src="<?php echo SP_BASE_URL; ?>images/ifc-logo.png" alt="International finance corporation" /></a>
+        	<a href="<?php echo $data['ilo_url']; ?>" target="_blank" title="International labour organization"><img src="<?php echo SP_BASE_URL; ?>images/ilo-logo.png" alt="International labour organization" /></a>
+            <a href="<?php echo $data['ifc_url']; ?>" target="_blank" title="International finance corporation"><img src="<?php echo SP_BASE_URL; ?>images/ifc-logo.png" alt="International finance corporation" /></a>
         </div><!--end .one_third .last--> 
    </div><!--end .container--> 
 </footer> <!--end #footer-bottom-->   
+
+<?php echo $data['google_analytics']; ?>
+
 <?php wp_footer(); ?>
+
 </body>
 </html>

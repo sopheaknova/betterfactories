@@ -1,0 +1,2436 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SmartStart WP v1.04\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-20 00:23+0200\n"
+"PO-Revision-Date: 2012-04-20 01:01+0200\n"
+"Last-Translator: Samuli Saarinen <smulitus@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2;esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:11
+msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: ../404.php:23
+#: ../archive.php:62
+#: ../category.php:56
+#: ../index.php:58
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for..."
+msgstr ""
+
+#: ../archive.php:16
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:18
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:20
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:22
+msgid "Archives"
+msgstr ""
+
+#: ../archive.php:31
+#: ../category.php:17
+msgid "Nothing Found"
+msgstr ""
+
+#: ../category.php:13
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../comments.php:5
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:12
+#, php-format
+msgid "Comments (%1$s)"
+msgid_plural "Comments (%1$s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:28
+msgid "Comments are closed."
+msgstr ""
+
+#: ../functions.php:47
+msgid "Primary Navigation"
+msgstr ""
+
+#: ../functions.php:48
+msgid "Footer Navigation"
+msgstr ""
+
+#: ../functions.php:115
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../functions.php:116
+msgid "Install Plugins"
+msgstr ""
+
+#: ../functions.php:117
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../functions.php:118
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions.php:129
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions.php:130
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions.php:131
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../functions.php:278
+#, php-format
+msgid "Search results for %s"
+msgstr ""
+
+#: ../functions.php:281
+#: ../functions.php:295
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:311
+msgid "Name"
+msgstr ""
+
+#: ../functions.php:311
+#: ../functions.php:314
+msgid "required"
+msgstr ""
+
+#: ../functions.php:314
+msgid "Email"
+msgstr ""
+
+#: ../functions.php:317
+msgid "Website"
+msgstr ""
+
+#: ../functions.php:320
+msgid "Your Comment"
+msgstr ""
+
+#: ../functions.php:325
+msgid "Cancel reply"
+msgstr ""
+
+#: ../functions.php:327
+msgid "Leave a Comment"
+msgstr ""
+
+#: ../functions.php:379
+msgid "This project is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: ../functions.php:381
+msgid "Submit"
+msgstr ""
+
+#: ../page.php:51
+msgid "Pages:"
+msgstr ""
+
+#: ../page.php:53
+#: ../single-portfolio.php:71
+#: ../single-portfolio.php:87
+#: ../single-slider.php:19
+#: ../single-team.php:19
+#: ../functions/custom-functions.php:199
+msgid "Edit"
+msgstr ""
+
+#: ../search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../search.php:48
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: ../searchform.php:2
+#: ../searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: ../searchform.php:3
+msgid "Search from the blog..."
+msgstr ""
+
+#: ../sidebar.php:21
+msgid "Meta"
+msgstr ""
+
+#: ../single-portfolio.php:16
+msgid "All Projects"
+msgstr ""
+
+#: ../single-portfolio.php:46
+#: ../functions/custom-functions.php:425
+msgid "Next"
+msgstr ""
+
+#: ../single-portfolio.php:50
+#: ../functions/custom-functions.php:435
+msgid "Previous"
+msgstr ""
+
+#: ../tag.php:13
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../taxonomy-portfolio-categories.php:13
+#, php-format
+msgid "Portfolio Category: %s"
+msgstr ""
+
+#: ../functions/admin.php:76
+msgid "No font selected!"
+msgstr ""
+
+#: ../functions/custom-functions.php:92
+#, php-format
+msgid "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time datetime=\"%3$s\" pubdate>%4$s</time></a>"
+msgstr ""
+
+#: ../functions/custom-functions.php:117
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions/custom-functions.php:117
+#: ../functions/custom-functions.php:154
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions/custom-functions.php:132
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../functions/custom-functions.php:139
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions/custom-functions.php:149
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions/custom-functions.php:199
+msgid "Edit Post"
+msgstr ""
+
+#: ../functions/custom-functions.php:219
+#: ../functions/custom-functions.php:227
+msgid "Permalink"
+msgstr ""
+
+#: ../functions/custom-functions.php:229
+msgid "Posted:"
+msgstr ""
+
+#: ../functions/custom-functions.php:236
+msgid "Tags:"
+msgstr ""
+
+#: ../functions/custom-functions.php:239
+msgid "Comments:"
+msgstr ""
+
+#: ../functions/custom-functions.php:767
+msgid "Showing"
+msgstr ""
+
+#: ../functions/custom-functions.php:768
+msgid "All"
+msgstr ""
+
+#: ../functions/custom-functions.php:854
+msgid " seconds ago"
+msgstr ""
+
+#: ../functions/custom-functions.php:861
+msgid " minute"
+msgstr ""
+
+#: ../functions/custom-functions.php:863
+#: ../functions/custom-functions.php:873
+#: ../functions/custom-functions.php:883
+#: ../functions/custom-functions.php:893
+#: ../functions/custom-functions.php:903
+msgid "s"
+msgstr ""
+
+#: ../functions/custom-functions.php:864
+#: ../functions/custom-functions.php:874
+#: ../functions/custom-functions.php:884
+#: ../functions/custom-functions.php:894
+#: ../functions/custom-functions.php:904
+msgid " ago"
+msgstr ""
+
+#: ../functions/custom-functions.php:871
+#: ../functions/custom-functions.php:881
+#: ../functions/custom-functions.php:891
+#: ../functions/custom-functions.php:901
+msgid "about "
+msgstr ""
+
+#: ../functions/custom-functions.php:871
+msgid " hour"
+msgstr ""
+
+#: ../functions/custom-functions.php:881
+msgid " day"
+msgstr ""
+
+#: ../functions/custom-functions.php:891
+msgid " week"
+msgstr ""
+
+#: ../functions/custom-functions.php:901
+msgid " month"
+msgstr ""
+
+#: ../functions/custom-functions.php:910
+msgid "more than a year ago"
+msgstr ""
+
+#: ../functions/custom-functions.php:943
+msgid "Oops, our Twitter feed is unavailable at the moment."
+msgstr ""
+
+#: ../functions/custom-functions.php:943
+msgid "Follow us on Twitter!"
+msgstr ""
+
+#: ../functions/custom-post-types.php:11
+#: ../functions/custom-post-types.php:22
+msgid "Portfolio"
+msgstr ""
+
+#: ../functions/custom-post-types.php:12
+msgid "Project"
+msgstr ""
+
+#: ../functions/custom-post-types.php:13
+#: ../functions/custom-post-types.php:155
+#: ../functions/custom-post-types.php:271
+msgid "Add New"
+msgstr ""
+
+#: ../functions/custom-post-types.php:14
+msgid "Add New Project"
+msgstr ""
+
+#: ../functions/custom-post-types.php:15
+msgid "Edit Project"
+msgstr ""
+
+#: ../functions/custom-post-types.php:16
+msgid "New Project"
+msgstr ""
+
+#: ../functions/custom-post-types.php:17
+msgid "View Project"
+msgstr ""
+
+#: ../functions/custom-post-types.php:18
+msgid "Search Projects"
+msgstr ""
+
+#: ../functions/custom-post-types.php:19
+msgid "No projects found"
+msgstr ""
+
+#: ../functions/custom-post-types.php:20
+msgid "No projects found in Trash"
+msgstr ""
+
+#: ../functions/custom-post-types.php:21
+msgid "Parent Project:"
+msgstr ""
+
+#: ../functions/custom-post-types.php:54
+#: ../functions/custom-post-types.php:68
+#: ../functions/custom-post-types.php:94
+msgid "Categories"
+msgstr ""
+
+#: ../functions/custom-post-types.php:55
+msgid "Category"
+msgstr ""
+
+#: ../functions/custom-post-types.php:56
+msgid "Search Categories"
+msgstr ""
+
+#: ../functions/custom-post-types.php:57
+msgid "Popular Categories"
+msgstr ""
+
+#: ../functions/custom-post-types.php:58
+msgid "All Categories"
+msgstr ""
+
+#: ../functions/custom-post-types.php:59
+msgid "Parent Category"
+msgstr ""
+
+#: ../functions/custom-post-types.php:60
+msgid "Parent Category:"
+msgstr ""
+
+#: ../functions/custom-post-types.php:61
+msgid "Edit Category"
+msgstr ""
+
+#: ../functions/custom-post-types.php:62
+msgid "Update Category"
+msgstr ""
+
+#: ../functions/custom-post-types.php:63
+msgid "Add New Category"
+msgstr ""
+
+#: ../functions/custom-post-types.php:64
+msgid "New Category"
+msgstr ""
+
+#: ../functions/custom-post-types.php:65
+msgid "Separate categories with commas"
+msgstr ""
+
+#: ../functions/custom-post-types.php:66
+msgid "Add or remove Categories"
+msgstr ""
+
+#: ../functions/custom-post-types.php:67
+msgid "Choose from most used Categories"
+msgstr ""
+
+#: ../functions/custom-post-types.php:92
+msgid "Thumbnail"
+msgstr ""
+
+#: ../functions/custom-post-types.php:95
+msgid "Date"
+msgstr ""
+
+#: ../functions/custom-post-types.php:153
+#: ../functions/custom-post-types.php:164
+msgid "Sliders"
+msgstr ""
+
+#: ../functions/custom-post-types.php:154
+msgid "Slider"
+msgstr ""
+
+#: ../functions/custom-post-types.php:156
+msgid "Add New Slider"
+msgstr ""
+
+#: ../functions/custom-post-types.php:157
+msgid "Edit Slider"
+msgstr ""
+
+#: ../functions/custom-post-types.php:158
+msgid "New Slider"
+msgstr ""
+
+#: ../functions/custom-post-types.php:159
+msgid "View Slider"
+msgstr ""
+
+#: ../functions/custom-post-types.php:160
+msgid "Search Sliders"
+msgstr ""
+
+#: ../functions/custom-post-types.php:161
+msgid "No sliders found"
+msgstr ""
+
+#: ../functions/custom-post-types.php:162
+msgid "No sliders found in Trash"
+msgstr ""
+
+#: ../functions/custom-post-types.php:163
+msgid "Parent Slider:"
+msgstr ""
+
+#: ../functions/custom-post-types.php:198
+msgid "Slide Count"
+msgstr ""
+
+#: ../functions/custom-post-types.php:199
+#: ../functions/custom-post-types.php:317
+msgid "Shortcode"
+msgstr ""
+
+#: ../functions/custom-post-types.php:253
+msgid "Enter slider name here"
+msgstr ""
+
+#: ../functions/custom-post-types.php:269
+#: ../functions/custom-post-types.php:280
+msgid "Team"
+msgstr ""
+
+#: ../functions/custom-post-types.php:270
+msgid "Member"
+msgstr ""
+
+#: ../functions/custom-post-types.php:272
+msgid "Add New Member"
+msgstr ""
+
+#: ../functions/custom-post-types.php:273
+msgid "Edit Member"
+msgstr ""
+
+#: ../functions/custom-post-types.php:274
+msgid "New Member"
+msgstr ""
+
+#: ../functions/custom-post-types.php:275
+msgid "View Member"
+msgstr ""
+
+#: ../functions/custom-post-types.php:276
+msgid "Search Members"
+msgstr ""
+
+#: ../functions/custom-post-types.php:277
+msgid "No members found"
+msgstr ""
+
+#: ../functions/custom-post-types.php:278
+msgid "No members found in Trash"
+msgstr ""
+
+#: ../functions/custom-post-types.php:279
+msgid "Parent Member:"
+msgstr ""
+
+#: ../functions/custom-post-types.php:313
+msgid "Photo"
+msgstr ""
+
+#: ../functions/custom-post-types.php:315
+msgid "Job Title"
+msgstr ""
+
+#: ../functions/custom-post-types.php:316
+msgid "Description"
+msgstr ""
+
+#: ../functions/meta-boxes.php:28
+msgid "General Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:34
+msgid "Page Layout"
+msgstr ""
+
+#: ../functions/meta-boxes.php:38
+msgid "Use theme default setting"
+msgstr ""
+
+#: ../functions/meta-boxes.php:39
+msgid "Fullwidth - No sidebar"
+msgstr ""
+
+#: ../functions/meta-boxes.php:39
+msgid "Fullwidth - No sidebar\""
+msgstr ""
+
+#: ../functions/meta-boxes.php:40
+msgid "Sidebar on the left"
+msgstr ""
+
+#: ../functions/meta-boxes.php:41
+msgid "Sidebar on the right"
+msgstr ""
+
+#: ../functions/meta-boxes.php:44
+msgid "Here you can overwrite the Site Structure setting from the Theme Options, just for this page."
+msgstr ""
+
+#: ../functions/meta-boxes.php:55
+msgid "Page Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:61
+msgid "Page Title"
+msgstr ""
+
+#: ../functions/meta-boxes.php:65
+msgid "This field will overwrite the default page title."
+msgstr ""
+
+#: ../functions/meta-boxes.php:68
+msgid "Page Description"
+msgstr ""
+
+#: ../functions/meta-boxes.php:72
+msgid "This will be shown under the page title"
+msgstr ""
+
+#: ../functions/meta-boxes.php:75
+msgid "Page Subdescription"
+msgstr ""
+
+#: ../functions/meta-boxes.php:79
+msgid "This will be shown under the page title or under the page description"
+msgstr ""
+
+#: ../functions/meta-boxes.php:82
+msgid "Disable Page Header"
+msgstr ""
+
+#: ../functions/meta-boxes.php:97
+msgid "Link Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:103
+msgid "The URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:118
+msgid "Quote Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:124
+msgid "The Quote"
+msgstr ""
+
+#: ../functions/meta-boxes.php:133
+msgid "The Author"
+msgstr ""
+
+#: ../functions/meta-boxes.php:137
+msgid "(optional)"
+msgstr ""
+
+#: ../functions/meta-boxes.php:148
+msgid "Video Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:154
+msgid "MP4 File URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:158
+msgid "For Safari, IE9, iPhone, iPad, Android, and Windows Phone 7."
+msgstr ""
+
+#: ../functions/meta-boxes.php:161
+msgid "WebM File URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:165
+msgid "For Firefox, Opera, and Chrome."
+msgstr ""
+
+#: ../functions/meta-boxes.php:168
+#: ../functions/meta-boxes.php:218
+msgid "OGG File URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:172
+msgid "For older Firefox and Opera versions."
+msgstr ""
+
+#: ../functions/meta-boxes.php:175
+msgid "Preview Image URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:182
+msgid "Aspect Ratio"
+msgstr ""
+
+#: ../functions/meta-boxes.php:186
+msgid "Video width / video height. (default: 1.7)"
+msgstr ""
+
+#: ../functions/meta-boxes.php:189
+msgid "External Video"
+msgstr ""
+
+#: ../functions/meta-boxes.php:193
+#: ../functions/meta-boxes.php:229
+msgid "For example embed code."
+msgstr ""
+
+#: ../functions/meta-boxes.php:205
+msgid "Audio Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:211
+msgid "MP3 File URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:215
+msgid "For Safari, Internet Explorer, Chrome."
+msgstr ""
+
+#: ../functions/meta-boxes.php:222
+msgid "For Firefox, Opera, Chrome."
+msgstr ""
+
+#: ../functions/meta-boxes.php:225
+msgid "External Audio"
+msgstr ""
+
+#: ../functions/meta-boxes.php:242
+msgid "Social Links"
+msgstr ""
+
+#: ../functions/meta-boxes.php:248
+msgid "Behance Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:255
+msgid "Delicious Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:262
+msgid "deviantART Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:269
+msgid "Digg Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:276
+msgid "Dribbble Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:283
+msgid "Dropbox Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:290
+msgid "Email Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:297
+msgid "Facebook Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:304
+msgid "Flickr Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:311
+msgid "Forrst Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:318
+msgid "GitHub Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:325
+msgid "Google Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:332
+msgid "Google+ Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:339
+msgid "iChat Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:346
+msgid "Last.fm Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:353
+msgid "LinkedIn Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:360
+msgid "Mobypicture Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:367
+msgid "MySpace Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:374
+msgid "Picasa Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:381
+msgid "Plixi Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:388
+msgid "Skype Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:395
+msgid "StumbleUpon Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:402
+msgid "Tumblr Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:409
+msgid "Twitter Username"
+msgstr ""
+
+#: ../functions/meta-boxes.php:416
+msgid "Vimeo Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:423
+msgid "YouTube Profile URL"
+msgstr ""
+
+#: ../functions/meta-boxes.php:434
+msgid "Member Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:440
+msgid "The Job Title"
+msgstr ""
+
+#: ../functions/meta-boxes.php:455
+msgid "Slides"
+msgstr ""
+
+#: ../functions/meta-boxes.php:461
+#: ../functions/meta-boxes.php:681
+msgid "The Slides"
+msgstr ""
+
+#: ../functions/meta-boxes.php:472
+msgid "Basic Slider Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:478
+msgid "Transition type for the animation"
+msgstr ""
+
+#: ../functions/meta-boxes.php:497
+msgid "Speed of the animation transition"
+msgstr ""
+
+#: ../functions/meta-boxes.php:504
+msgid "Time between slide transitions"
+msgstr ""
+
+#: ../functions/meta-boxes.php:508
+msgid "0 to disable autoplay."
+msgstr ""
+
+#: ../functions/meta-boxes.php:511
+msgid "Interval between each slide's animation"
+msgstr ""
+
+#: ../functions/meta-boxes.php:515
+msgid "Used for seqFade, seqHorizontalSlide, seqVerticalSlide &amp; seqVerticalSlideAlt."
+msgstr ""
+
+#: ../functions/meta-boxes.php:518
+msgid "First slide to be displayed"
+msgstr ""
+
+#: ../functions/meta-boxes.php:522
+msgid "Zero-based index."
+msgstr ""
+
+#: ../functions/meta-boxes.php:529
+msgid "Advanced Slider Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:535
+msgid "Easing type for the animation."
+msgstr ""
+
+#: ../functions/meta-boxes.php:577
+msgid "Pause autoplay on mouseover"
+msgstr ""
+
+#: ../functions/meta-boxes.php:584
+msgid "Stop autoplay on click"
+msgstr ""
+
+#: ../functions/meta-boxes.php:591
+msgid "Content box position"
+msgstr ""
+
+#: ../functions/meta-boxes.php:603
+msgid "Speed of the content box transition"
+msgstr ""
+
+#: ../functions/meta-boxes.php:610
+msgid "Show content box only on mouseover"
+msgstr ""
+
+#: ../functions/meta-boxes.php:617
+msgid "Hide content box"
+msgstr ""
+
+#: ../functions/meta-boxes.php:624
+msgid "Slider container height"
+msgstr ""
+
+#: ../functions/meta-boxes.php:631
+msgid "Slider container width"
+msgstr ""
+
+#: ../functions/meta-boxes.php:646
+msgid "Project Settings"
+msgstr ""
+
+#: ../functions/meta-boxes.php:652
+msgid "Project Page Layout"
+msgstr ""
+
+#: ../functions/meta-boxes.php:656
+msgid "Fullwidth"
+msgstr ""
+
+#: ../functions/meta-boxes.php:656
+msgid "Fullwidth\""
+msgstr ""
+
+#: ../functions/meta-boxes.php:657
+msgid "Content on the left"
+msgstr ""
+
+#: ../functions/meta-boxes.php:658
+msgid "Content on the right"
+msgstr ""
+
+#: ../functions/meta-boxes.php:668
+msgid "Project Slider"
+msgstr ""
+
+#: ../functions/meta-boxes.php:674
+msgid "Disable slider"
+msgstr ""
+
+#: ../functions/meta-boxes.php:678
+msgid "By checking this option, you can disable the slider functionality (JavaScript part). But slides will be still generated, so you can use slides as you normally would."
+msgstr ""
+
+#: ../functions/meta-boxes.php:685
+msgid "If slider has only one slide and it's totally empty, slider won't be created. <br /> Also, if slider has <u>only one</u> slide, which has any content, slider pagination arrows will be hidden."
+msgstr ""
+
+#: ../functions/plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../functions/plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../functions/plugin-activation.php:515
+#: ../functions/plugin-activation.php:2053
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../functions/plugin-activation.php:543
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../functions/plugin-activation.php:702
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1086
+msgid "External Link"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1091
+msgid "Private Repository"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1094
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1098
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1101
+msgid "Required"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1101
+msgid "Recommended"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1104
+msgid "Not Installed"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1106
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1276
+#, php-format
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1292
+msgid "Plugin"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1293
+msgid "Source"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1294
+msgid "Type"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1295
+msgid "Status"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1313
+msgid "Install"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1314
+msgid "Activate"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1539
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/plugin-activation.php:1824
+msgid "Install package not available."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1825
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1826
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1827
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1828
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1829
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1840
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1950
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1951
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1951
+#: ../functions/plugin-activation.php:1960
+msgid "Show Details"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1951
+#: ../functions/plugin-activation.php:1960
+msgid "Hide Details"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1952
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1953
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../functions/plugin-activation.php:1957
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1958
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1959
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1960
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1961
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../functions/plugin-activation.php:1962
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../functions/shortcodes.php:643
+msgid "Latest stuff from our blog"
+msgstr ""
+
+#: ../functions/shortcodes.php:695
+msgid "Latest projects"
+msgstr ""
+
+#: ../functions/widgets.php:11
+msgid "Blog Widget Area"
+msgstr ""
+
+#: ../functions/widgets.php:13
+msgid "Only for blog pages and posts."
+msgstr ""
+
+#: ../functions/widgets.php:22
+msgid "General Widget Area"
+msgstr ""
+
+#: ../functions/widgets.php:24
+msgid "For all pages and posts."
+msgstr ""
+
+#: ../functions/widgets.php:33
+msgid "Left Footer Widget Area"
+msgstr ""
+
+#: ../functions/widgets.php:35
+msgid "Left side of footer."
+msgstr ""
+
+#: ../functions/widgets.php:44
+msgid "Right Footer Widget Area"
+msgstr ""
+
+#: ../functions/widgets.php:46
+msgid "Right side of footer"
+msgstr ""
+
+#: ../functions/widgets.php:67
+msgid "Display the most recent tweets."
+msgstr ""
+
+#: ../functions/widgets.php:68
+msgid "Smart Twitter Feed"
+msgstr ""
+
+#: ../functions/widgets.php:73
+msgid "Twitter Feed"
+msgstr ""
+
+#: ../functions/widgets.php:87
+#: ../functions/widgets.php:174
+#: ../functions/widgets.php:250
+#: ../functions/widgets.php:335
+msgid "Title:"
+msgstr ""
+
+#: ../functions/widgets.php:92
+msgid "Username:"
+msgstr ""
+
+#: ../functions/widgets.php:97
+msgid "Tweet count:"
+msgstr ""
+
+#: ../functions/widgets.php:102
+msgid "Ignore replies:"
+msgstr ""
+
+#: ../functions/widgets.php:156
+msgid "Display the most recent flickr images."
+msgstr ""
+
+#: ../functions/widgets.php:157
+msgid "Smart Flickr Feed"
+msgstr ""
+
+#: ../functions/widgets.php:162
+msgid "Flickr Feed"
+msgstr ""
+
+#: ../functions/widgets.php:179
+msgid "Flickr ID:"
+msgstr ""
+
+#: ../functions/widgets.php:185
+msgid "Image count:"
+msgstr ""
+
+#: ../functions/widgets.php:237
+msgid "Display social links. Settings can be found from Theme Options page."
+msgstr ""
+
+#: ../functions/widgets.php:238
+msgid "Smart Social Links"
+msgstr ""
+
+#: ../functions/widgets.php:243
+msgid "Stay Connected"
+msgstr ""
+
+#: ../functions/widgets.php:322
+msgid "Display your contact info."
+msgstr ""
+
+#: ../functions/widgets.php:323
+msgid "Smart Contact Info"
+msgstr ""
+
+#: ../functions/admin/options-framework.php:238
+msgid "Save Options"
+msgstr ""
+
+#: ../functions/admin/options-framework.php:239
+msgid "Restore Defaults"
+msgstr ""
+
+#: ../functions/admin/options-framework.php:239
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: ../functions/admin/options-framework.php:271
+msgid "Default options restored."
+msgstr ""
+
+#: ../functions/admin/options-framework.php:312
+msgid "Options saved."
+msgstr ""
+
+#: ../functions/admin/options-framework.php:370
+msgid "Theme Options"
+msgstr ""
+
+#: ../functions/admin/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr ""
+
+#: ../functions/admin/options-medialibrary-uploader.php:128
+msgid "Upload"
+msgstr ""
+
+#: ../functions/admin/options-medialibrary-uploader.php:137
+msgid "Remove"
+msgstr ""
+
+#: ../functions/admin/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr ""
+
+#: ../functions/admin/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr ""
+
+#: ../functions/admin/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr ""
+
+#: ../functions/admin/options.php:46
+msgid "None / Default"
+msgstr ""
+
+#: ../functions/admin/options.php:62
+msgid "Select a page:"
+msgstr ""
+
+#: ../functions/admin/options.php:80
+msgid "Logo"
+msgstr ""
+
+#: ../functions/admin/options.php:81
+#, php-format
+msgid "Keep in mind that if the new logo is a much bigger, you may have to edit some header styling properties. %1$s The default logo height is %2$s."
+msgstr ""
+
+#: ../functions/admin/options.php:85
+msgid "Favicon"
+msgstr ""
+
+#: ../functions/admin/options.php:86
+#, php-format
+msgid "Favicon (or bookmark icon) will be shown in address bar. The image dimension should be %1$s and the file format %2$s."
+msgstr ""
+
+#: ../functions/admin/options.php:90
+msgid "Site Structure"
+msgstr ""
+
+#: ../functions/admin/options.php:91
+msgid "This settings will determine page structure in all regular pages and posts. However the option can be overwritten by a single pages and posts."
+msgstr ""
+
+#: ../functions/admin/options.php:102
+msgid "Footer Bottom"
+msgstr ""
+
+#: ../functions/admin/options.php:103
+#, php-format
+msgid "This will placed below the actual footer, if any content exist. %1$s HTML tags are allowed."
+msgstr ""
+
+#: ../functions/admin/options.php:108
+msgid "Custom JS"
+msgstr ""
+
+#: ../functions/admin/options.php:109
+#, php-format
+msgid "Here you can add any custom scripts to your site. Great place for example for Google Analytics tracking code. %1$s You don't need to add %2$s tags."
+msgstr ""
+
+#: ../functions/admin/options.php:117
+msgid "Styling"
+msgstr ""
+
+#: ../functions/admin/options.php:120
+msgid "Color Scheme"
+msgstr ""
+
+#: ../functions/admin/options.php:121
+msgid "This color will be used as a site primary color."
+msgstr ""
+
+#: ../functions/admin/options.php:126
+msgid "Background"
+msgstr ""
+
+#: ../functions/admin/options.php:127
+msgid "Set site background."
+msgstr ""
+
+#: ../functions/admin/options.php:132
+msgid "Typography"
+msgstr ""
+
+#: ../functions/admin/options.php:133
+msgid "Set site typography."
+msgstr ""
+
+#: ../functions/admin/options.php:143
+msgid "Main Heading Font"
+msgstr ""
+
+#: ../functions/admin/options.php:144
+msgid "This font will be used in every heading and also in forms."
+msgstr ""
+
+#: ../functions/admin/options.php:150
+msgid "Blockquote Heading Font"
+msgstr ""
+
+#: ../functions/admin/options.php:151
+msgid "This font will be used in blockquotes."
+msgstr ""
+
+#: ../functions/admin/options.php:157
+msgid "Custom CSS"
+msgstr ""
+
+#: ../functions/admin/options.php:158
+msgid "Here you can add any custom styles to your site."
+msgstr ""
+
+#: ../functions/admin/options.php:169
+msgid "Portfolio page"
+msgstr ""
+
+#: ../functions/admin/options.php:170
+#, php-format
+msgid "Select the portfolio page to fix any navigation issues (correct highlighting etc.). %1$s Remember also to insert %2$s shortcode to that same page!"
+msgstr ""
+
+#: ../functions/admin/options.php:175
+msgid "Enable lightbox in Portfolio page"
+msgstr ""
+
+#: ../functions/admin/options.php:176
+msgid "This setting will determine can thumbnails be zoomed in Portfolio page."
+msgstr ""
+
+#: ../functions/admin/options.php:182
+msgid "Enable lightbox in single project page"
+msgstr ""
+
+#: ../functions/admin/options.php:183
+msgid "This setting will determine can thumbnails be zoomed in single project page."
+msgstr ""
+
+#: ../functions/admin/options.php:189
+msgid "Project Slider - Animation effect"
+msgstr ""
+
+#: ../functions/admin/options.php:190
+#: ../functions/admin/options.php:240
+msgid "Transition type for the animation."
+msgstr ""
+
+#: ../functions/admin/options.php:196
+msgid "Project Slider - Animation speed"
+msgstr ""
+
+#: ../functions/admin/options.php:197
+#: ../functions/admin/options.php:247
+msgid "Speed of the animation transition."
+msgstr ""
+
+#: ../functions/admin/options.php:203
+msgid "Project Slider - Use custom animation speed"
+msgstr ""
+
+#: ../functions/admin/options.php:204
+#: ../functions/admin/options.php:254
+msgid "This will overwritten the animation speed setting above."
+msgstr ""
+
+#: ../functions/admin/options.php:208
+msgid "Project Slider - Custom animation speed"
+msgstr ""
+
+#: ../functions/admin/options.php:209
+#: ../functions/admin/options.php:227
+#: ../functions/admin/options.php:259
+#: ../functions/admin/options.php:277
+msgid "Value is in milliseconds (1 second = 1000ms)."
+msgstr ""
+
+#: ../functions/admin/options.php:214
+msgid "Project Slider - Slider autoplay"
+msgstr ""
+
+#: ../functions/admin/options.php:215
+#: ../functions/admin/options.php:265
+msgid "Time between slide transitions."
+msgstr ""
+
+#: ../functions/admin/options.php:221
+msgid "Project Slider - Use custom autoplay"
+msgstr ""
+
+#: ../functions/admin/options.php:222
+#: ../functions/admin/options.php:272
+msgid "This will overwritten the autoplay setting above."
+msgstr ""
+
+#: ../functions/admin/options.php:226
+msgid "Project Slider - Custom autoplay"
+msgstr ""
+
+#: ../functions/admin/options.php:236
+msgid "Blog"
+msgstr ""
+
+#: ../functions/admin/options.php:239
+msgid "Gallery Slider - Animation effect"
+msgstr ""
+
+#: ../functions/admin/options.php:246
+msgid "Gallery Slider - Animation speed"
+msgstr ""
+
+#: ../functions/admin/options.php:253
+msgid "Gallery Slider - Use custom animation speed"
+msgstr ""
+
+#: ../functions/admin/options.php:258
+msgid "Gallery Slider - Custom animation speed"
+msgstr ""
+
+#: ../functions/admin/options.php:264
+msgid "Gallery Slider - Slider autoplay"
+msgstr ""
+
+#: ../functions/admin/options.php:271
+msgid "Gallery Slider - Use custom autoplay"
+msgstr ""
+
+#: ../functions/admin/options.php:276
+msgid "Gallery Slider - Custom autoplay"
+msgstr ""
+
+#: ../functions/admin/options.php:286
+msgid "Social Media"
+msgstr ""
+
+#: ../functions/admin/options.php:289
+msgid "Contact Info - Address"
+msgstr ""
+
+#: ../functions/admin/options.php:290
+msgid "The address for Smart Contact Info widget."
+msgstr ""
+
+#: ../functions/admin/options.php:295
+msgid "Contact Info - Phone"
+msgstr ""
+
+#: ../functions/admin/options.php:296
+msgid "The phone for Smart Contact Info widget."
+msgstr ""
+
+#: ../functions/admin/options.php:301
+msgid "Contact Info - Email"
+msgstr ""
+
+#: ../functions/admin/options.php:302
+msgid "The email for Smart Contact Info widget."
+msgstr ""
+
+#: ../functions/admin/options.php:308
+msgid "Select the social icons for Smart Social Links widget."
+msgstr ""
+
+#: ../functions/admin/options.php:314
+msgid "Your Behance profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:319
+msgid "Your Delicious profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:324
+msgid "Your deviantART profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:329
+msgid "Your Digg profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:334
+msgid "Your Dribbble profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:339
+msgid "Your Dropbox profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:344
+msgid "Your Facebook profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:349
+msgid "Your Flickr profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:354
+msgid "Your Forrst profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:359
+msgid "Your GitHub profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:364
+msgid "Your Google profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:369
+msgid "Your iChat profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:374
+msgid "Your Last.fm profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:379
+msgid "Your LinkedIn profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:384
+msgid "Your Mobypicture profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:389
+msgid "Your MySpace profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:394
+msgid "Your Picasa profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:398
+msgid "RSS Feed URL"
+msgstr ""
+
+#: ../functions/admin/options.php:399
+msgid "The site RSS feed URL."
+msgstr ""
+
+#: ../functions/admin/options.php:404
+msgid "Your Plixi profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:409
+msgid "Your Skype profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:414
+msgid "Your StumbleUpon profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:419
+msgid "Your Tumblr profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:424
+msgid "Your Twitter username."
+msgstr ""
+
+#: ../functions/admin/options.php:429
+msgid "Your Vimeo profile URL."
+msgstr ""
+
+#: ../functions/admin/options.php:434
+msgid "Your YouTube profile URL."
+msgstr ""
+
+#: ../functions/meta-box/class.php:79
+msgid "RW_Meta_Box Debug:"
+msgstr ""
+
+#: ../functions/meta-box/inc/classes/meta-box.php:314
+msgid "+"
+msgstr ""
+
+#: ../functions/meta-box/inc/classes/meta-box.php:338
+msgid "&#8211;"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/file.php:69
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/file.php:83
+msgid "Uploaded files"
+msgid_plural "file upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/file.php:84
+msgid "Delete this file"
+msgid_plural "file upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/file.php:85
+msgid "Delete"
+msgid_plural "file upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/file.php:86
+msgid "Upload files"
+msgid_plural "file upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/file.php:87
+msgid "Add another file"
+msgid_plural "file upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/image.php:68
+msgid "Order saved"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/plupload-image.php:112
+msgid "Allowed Image Files"
+msgid_plural "image upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/plupload-image.php:170
+msgid "Drop images here"
+msgid_plural "image upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/plupload-image.php:171
+msgid "or"
+msgid_plural "image upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/plupload-image.php:172
+msgid "Select Files"
+msgid_plural "image upload"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:102
+#: ../functions/meta-box/inc/fields/project-slider.php:280
+#: ../functions/meta-box/inc/fields/slider-slides.php:100
+#: ../functions/meta-box/inc/fields/slider-slides.php:278
+msgid "Click to toggle"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:104
+#: ../functions/meta-box/inc/fields/project-slider.php:282
+#: ../functions/meta-box/inc/fields/slider-slides.php:102
+#: ../functions/meta-box/inc/fields/slider-slides.php:280
+msgid "Slide"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:115
+#: ../functions/meta-box/inc/fields/project-slider.php:293
+msgid "Slide Type"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:120
+#: ../functions/meta-box/inc/fields/project-slider.php:298
+#: ../functions/meta-box/inc/fields/slider-slides.php:109
+#: ../functions/meta-box/inc/fields/slider-slides.php:143
+#: ../functions/meta-box/inc/fields/slider-slides.php:238
+#: ../functions/meta-box/inc/fields/slider-slides.php:287
+#: ../functions/meta-box/inc/fields/slider-slides.php:321
+#: ../functions/meta-box/inc/fields/slider-slides.php:416
+msgid "Image"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:121
+#: ../functions/meta-box/inc/fields/project-slider.php:299
+msgid "Video"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:122
+#: ../functions/meta-box/inc/fields/project-slider.php:300
+msgid "Audio"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:123
+#: ../functions/meta-box/inc/fields/project-slider.php:301
+msgid "Custom"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:134
+#: ../functions/meta-box/inc/fields/project-slider.php:312
+#: ../functions/meta-box/inc/fields/slider-slides.php:120
+#: ../functions/meta-box/inc/fields/slider-slides.php:196
+#: ../functions/meta-box/inc/fields/slider-slides.php:298
+#: ../functions/meta-box/inc/fields/slider-slides.php:374
+msgid "Image URL"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:139
+#: ../functions/meta-box/inc/fields/project-slider.php:317
+#: ../functions/meta-box/inc/fields/slider-slides.php:125
+#: ../functions/meta-box/inc/fields/slider-slides.php:201
+#: ../functions/meta-box/inc/fields/slider-slides.php:253
+#: ../functions/meta-box/inc/fields/slider-slides.php:303
+#: ../functions/meta-box/inc/fields/slider-slides.php:379
+#: ../functions/meta-box/inc/fields/slider-slides.php:431
+msgid "Upload Image"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:233
+#: ../functions/meta-box/inc/fields/project-slider.php:411
+msgid "Ogg File URL"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:250
+#: ../functions/meta-box/inc/fields/project-slider.php:428
+#: ../functions/meta-box/inc/fields/slider-slides.php:111
+#: ../functions/meta-box/inc/fields/slider-slides.php:289
+#: ../functions/tinymce/tinymce.php:283
+#: ../functions/tinymce/tinymce.php:336
+#: ../functions/tinymce/tinymce.php:396
+#: ../functions/tinymce/tinymce.php:482
+#: ../functions/tinymce/tinymce.php:537
+#: ../functions/tinymce/tinymce.php:587
+#: ../functions/tinymce/tinymce.php:966
+#: ../functions/tinymce/tinymce.php:984
+#: ../functions/tinymce/tinymce.php:1316
+msgid "Content"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:255
+#: ../functions/meta-box/inc/fields/project-slider.php:433
+msgid "HTML tags and WordPress shortcodes are allowed."
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:266
+#: ../functions/meta-box/inc/fields/project-slider.php:444
+#: ../functions/meta-box/inc/fields/slider-slides.php:263
+#: ../functions/meta-box/inc/fields/slider-slides.php:441
+msgid "Remove Slide"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/project-slider.php:458
+#: ../functions/meta-box/inc/fields/slider-slides.php:453
+msgid "Add New Slide"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:110
+#: ../functions/meta-box/inc/fields/slider-slides.php:288
+#: ../functions/tinymce/tinymce.php:48
+msgid "Button"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:112
+#: ../functions/meta-box/inc/fields/slider-slides.php:290
+msgid "Link"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:137
+#: ../functions/meta-box/inc/fields/slider-slides.php:315
+msgid "Button Type"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:142
+#: ../functions/meta-box/inc/fields/slider-slides.php:320
+#: ../functions/tinymce/tinymce.php:119
+#: ../functions/tinymce/tinymce.php:157
+#: ../functions/tinymce/tinymce.php:247
+msgid "Text"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:154
+#: ../functions/meta-box/inc/fields/slider-slides.php:332
+#: ../functions/tinymce/tinymce.php:49
+msgid "Dropcap"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:167
+#: ../functions/meta-box/inc/fields/slider-slides.php:345
+#: ../functions/tinymce/tinymce.php:450
+#: ../functions/tinymce/tinymce.php:500
+#: ../functions/tinymce/tinymce.php:571
+msgid "Title"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:215
+#: ../functions/meta-box/inc/fields/slider-slides.php:393
+msgid "Slide Content"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:220
+#: ../functions/meta-box/inc/fields/slider-slides.php:398
+msgid "(optional) HTML tags and WordPress shortcodes are allowed."
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:232
+#: ../functions/meta-box/inc/fields/slider-slides.php:410
+#: ../functions/tinymce/tinymce.php:53
+msgid "Lightbox"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:237
+#: ../functions/meta-box/inc/fields/slider-slides.php:415
+msgid "Disabled"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:239
+#: ../functions/meta-box/inc/fields/slider-slides.php:417
+#: ../functions/tinymce/tinymce.php:423
+msgid "Iframe"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:248
+#: ../functions/meta-box/inc/fields/slider-slides.php:426
+#: ../functions/tinymce/tinymce.php:173
+msgid "URL"
+msgstr ""
+
+#: ../functions/meta-box/inc/fields/slider-slides.php:254
+#: ../functions/meta-box/inc/fields/slider-slides.php:432
+msgid "(optional) Any valid URL is allowed, doesn't have to be an image"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:37
+msgid "All shortcodes"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:44
+msgid "Pick a Shortcode"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:45
+msgid "General"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:46
+msgid "Divider"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:47
+msgid "Slogan"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:50
+msgid "Info Box"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:51
+msgid "List"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:52
+msgid "Quote"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:54
+msgid "Accordion Content"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:55
+msgid "Content Tabs"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:56
+msgid "Pricing Tables"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:57
+msgid "Video Player"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:58
+msgid "Audio Player"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:60
+msgid "Alert Boxes"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:61
+msgid "Error"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:62
+msgid "Success"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:63
+msgid "Info"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:64
+msgid "Notice"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:66
+msgid "Layout"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:67
+#: ../functions/tinymce/tinymce.php:1134
+#: ../functions/tinymce/tinymce.php:1267
+msgid "1/2"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:68
+msgid "1/2 Last"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:69
+#: ../functions/tinymce/tinymce.php:1135
+#: ../functions/tinymce/tinymce.php:1268
+msgid "1/3"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:70
+msgid "1/3 Last"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:71
+#: ../functions/tinymce/tinymce.php:1136
+#: ../functions/tinymce/tinymce.php:1269
+msgid "1/4"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:72
+msgid "1/4 Last"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:73
+msgid "2/3"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:74
+msgid "2/3 Last"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:75
+msgid "3/4"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:76
+msgid "3/4 Last"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:78
+msgid "Template Tags"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:79
+msgid "Post Carousel"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:80
+msgid "Projects Carousel"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:83
+#: ../functions/tinymce/tinymce.php:1229
+msgid "Team Member"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:85
+msgid "Misc"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:86
+msgid "Fullwidth Map"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:87
+msgid "Raw (disable editor formatting)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:101
+msgid "Dotted line"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:134
+msgid "Align"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:141
+#: ../functions/tinymce/tinymce.php:196
+#: ../functions/tinymce/tinymce.php:523
+#: ../functions/tinymce/tinymce.php:667
+msgid "Normal"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:142
+#: ../functions/tinymce/tinymce.php:234
+msgid "Left"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:143
+msgid "Center"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:144
+#: ../functions/tinymce/tinymce.php:233
+msgid "Right"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:189
+msgid "Size"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:197
+msgid "Medium"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:198
+msgid "Large"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:209
+msgid "Remove background"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:225
+#: ../functions/tinymce/tinymce.php:362
+msgid "Arrow"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:232
+#: ../functions/tinymce/tinymce.php:781
+msgid "No"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:270
+msgid "Light"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:271
+msgid "Dark"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:301
+msgid "Author"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:324
+msgid "Default"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:325
+#: ../functions/tinymce/tinymce.php:633
+msgid "Simple"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:354
+msgid "Icon"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:361
+msgid "None"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:363
+msgid "Arrow 2"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:364
+msgid "Check"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:365
+msgid "Check 2"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:366
+msgid "Circle"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:367
+msgid "Plus"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:368
+msgid "Dash"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:369
+msgid "Star"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:380
+msgid "Dotted Bottom Border"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:421
+msgid "Single image"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:422
+msgid "Image gallery"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:434
+msgid "Full (URL)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:466
+msgid "Group name (lowercase)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:466
+msgid "(Only for image gallery)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:516
+msgid "Title size"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:524
+msgid "Heading 6"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:525
+msgid "Heading 5"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:526
+msgid "Heading 4"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:527
+msgid "Heading 3"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:555
+msgid "Single tab"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:555
+#: ../functions/tinymce/tinymce.php:644
+msgid "(Remove wrapping shortcode)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:605
+msgid "Table column count"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:612
+msgid "1"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:613
+msgid "2"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:614
+msgid "3"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:615
+msgid "4"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:616
+msgid "5"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:626
+msgid "Table type"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:634
+msgid "Extended"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:644
+msgid "Single column"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:660
+msgid "Column type"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:668
+msgid "Features list (only for Extended tables)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:678
+msgid "Column title"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:694
+msgid "Column price"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:694
+msgid "(With currency)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:710
+msgid "Column period"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:726
+msgid "Column description"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:726
+msgid "(Only for Simple tables)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:742
+msgid "Column Sign Up button title"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:758
+msgid "Column Sign Up button URL"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:774
+msgid "Special column"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:782
+msgid "Free"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:783
+msgid "Featured"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:793
+msgid "Column content (list items)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:800
+#, php-format
+msgid "(Use %1$s shortcode to create a tooltip and %2$s shortcode to create a check icon.)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:812
+msgid "MP4 file URL"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:819
+msgid "(For Safari, Internet Explorer 9, iPhone, iPad, Android, and Windows Phone 7)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:829
+msgid "WebM file URL"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:836
+msgid "(For Firefox4, Opera, and Chrome)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:846
+msgid "OGG file URL"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:853
+msgid "(For older Firefox and Opera versions)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:863
+msgid "Preview image URL"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:880
+msgid "Aspect ratio"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:896
+#: ../functions/tinymce/tinymce.php:948
+msgid "Extra Info"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:902
+msgid "If video element isn't displayed properly, try to wrap it inside of <code>[raw]</code> shortcode."
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:921
+msgid "(For Safari, Internet Explorer, Chrome)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:938
+msgid "(For Firefox, Opera, Chrome)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:954
+msgid "If audio element isn't displayed properly, try to wrap it inside of <code>[raw]</code> shortcode."
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1002
+#: ../functions/tinymce/tinymce.php:1064
+msgid "Custom Title"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1009
+msgid "(Default: Latest stuff from our blog)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1018
+#: ../functions/tinymce/tinymce.php:1080
+#: ../functions/tinymce/tinymce.php:1149
+msgid "Limit"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1025
+#: ../functions/tinymce/tinymce.php:1087
+msgid "(Only numbers! Default: 8)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1052
+#: ../functions/tinymce/tinymce.php:1115
+#: ../functions/tinymce/tinymce.php:1184
+msgid "(You can select multiple categories by pressing CTRL key)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1071
+msgid "(Default: Latest projects)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1127
+#: ../functions/tinymce/tinymce.php:1260
+msgid "Column"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1156
+msgid "(Only numbers! Default: All)"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1196
+msgid "ID"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1204
+msgid "Select slider"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1237
+msgid "Select team member"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1280
+msgid "Last column"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1298
+msgid "Map shortcode"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1334
+msgid "Current shortcode with all available attributes"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1335
+msgid "red"
+msgstr ""
+
+#: ../functions/tinymce/tinymce.php:1355
+msgid "Insert Shortcode"
+msgstr ""
+

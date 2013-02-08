@@ -1,7 +1,7 @@
 <?php
 
 if( !isset( $content_width ) )
-	$content_width = 700;
+	$content_width = 600;
 
 if( !function_exists( 'sp_content_width' ) ) {
     function sp_content_width() {
@@ -191,7 +191,7 @@ add_action('init', 'sp_register_styles');
 function sp_enqueue_styles() {
 
 	if( !is_admin() ) {
-		//wp_enqueue_style('g_droidsans');
+		wp_enqueue_style('g_droidsans');
 		wp_enqueue_style('sp-theme-styles');
 		wp_enqueue_style('video-js');
 		wp_enqueue_style('audioplayerv1');
@@ -215,7 +215,6 @@ function sp_register_scripts() {
 	wp_deregister_script('jquery');
 	//wp_register_script( 'jquery',   'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', array(), '1.8.2', false ); //use for online
 	wp_register_script( 'jquery',   SP_BASE_URL . 'js/jquery-1.8.2.js', array(), '1.8.2', false ); //use for local development
-	//wp_register_script( 'jquery',   'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', array(), '1.7.2', false );
 	wp_register_script( 'modernizr_custom',  SP_BASE_URL . 'js/modernizr.custom.js', array(), '2.5.3', false );
 	wp_register_script( 'video-js',          SP_BASE_URL . 'js/video-js.min.js', array(), '3.2.0', false );
 	wp_register_script( 'selectivizr',       SP_BASE_URL . 'js/selectivizr-and-extra-selectors.min.js', array('jquery'), '1.0.2', true );

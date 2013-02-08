@@ -125,7 +125,13 @@ $of_options[] = array( "name" => "Custom favicon upload",
 					"id" => "theme_favico",
 					"std" => SP_BASE_URL . "favicon.ico",
 					"mod" => "min",
-					"type" => "media");
+					"type" => "media");				
+
+$of_options[] = array( "name" => "Tracking Code",
+					"desc" => "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.",
+					"id" => "google_analytics",
+					"std" => "",
+					"type" => "textarea");
 
 //Feature Slide
 
@@ -328,16 +334,30 @@ $of_options[] = array( "name" => "Footer",
 $of_options[] = array( "name" => "Facebook URL",
 					"desc" => "Enter Facebook url/link",
 					"id" => "fb_url",
-					"std" => "",
+					"std" => "#",
 					"type" => "text"
 					);
 					
 $of_options[] = array( "name" => "Youtube URL",
 					"desc" => "Enter Youtube url/link",
 					"id" => "youtube_url",
-					"std" => "",
+					"std" => "#",
 					"type" => "text"
-					);					
+					);
+					
+$of_options[] = array( "name" => "URl for ILO (International Labour Organization)",
+					"desc" => "Enter the url of ILO website address",
+					"id" => "ilo_url",
+					"std" => "http://www.ilo.org",
+					"type" => "text"
+					);
+
+$of_options[] = array( "name" => "URl for IFC (International Finance Corporation)",
+					"desc" => "Enter the url of IFC website address",
+					"id" => "ifc_url",
+					"std" => "http://www.ifc.org",
+					"type" => "text"
+					);											
 					
 $of_options[] = array( "name" => "Copyright",
 					"desc" => "footer copyrights text",

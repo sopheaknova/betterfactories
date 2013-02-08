@@ -262,28 +262,19 @@ if( !function_exists('sp_check_heading_image')) {
 
 		global $post;
 		
-		if( ( is_page() || is_single() ) && sp_get_custom_field( 'sp_heading_image', $post->ID ) ) {
-		$image = wp_get_attachment_image_src( sp_get_custom_field( 'sp_heading_image', $post->ID ), 'full' ); 
-		$output = '<img src="' . aq_resize( $image[0], 980, 157, true ) . '" />';
-		} else { 
-			//check heading of parent page
-			if ( ( is_page() ) && sp_get_custom_field( 'sp_heading_image', $post->post_parent )) {
-				$image = wp_get_attachment_image_src( sp_get_custom_field( 'sp_heading_image', $post->post_parent ), 'full' ); 
-				$output = '<img src="' . aq_resize( $image[0], 980, 157, true ) . '" />';
-			} elseif ( is_page_template() || is_singular() || is_single() ) { 
-				$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image-'.rand(1,7).'.jpg" />';
-		    } elseif ( is_category() && function_exists('z_taxonomy_image_url') ) {
-				if (z_taxonomy_image_url() != '') :
-					$output = '<img src="' . aq_resize( z_taxonomy_image_url(), 980, 157, true ) . '" /> ';
-				else: 
-					$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image-'.rand(1,7).'.jpg" />';
-				endif;
-			} else {
-			
-				//display blank image if options above are fail
-				$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image'.rand(1,7).'.jpg" />';
-			}
+		$post_img =  rwmb_meta( 'sp_heading_image', $args = array('type' => 'plupload_image') );
+		
+		if( ( is_page() || is_page_template() || is_singular() || is_single() ) && ( $post_img ) ) {
+		
+			foreach ( $post_img as $image )
+			{
+				$output = '<img src="' . aq_resize( $image['full_url'], 980, 157, true ) . '" />';
+			}// end foreach
+		
+		} else {
+			$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image-' . rand(1,7) . '.jpg' . '" width="980" height="157" />';
 		}
+		
 		return $output;
 	}
 

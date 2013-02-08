@@ -26,7 +26,7 @@ Template Name: Publication Reports Page
 	
 	foreach (get_categories(array('parent' => $category_id)) as $cat) :  
 	
-	if (function_exists('z_taxonomy_image_url'))
+	if (function_exists('z_taxonomy_image_url') && ( z_taxonomy_image_url($cat->term_id) !=''))
 		$cat_image_url = z_taxonomy_image_url($cat->term_id);
 		
 		$image = aq_resize( $cat_image_url, 300, 145, true ); 
