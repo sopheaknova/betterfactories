@@ -262,27 +262,29 @@ if( !function_exists('sp_check_heading_image')) {
 
 		global $post;
 		
-		if( ( is_page() ) && sp_get_custom_field( 'sp_heading_image', $post->ID ) ) {
+		if( ( is_page() || is_single() ) && sp_get_custom_field( 'sp_heading_image', $post->ID ) ) {
 		$image = wp_get_attachment_image_src( sp_get_custom_field( 'sp_heading_image', $post->ID ), 'full' ); 
 		$output = '<img src="' . aq_resize( $image[0], 980, 157, true ) . '" />';
-		}
-		else { 
+		} else { 
 			//check heading of parent page
 			if ( ( is_page() ) && sp_get_custom_field( 'sp_heading_image', $post->post_parent )) {
 				$image = wp_get_attachment_image_src( sp_get_custom_field( 'sp_heading_image', $post->post_parent ), 'full' ); 
 				$output = '<img src="' . aq_resize( $image[0], 980, 157, true ) . '" />';
-			} elseif ( is_single() && function_exists('z_taxonomy_image_url') ) {
-				$category = get_the_category();
-				$output = '<img src="' . aq_resize( z_taxonomy_image_url($category[0]->term_id), 980, 157, true ) . '" />';
-			} elseif ( is_category() && function_exists('z_taxonomy_image_url') ) {
-				$output = '<img src="' . aq_resize( z_taxonomy_image_url(), 980, 157, true ) . '" />';
+			} elseif ( is_page_template() || is_singular() || is_single() ) { 
+				$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image-'.rand(1,7).'.jpg" />';
+		    } elseif ( is_category() && function_exists('z_taxonomy_image_url') ) {
+				if (z_taxonomy_image_url() != '') :
+					$output = '<img src="' . aq_resize( z_taxonomy_image_url(), 980, 157, true ) . '" /> ';
+				else: 
+					$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image-'.rand(1,7).'.jpg" />';
+				endif;
 			} else {
 			
-			//display blank image if options above are fail
-			$output = '<img src="' . SP_BASE_URL . 'images/blank-photo-header.gif" />';
+				//display blank image if options above are fail
+				$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image'.rand(1,7).'.jpg" />';
 			}
 		}
-			return $output;
+		return $output;
 	}
 
 }

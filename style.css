@@ -96,12 +96,12 @@ blockquote {
 }
 
 	blockquote.simple {
-		background: none;
+		background: #fcfcfc;
 		border-left: 2px solid #ddd;
 		color: #bbb;
 		font-size: 13px;
 		margin: 0;
-		padding: 0 0 0 10px;
+		padding: 10px 0 0 10px;
 	}
 
 	blockquote p:last-of-type { margin-bottom: 0; }
@@ -1236,7 +1236,7 @@ table tbody tr:hover td {
 /*	Columns
 /* ---------------------------------------------------------------------- */
 
-.one_half, .one_third, .two_third, three_fourth, .two_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .two_sixth, .three_sixth, .four_sixth, .five_sixth {
+.one_half, .one_third, .two_third, .three_fourth, .two_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .two_sixth, .three_sixth, .four_sixth, .five_sixth {
 	position: relative;
 	margin-right: 4%;
 	float: left;
