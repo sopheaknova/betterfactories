@@ -540,7 +540,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		
 		.language{position:absolute; z-index:12; padding:3px; right:2px; top:2px;-moz-box-shadow: 0 1px 1px 0 #333; -webkit-box-shadow: 0 1px 1px 0 #333; box-shadow: 0 1px 1px 0 #333; background:#ffffff;}
 		.language ul{margin-bottom:0; font-size:11px;}
-		.language li{list-style:none; display:inline-block;margin-left:0;}
+		.language li{list-style:none; display:inline-block;margin-left:0; padding:0 3px;}
 		
 		/* -------------------------------------------------- */
 		/*	Homepage
@@ -611,34 +611,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 				a.learn-more{
 					color: #ff6633;
 				} 
-				
-				
-		.promo-msg h4{
-			font-weight:normal;
-			font-size:24px;	
-			margin-bottom:30px;
-		}		
-		.services-signup{
-			padding:10px 15px 20px;	
-			background:#9ed335;
-			-webkit-border-radius: 6px;
-			   -moz-border-radius: 6px;
-					border-radius: 6px;
-			color:#ffffff;
-		}
-		.services-signup h4{
-			font-size:20px;
-			text-transform:uppercase;
-			text-align:center;
-			color:#ffffff;
-			border-bottom:1px solid #c0e338;
-			padding-bottom:5px;
-		}
 		
-		.clients-link{
-			font-size:18px;	
-		}
-		.clients-link a { color:#ff6633}
 		
 	/* -------------------------------------------------- */
 	/*	Media Center
@@ -922,6 +895,30 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		.widget-custom .entry-meta{color:#333;}
 		
 		/* ---------------------------------------- */
+		/*	Register for training
+		/* ---------------------------------------- */
+		.services-signup-widget{
+			padding:10px 15px 20px;	
+			background:#9ed335;
+			-webkit-border-radius: 6px;
+			   -moz-border-radius: 6px;
+					border-radius: 6px;
+			color:#ffffff;
+		}
+		.services-signup-widget h3{
+			font-size:20px;
+			text-transform:uppercase;
+			text-align:center;
+			color:#ffffff;
+			background:none;
+			border-bottom:1px solid #c0e338;
+			border-top:none;
+			padding-top:0;
+			padding-bottom:5px;
+			margin-bottom:10px;
+		}
+		
+		/* ---------------------------------------- */
 		/*	Latest news
 		/* ---------------------------------------- */
 		ul.latest-news .entry-meta{
@@ -1193,6 +1190,13 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		.blog-posts-widget, .textwidget{ background:#ececec;}
 		
 		.textwidget{ padding:10px;}
+		
+		.home .textwidget {padding:0; background:none;}
+		.home .textwidget h2{font-size:24px; margin-bottom:30px;}
+		.home .textwidget p{font-size:18px;}
+		.home .textwidget a{color:#ff6633;}
+		.home .textwidget a:hover{color:#4e4e4e;}
+		.home .textwidget p{color:#808080;}
 			
 
 /* ---------------------------------------------------------------------- */

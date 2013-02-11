@@ -141,10 +141,30 @@ function sp_widgets_init() {
 		'after_title'   => '</h6>',
 	));
 	
-	// Home Widget Area
+	// Home Widget Area 1
 	register_sidebar(array(
-		'name'          => __('Home Sidebar', 'sptheme'),
+		'name'          => __('Home Sidebar 1', 'sptheme'),
 		'description'   => __('For homepage under slideshow', 'sptheme'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h6>',
+	));
+	
+	// Home Widget Area 2
+	register_sidebar(array(
+		'name'          => __('Home Sidebar 2', 'sptheme'),
+		'description'   => __('For homepage under slideshow', 'sptheme'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h6>',
+	));
+	
+	// Footer Bottom Widget Area
+	register_sidebar(array(
+		'name'          => __('Footer Bottom Sidebar', 'sptheme'),
+		'description'   => __('For place email subscibe box like Newsletter widget', 'sptheme'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',

@@ -44,7 +44,6 @@ jQuery( document ).ready( function($) {
 
 			$linkSettings.show();
 			$postdivrich.hide();
-			$generalSettings.hide();
 			$headingImage.hide();
 			
 		}

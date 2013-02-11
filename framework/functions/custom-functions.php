@@ -1,6 +1,30 @@
 <?php
 
 /* ---------------------------------------------------------------------- */
+/*	Show language list on header
+/* ---------------------------------------------------------------------- */
+if( !function_exists('languages_list_header')) {
+	
+	function languages_list_header(){
+		$languages = icl_get_languages('skip_missing=0&orderby=code');
+		if(!empty($languages)){
+			echo '<div class="language"><ul>';
+			foreach($languages as $l){
+				echo '<li>';
+				
+				if(!$l['active']) echo '<a href="'.$l['url'].'">';
+				echo $l['native_name'];
+				if(!$l['active']) echo '</a>';
+				
+				echo '</li>';
+			}
+			echo '</ul></div>';
+		}
+	}
+	
+}
+
+/* ---------------------------------------------------------------------- */
 /*	Show main and footer navigation
 /* ---------------------------------------------------------------------- */
 
@@ -263,12 +287,20 @@ if( !function_exists('sp_check_heading_image')) {
 		global $post;
 		
 		$post_img =  rwmb_meta( 'sp_heading_image', $args = array('type' => 'plupload_image') );
+		$post_img_parent = rwmb_meta( 'sp_heading_image', $args = array('type' => 'plupload_image'), $post->post_parent );
 		
 		if( ( is_page() || is_page_template() || is_singular() || is_single() ) && ( $post_img ) ) {
 		
 			foreach ( $post_img as $image )
 			{
 				$output = '<img src="' . aq_resize( $image['full_url'], 980, 157, true ) . '" />';
+			}// end foreach
+		
+		} elseif ( ( is_page() ) && ( $post_img_parent ) ) {
+		
+			foreach ( $post_img_parent as $image_parent )
+			{
+				$output = '<img src="' . aq_resize( $image_parent['full_url'], 980, 157, true ) . '" />';
 			}// end foreach
 		
 		} else {

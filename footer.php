@@ -2,14 +2,19 @@
 <?php if ( !is_page_template('page-contact.php') ) { ?>
 <div class="container clearfix">
     <hr class="dotted-3">
-    <div id="email-subscribe">
-    <div class="icon-email-newsletter"><?php _e( 'Want to be notified when we updated? Enter your email address below to be the first to know.', 'sptheme' ); ?></div>
-    <form>
-        <label for="email"><?php _e( 'Email subscription', 'sptheme' ); ?></label>
-        <input type="text" name="email" value="<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;" onblur="if (this.value == '') {this.value = '<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;';}" onfocus="if (this.value == '<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;') {this.value = '';}" class="youremail" />
-        <input type="submit" value="signup" class="subscribe-btn" />
-    </form> 
-    </div><!--end #email-subscribe -->
+    <?php 
+	if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Footer Bottom sidebar') ) :	
+	else :
+	?>	
+		<div class="non-widget">
+		<h3>About This Sidebar</h3>
+		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place Newsletter widgets into the <strong><em>Footer Bottom sidebar</em></strong> Area', 'sptheme'); ?></p>
+		</div>
+	<?php	
+		endif;
+	?>
+    
+    
 </div><!--end .container .clearfix-->
 <?php } ?>
 
@@ -18,7 +23,14 @@
     
 	<?php 
 	if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Footer sidebar') ) :	
-	endif;
+	else :
+	?>	
+		<div class="non-widget">
+		<h3>About This Sidebar</h3>
+		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place Custom Menu widgets into the <strong><em>Footer sidebar</em></strong> Area', 'sptheme'); ?></p>
+		</div>
+	<?php	
+		endif;
 	?>
     
     </div><!--end .container-->

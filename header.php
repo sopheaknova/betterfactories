@@ -15,11 +15,15 @@
 	
 	<title><?php wp_title('|', true, 'right'); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <!-- feeds, pingback -->
+    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php echo ($data['feedburner'] == '') ? bloginfo( 'rss2_url' ) :  $data['feedburner']; ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    
     <link rel="shortcut icon" href="<?php echo ($data['theme_favico'] == '') ? SP_BASE_URL.'favicon.ico' : $data['theme_favico']; ?>" type="image/x-icon" /> 
     
-    <?php wp_head(); ?>
+	<?php wp_head(); ?>
     
+    <?php if ( is_home() ) { ?>
     <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		
@@ -31,6 +35,31 @@
 			timeout:   <?php echo $data['cycle_timeout']; ?>,
 			delay: <?php echo $data['cycle_speed']; ?>
 		});
+		
+	});
+	</script>
+    <?php } ?>
+    
+    <?php if ( is_page_template('page-teams.php') ) { ?>
+    <script type="text/javascript">
+	jQuery(document).ready(function($) {
+		
+		//Featured Staff
+		$('#featured-staff').cycle({
+			fx:       '<?php echo $data['cycle_effect']; ?>',
+			slideExpr: '.staff-slide',
+			pager:  '.nav-slide',
+			timeout:   <?php echo $data['cycle_timeout']; ?>,
+			delay: <?php echo $data['cycle_speed']; ?>
+		});
+		
+	});
+	</script>
+    <?php } ?>
+    
+    <?php if ( is_page_template('page-media-center.php') ) { ?>
+    <script type="text/javascript">
+	jQuery(document).ready(function($) {
 		
 		//featured media center page
 		$('#featured-media').cycle({
@@ -74,17 +103,11 @@
 				}
 			);
 		
-		//Featured Staff
-		$('#featured-staff').cycle({
-			fx:       '<?php echo $data['cycle_effect']; ?>',
-			slideExpr: '.staff-slide',
-			pager:  '.nav-slide',
-			timeout:   <?php echo $data['cycle_timeout']; ?>,
-			delay: <?php echo $data['cycle_speed']; ?>
-		});
+		
 		
 	});
 	</script>
+    <?php } ?>
     
 </head>
 
@@ -103,19 +126,20 @@
         </h2>
   	</div><!-- end .logo -->
     
-    <div class="language">
-    	<ul>
-        	<li><a href="#">Chinese</a> -</li>
-            <li><a href="#">English</a> - </li>
-            <li><a href="#">Khmer</a></li>
-        </ul>
-    </div>
+    <?php 
+	//WPML Language Switcher
+	if (function_exists('icl_get_languages')) {
+		languages_list_header(); 
+	}
+	?>
     
     <?php if(is_front_page()) : ?>
     <div class="featured-home">
     <?php 
+	$category_name = $data['feature_category'];	
+	$category_id = get_cat_ID($category_name);
 	  $args = array (
-					'category_name'  	=> $data['bfc_voice_cat'],
+					'cat'  	=> $category_id,
 					'posts_per_page'	=> 5
 				);
 	  $slide_query = new WP_Query($args);
