@@ -146,7 +146,6 @@
 	?>
     
     <?php if(is_front_page()) : ?>
-    <div class="featured-home">
     <?php 
 	$category_name = $data['feature_category'];	
 	$category_id = get_cat_ID($category_name);
@@ -156,6 +155,9 @@
 				);
 	  $slide_query = new WP_Query($args);
 	  if ($slide_query->have_posts()) :
+	 ?>
+     <div class="featured-home">
+     <?php 
 	  while ( $slide_query->have_posts() ) : $slide_query->the_post();		  
 	  
 	  $slide_image = get_post_thumbnail_id( $post->ID );
@@ -182,10 +184,18 @@
         
       <?php
 	  endwhile;
-	  endif;
-	  ?>  
-        <div class="nav-slide"></div>
-        
+	  ?>
+      <div class="nav-slide"></div>
+      <?php else: ?>
+      <div class="no-slide-status">
+      <div class="wrap-status">
+      <h3><?php _e('Slideshow are not available.', 'sptheme'); ?></h3>
+      <p><?php _e('Make sure the post/article was checked in Featured category', 'sptheme'); ?></p>
+      </div>
+      </div>  
+      <?php
+	  endif; // end slide
+	  ?>   
     </div><!-- end .featured-home -->
     <?php else: ?>
     <div class="heading-image">

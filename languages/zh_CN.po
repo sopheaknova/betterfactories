@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betterfactories\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-12 13:40+0700\n"
-"PO-Revision-Date: 2013-02-12 13:45+0700\n"
+"POT-Creation-Date: 2013-02-13 16:14+0700\n"
+"PO-Revision-Date: 2013-02-13 16:16+0700\n"
 "Last-Translator: Dara <dara@fhi.org.kh>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -90,8 +90,8 @@ msgstr "分类存档： %s"
 #: content-link.php:5
 #: content-video.php:5
 #: content.php:5
-#: header.php:158
-#: header.php:166
+#: header.php:169
+#: header.php:177
 #: index.php:64
 #: index.php:71
 #: index.php:109
@@ -122,9 +122,17 @@ msgstr "要编辑这个侧边栏，进入管理页面 <strong><em>Appearance -&g
 msgid "To edit this sidebar, go to admin backend's <strong><em>Appearance -&gt; Widgets</em></strong> and place Custom Menu widgets into the <strong><em>Footer sidebar</em></strong> Area"
 msgstr "要编辑这个侧边栏，进入管理页面 <strong><em>Appearance -&gt; Widgets</em></strong> 和地点 Custom Menu widgets 到 <strong><em>Footer sidebar</em></strong> 区域"
 
-#: header.php:170
+#: header.php:181
 msgid "Learn more »"
 msgstr "了解更多»"
+
+#: header.php:192
+msgid "Slideshow are not available."
+msgstr "幻灯片是不可用"
+
+#: header.php:193
+msgid "Make sure the post/article was checked in Featured category"
+msgstr "请务必检查后/条 Featured 类别"
 
 #: index.php:18
 #: index.php:31

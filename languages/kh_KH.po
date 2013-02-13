@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Betterfactories\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-11 09:04+0700\n"
-"PO-Revision-Date: 2013-02-12 15:25+0700\n"
+"PO-Revision-Date: 2013-02-13 14:57+0700\n"
 "Last-Translator: Dara <dara@fhi.org.kh>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,31 +17,31 @@ msgstr ""
 
 #: 404.php:12
 msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
-msgstr "នេះជាអ្វីមួយដែលពុំត្រឹមត្រូវហើយ មិនអីបឹងរឺ?"
+msgstr "នេះជាអ្វីមួយដែលពុំត្រឹមត្រូវហើយ សូមត្រឡប់ទៅ ទំព័រដំបូង?"
 
 #: 404.php:16 archive.php:63 category.php:57
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for..."
-msgstr "យើងមិនអាចស្វែងរកនូវអ្វីដែលអ្នកកំពុងស្វែងរក..."
+msgstr "យើងមិនអាចស្វែងរកនូវអ្វីដែលអ្នកកំពុងស្វែងរកទេ…"
 
 #: 404.php:17
 #, php-format
 msgid "<strong>Start over again</strong> with the %1$sHomepage%2$s."
-msgstr "<strong>ចាប់ផ្តើមម្តងទៀត</strong> ជាមួយ %1$sទំព័រដើម%2$s៕"
+msgstr "<strong>ចាប់ផ្តើមម្តងទៀត</strong> ជាមួយ %1$s ទំព័រដើម %2$s"
 
 #: archive.php:16
 #, php-format
 msgid "Daily Archives: %s"
-msgstr "Archives ប្រចាំថ្ងៃ: %s"
+msgstr "ឯកសារ ប្រចាំថ្ងៃ: %s"
 
 #: archive.php:18
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr "Archives ប្រចាំខែ: %s"
+msgstr "ឯកសារ ប្រចាំខែ: %s"
 
 #: archive.php:20
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr "Archives ប្រចាំឆ្នាំ: %s"
+msgstr "ឯកសារ ប្រចាំឆ្នាំ: %s"
 
 #: archive.php:22
 msgid "Archives"
@@ -49,11 +49,11 @@ msgstr "កន្លែងផ្ទុកឯកសារផេ្សងៗ(Archi
 
 #: archive.php:31 category.php:17
 msgid "Nothing Found"
-msgstr "រកពុំឃើញអ្វីទាំងអស់"
+msgstr "ពុំឃើញអ្វីទាំងអស់"
 
 #: archives.php:18
 msgid "Archive Index Page"
-msgstr "Archive Index Page"
+msgstr "ទំព័រឯកសារ"
 
 #: archives.php:20
 msgid "<p class=\"serif\">Read the rest of this entry &raquo;</p>"
@@ -65,31 +65,31 @@ msgstr "ទំព័រ"
 
 #: archives.php:45
 msgid "Archives by Year:"
-msgstr "Archives តាមឆ្នាំ"
+msgstr "ឯកសារ តាមឆ្នាំ"
 
 #: archives.php:50
 msgid "Archives by Month:"
-msgstr "Archives តាមខែ"
+msgstr "ឯកសារ តាមខែ"
 
 #: archives.php:55
 msgid "Archives by Subject:"
-msgstr "Archives តាមមុខវិជ្ជា"
+msgstr "ឯកសារ តាមមុខវិជ្ជា"
 
 #: archives.php:64
 msgid "All Articles"
-msgstr " Articles ទាំងអស់"
+msgstr "អត្ថបទ ទាំងអស់"
 
 #: category.php:13
 #, php-format
 msgid "Category Archives: %s"
-msgstr "Category Archives​: %s"
+msgstr "ឯកសារ តាមផ្នែក: %s"
 
 #: content-link.php:5 content-video.php:5 content.php:5 header.php:131
 #: header.php:139 index.php:51 index.php:58 index.php:92 index.php:96
 #: index.php:132
 #, php-format
 msgid "Permalink to %s"
-msgstr "ភ្ជាប(Permalink)់ទៅកាន់ %s"
+msgstr "ភ្ជាបទៅកាន់ %s"
 
 #: content-link.php:24
 msgid "View the source file"
@@ -102,19 +102,17 @@ msgstr "%s, %s"
 
 #: content-staff.php:22
 msgid "return to Our Teams"
-msgstr "ត្រលប់ទៅកាន់ក្រុមរបស់ពួកយើង"
+msgstr "ត្រលប់ទៅទំព័រ ក្រុម BFC"
 
 #: footer.php:6
 msgid ""
 "Want to be notified when we updated? Enter your email address below to be "
 "the first to know."
-msgstr ""
-"តើចង់អោយគេធ្វើការកំណត់សំគាល់នៅពេលដែលអ្នកធ្វើការកែប្រែរឺទេ? សូមបញ្ជូលemail "
-"របស់អ្នកខាងក្រោមដែលជាចំណុចទីមួយដែលគេអាចដឹង"
+msgstr "តើអ្នកចង់បានពត៏មានថ្មី រឺទេ? សូមបញ្ជូល E-mail របស់អ្នកនៅក្នុងប្រអប់ខាងក្រោមនេះ"
 
 #: footer.php:8
 msgid "Email subscription"
-msgstr "Email ​​សំរាប់ការជាវ"
+msgstr "ទទួលពត៏មានតាម E-mail"
 
 #: footer.php:9
 msgid "Enter your email"
@@ -122,7 +120,7 @@ msgstr "សូមបញ្ជូល  email  របស់អ្នក"
 
 #: header.php:143
 msgid "Learn more »"
-msgstr "យល់ដឹងបន្ថែម»"
+msgstr "អានបន្ថែម»"
 
 #: index.php:106
 msgid "Video are coming soon."
@@ -142,15 +140,15 @@ msgstr "សូមបញ្ជូលឈ្មោះរបស់អ្នក"
 
 #: page-contact.php:19
 msgid "Please enter your email address."
-msgstr "សូមបញ្ជូលអីមែល របស់អ្នក"
+msgstr "សូមបញ្ជូលអ៊ីមែល របស់អ្នក"
 
 #: page-contact.php:29
 msgid "Please enter a message."
-msgstr "សូមបញ្ជូលអត្តបទសារ"
+msgstr "សូមបញ្ជូលអត្តបទ"
 
 #: page-contact.php:117
 msgid "Thanks, your email was sent successfully."
-msgstr "អរគុណ​!​អីមែល​របស់អ្នកត្រូវបានបញ្ជូនយ៉ាងជោគជ័យ"
+msgstr "អរគុណ! អ៊ីមែលរបស់អ្នកត្រូវបានបញ្ជូនដោយជោគជ័យ"
 
 #: page-contact.php:123
 msgid "Name"
@@ -158,11 +156,11 @@ msgstr "ឈ្មោះ"
 
 #: page-contact.php:130
 msgid "E-mail"
-msgstr "អីមែល"
+msgstr "អ៊ីមែល"
 
 #: page-contact.php:137
 msgid "Message"
-msgstr "អត្តបទសារ"
+msgstr "សារ"
 
 #: page-contact.php:144
 msgid "Send"
@@ -170,12 +168,12 @@ msgstr "បញ្ជូន"
 
 #: page-jobs.php:56
 msgid "Sorry, the job announcement not available yet."
-msgstr "សូមទោស សេចក្តីប្រកាសការងារមិនទាន់អាចរកបាននៅឡើយ"
+msgstr "សូមទោស សេចក្តីជូនដំណឹង រកការងារ មិនទាន់មាននៅឡើយទេ"
 
 #: page-media-center.php:156 page-media-center.php:211
 #: page-media-center.php:264 page-publication-reports.php:75
 msgid "See more"
-msgstr "សូមមើលបន្ថែម"
+msgstr "សូមមើលបន្ថែមអំពី"
 
 #: page-teams.php:26
 msgid "Featured staff"
@@ -183,7 +181,7 @@ msgstr "បុគ្គលិកពិសេស"
 
 #: page-teams.php:44
 msgid "This post have no photo"
-msgstr "post នេះពុំមានរូបភាពទេ"
+msgstr "អត្ថបទនេះពុំមានរូបភាពទេ"
 
 #: page-teams.php:51
 msgid "View detail"
@@ -191,7 +189,7 @@ msgstr "បង្ហាញលំអិត"
 
 #: page-teams.php:78
 msgid "Management Teams"
-msgstr "ការគ្រប់គ្រងក្រុម"
+msgstr "ក្រុមអ្នកគ្រប់គ្រង"
 
 #: page-teams.php:110
 msgid "Sorry, we will update our teams soon."
@@ -199,18 +197,18 @@ msgstr "សូមអភ័យទោស យើងនឹងធ្វើការ�
 
 #: page.php:23
 msgid "Edit"
-msgstr "ការកែប្រែ"
+msgstr "កែតំរូវ"
 
 #: search.php:13
 #, php-format
 msgid "Search Results for: %s"
-msgstr "ស្វែងរកលទ្ធផលសំរាប់: %s"
+msgstr "រកឃើញលទ្ធផលសំរាប់: %s"
 
 #: search.php:48
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr "សូមអភ័យទោស ប៉ុន្តែពុំអាចរកឃើញនូវអ្វីដែលអ្នកកំពុងស្វែងរក៕  សូមព្យាយាមជាមួយនឺងពាក្យផ្សេងទៀត"
+msgstr "សូមអភ័យទោស ពុំអាចរកឃើញនូវអ្វីដែលអ្នកកំពុងស្វែងរក៕  សូមព្យាយាមជាមួយនឹងពាក្យផ្សេងទៀត"
 
 #: searchform.php:2 searchform.php:3
 msgid "Search"
@@ -221,8 +219,8 @@ msgid ""
 "To edit this sidebar, go to admin backend's <strong><em>Appearance -&gt; "
 "Widgets</em></strong> and place widgets into the <strong><em>"
 msgstr ""
-"ដើម្បីកែប្រែsidebar​នេះសូមទៅកាន់admin​ backend's<strong><em>Appearance -&gt; "
-"Widgets</em></strong> ហើយនឹងដាក់ widgets នៅក្នុង <strong><em>"
+"ដើម្បីបង្ហាញទិន្ន័យក្នុង sidebar នេះសូមទៅកាន់ទំព័រ admin <strong><em>Appearance -&gt; "
+"Widgets</em></strong> ហើយទាញយក widgets ដាក់នៅក្នុង <strong> sidebar </strong>"
 
 #: framework/meta-boxes.php:29
 msgid "General Settings"
@@ -234,19 +232,19 @@ msgstr "Page Layout"
 
 #: framework/meta-boxes.php:40
 msgid "Fullwidth - No sidebar"
-msgstr "បណ្តោយពេញ-  គ្មាន ផ្នែកជំហៀងsidebar"
+msgstr "បណ្តោយពេញ-  គ្មាន ផ្នែកជំហៀង"
 
 #: framework/meta-boxes.php:40
 msgid "Fullwidth - No sidebar\""
-msgstr "បណ្តោយពេញ-  គ្មាន ផ្នែកជំហៀងsidebar\""
+msgstr "បណ្តោយពេញ-  គ្មាន ផ្នែកជំហៀង"
 
 #: framework/meta-boxes.php:42
 msgid "Sidebar on the right"
-msgstr "Sidebar នៅផ្នែកខាងស្តាំ"
+msgstr "នៅផ្នែកខាងស្តាំ"
 
 #: framework/meta-boxes.php:46
 msgid "select the layout structure for this page."
-msgstr "ជ្រើសរើសសំណង់ layout  សំរាប់ទំព័រនេះ"
+msgstr "ជ្រើសរើស  layout  សំរាប់ទំព័រនេះ"
 
 #: framework/meta-boxes.php:49
 msgid "Choose a sidebar to display"
@@ -254,7 +252,7 @@ msgstr "ជ្រើសរើសsidebar ដើម្បីបង្ហាញ"
 
 #: framework/meta-boxes.php:60
 msgid "Heading Image"
-msgstr "រូបភាពផ្នែកខាងលើគេHeading"
+msgstr "រូបភាពផ្នែកខាងលើគេរបស់ទំព័រ"
 
 #: framework/meta-boxes.php:66
 msgid "Upload heading image"
@@ -266,7 +264,7 @@ msgstr "ការបង្កើត ការងារ/ មុខរបរ"
 
 #: framework/meta-boxes.php:131
 msgid "Project title"
-msgstr "ចំណងជើងគំរោង"
+msgstr "Project title"
 
 #: framework/meta-boxes.php:138
 msgid "Post level"
@@ -274,23 +272,23 @@ msgstr "Post level"
 
 #: framework/meta-boxes.php:145
 msgid "Contract type"
-msgstr "ប្រភេទកិច្ចព្រមព្រៀង"
+msgstr "Contract type"
 
 #: framework/meta-boxes.php:152
 msgid "Duration of contract"
-msgstr "កំលុងពេលនៃកិច្ចព្រមព្រៀង"
+msgstr "Duration of contract"
 
 #: framework/meta-boxes.php:159
 msgid "Duty station"
-msgstr "ស្ងានីយ៏ពន្ធគយ"
+msgstr "Duty station"
 
 #: framework/meta-boxes.php:174
 msgid "Member setting"
-msgstr "ការបង្កើតសមាជិក"
+msgstr "Member setting"
 
 #: framework/meta-boxes.php:180
 msgid "Job title"
-msgstr "ចំណងជើងការងារ"
+msgstr "Job title"
 
 #: framework/meta-boxes.php:187
 msgid "Featured Staff"
@@ -298,11 +296,11 @@ msgstr "បុគ្គលិកពិសេស"
 
 #: framework/meta-boxes.php:204
 msgid "External Video Settings"
-msgstr "ការបង្កើតVideo ខាងក្រៅ"
+msgstr "External Video Settings"
 
 #: framework/meta-boxes.php:254
 msgid "Video id"
-msgstr "លេខសំគាល់វីដិអូVideo id"
+msgstr "Video id"
 
 #: framework/meta-boxes.php:258
 msgid ""
@@ -312,45 +310,47 @@ msgstr ""
 
 #: framework/meta-boxes.php:268
 msgid "Audio Settings"
-msgstr "ការបង្កើតសំលេងAudio"
+msgstr "Audio Settings"
 
 #: framework/meta-boxes.php:274
 msgid "MP3 File URL"
-msgstr "MP3 ឯកសារជា URL"
+msgstr "MP3 File URL"
 
 #: framework/meta-boxes.php:278
 msgid "For Safari, Internet Explorer, Chrome."
-msgstr "សំរាប់ Safari, Internet Explorer, Chrome."
+msgstr "For Safari, Internet Explorer, Chrome."
 
 #: framework/meta-boxes.php:281
 msgid "OGG File URL"
-msgstr "OGG ឯកសារជា URL"
+msgstr "OGG File URL"
 
 #: framework/meta-boxes.php:285
 msgid "For Firefox, Opera, Chrome."
-msgstr "សំរាប់Firefox, Opera, Chrome."
+msgstr "For Firefox, Opera, Chrome."
 
 #: framework/meta-boxes.php:288
 msgid "External Audio"
-msgstr "សំលេងខាងក្រៅExternal Audio"
+msgstr "External Audio"
 
 #: framework/meta-boxes.php:292
 msgid "For example embed code. e.g: embeded code from soundcloud.com"
-msgstr "ឧទារហណ័ដូចជាembed code.​ឧទារហណ័:​embeded code​ពី soundcloud.com"
+msgstr "For example embed code. e.g: embeded code from soundcloud.com"
 
 #: framework/meta-boxes.php:304
 msgid "Link Settings"
-msgstr "ការបង្កើតភ្ជាប់"
+msgstr "Link Settings"
 
 #: framework/meta-boxes.php:310
 msgid "Attach file"
-msgstr "ឯកសារដែលភ្ជាប់តាមអីមែល"
+msgstr "Attach file"
 
 #: framework/meta-boxes.php:315
 msgid ""
 "Upload news file (.gif, .png, .pdf) that you have scanned from newspaper or "
 "from other media."
-msgstr "បញ្ជូល ឯកសារថ្មីដូចជា (.gif, .png, .pdf) ដែលអ្នកបានស្កេនពីប្រពន្ធ័ឯកសារផ្សេងៗ"
+msgstr ""
+"Upload news file (.gif, .png, .pdf) that you have scanned from newspaper or "
+"from other media."
 
 #: framework/meta-boxes.php:318
 msgid "Source"
@@ -362,7 +362,7 @@ msgstr "កន្លែងដែលពត័មាននេះមកពី។ �
 
 #: framework/admin/classes/class.options_machine.php:488
 msgid "Last Backup : "
-msgstr "Backup ឯកសារចុងក្រោយ:"
+msgstr "Last Backup : "
 
 #: framework/admin/classes/class.options_machine.php:548
 msgid "Upload"
@@ -371,67 +371,67 @@ msgstr "Upload"
 #: framework/admin/front-end/options.php:43
 #: framework/admin/front-end/options.php:67
 msgid "Save All Changes"
-msgstr "រក្សាទុករាល់ការផ្លាស់ប្តូរ"
+msgstr "Save All Changes"
 
 #: framework/admin/front-end/options.php:68
 msgid "Options Reset"
-msgstr "បង្កើតនូវជំរើសលើងវិញ"
+msgstr "Options Reset"
 
 #: framework/admin/functions/functions.mediauploader.php:20
 msgid "Options"
-msgstr "ជំរើស"
+msgstr "Options"
 
 #: framework/admin/functions/functions.mediauploader.php:210
 #: framework/custom-post/gallery-post-types.php:11
 #: framework/custom-post/gallery-post-types.php:12
 #: framework/custom-post/gallery-post-types.php:22
 msgid "Gallery"
-msgstr "កន្លែងផ្ទុក"
+msgstr "Gallery"
 
 #: framework/admin/functions/functions.mediauploader.php:210
 msgid "Previously Uploaded"
-msgstr "ដែលបានUpload ពីមុខ"
+msgstr "Previously Uploaded"
 
 #: framework/custom-post/gallery-post-types.php:13
 #: framework/custom-post/gallery-post-types.php:14
 msgid "Add New Album"
-msgstr "បន្ថែមអាល់ប៊ុមថ្មី"
+msgstr "Add New Album"
 
 #: framework/custom-post/gallery-post-types.php:15
 msgid "Edit Album"
-msgstr "ការកែប្រែអាល់ប៊ុម"
+msgstr "Edit Album"
 
 #: framework/custom-post/gallery-post-types.php:16
 msgid "New Album"
-msgstr "អាល់ប៊ុមថ្មី"
+msgstr "New Album"
 
 #: framework/custom-post/gallery-post-types.php:17
 msgid "View Album"
-msgstr "បង្ហាញអាល់ប៊ុម"
+msgstr "View Album"
 
 #: framework/custom-post/gallery-post-types.php:18
 msgid "Search Album"
-msgstr "ស្វែងរកអាល់ប៊ុម"
+msgstr "Search Album"
 
 #: framework/custom-post/gallery-post-types.php:19
 msgid "No Album found"
-msgstr "គ្មានអាល់អាល់ប៊ុមណាមួយដែលរកឃើញ"
+msgstr "No Album found"
 
 #: framework/custom-post/gallery-post-types.php:20
 msgid "No Album found in Trash"
-msgstr "រកពុំឃើញអាល់ប៊ុមនៅក្នុងកន្លែងសំណល់Trash"
+msgstr "No Album found in Trash"
 
 #: framework/custom-post/gallery-post-types.php:21
 msgid "Parent Album:"
-msgstr "អាល់ប៊ុមមេ:"
+msgstr "Parent Album:"
 
 #: framework/custom-post/gallery-post-types.php:55
 msgid "Cover Album"
-msgstr "គំរបអាល់ប៊ុម"
+msgstr "Cover Album"
 
 #: framework/custom-post/gallery-post-types.php:57
 msgid "Photo number"
-msgstr "ចំនួនរូបភាព"
+msgstr "Photo number"
 
 #: framework/custom-post/gallery-post-types.php:58
 #: framework/custom-post/slider-post-types.php:57
@@ -441,235 +441,234 @@ msgstr "Shortcode"
 
 #: framework/custom-post/gallery-post-types.php:118
 msgid "Enter gallery name here"
-msgstr "បញ្ជូលឈ្មោះកន្លែងផ្ទុក(gallery) នៅទីនេះ"
+msgstr "Enter gallery name here"
 
 #: framework/custom-post/job-post-types.php:10
 #: framework/custom-post/job-post-types.php:11
 #: framework/custom-post/job-post-types.php:21
 msgid "Job"
-msgstr "ការងារ"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:12
 #: framework/custom-post/slider-post-types.php:13
 #: framework/custom-post/teams-post-types.php:12
 msgid "Add New"
-msgstr "បន្ថែមថ្មី"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:13
 msgid "Add New Job"
-msgstr "បន្ថែមការងារថ្មី"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:14
 msgid "Edit Job"
-msgstr "ការកែប្រែការងារ"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:15
 msgid "New Job"
-msgstr "ការងារថ្មី"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:16
 msgid "View Job"
-msgstr "បង្ហាញការងារ"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:17
 msgid "Search Job"
-msgstr "ស្វែងរកការងារ"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:18
 msgid "No job found"
-msgstr "ពុំឃើញការងារ"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:19
 msgid "No jobs found in Trash"
-msgstr "ពុំឃើញការងារនៅក្នុងកន្លែងសំណល់Trash"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:20
 msgid "Parent Job:"
-msgstr "ការងារមេ:"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:55
 msgid "Project Title"
-msgstr "ចំណងជើងគំរោង"
+msgstr ""
 
 #: framework/custom-post/job-post-types.php:127
 msgid "Enter job name here"
-msgstr "បញ្ជូលឈ្មោះការងារនៅទីនេះ"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:11
 #: framework/custom-post/slider-post-types.php:22
 msgid "Sliders"
-msgstr "ស្លាយដឺច្រើន"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:12
 msgid "Slider"
-msgstr "ស្លាយដឺ"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:14
 msgid "Add New Slider"
-msgstr "បន្ថែមស្លាយថ្មី"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:15
 msgid "Edit Slider"
-msgstr "កែប្រែស្លាយ"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:16
 msgid "New Slider"
-msgstr "ស្លាយថ្មី"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:17
 msgid "View Slider"
-msgstr "បង្ហាញស្លាយ"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:18
 msgid "Search Sliders"
-msgstr "ស្វែងរកស្លាយ"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:19
 msgid "No sliders found"
-msgstr "គ្មានស្លាយណាមួយដែលត្រូវបានរកឃើញទេ"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:20
 msgid "No sliders found in Trash"
-msgstr "គ្មានស្លាយណាមួយដែលត្រូវបានរកឃើញនៅក្នុងកន្លែងសំណល់ទេTrash"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:21
 msgid "Parent Slider:"
-msgstr "ស្លាយមេ:"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:56
 msgid "Slide Count"
-msgstr "រាប់ស្លាយ"
+msgstr ""
 
 #: framework/custom-post/slider-post-types.php:111
 msgid "Enter slider name here"
-msgstr "បញ្ជូលឈ្មោះស្លាយនៅទីនេះ"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:10
 #: framework/custom-post/teams-post-types.php:21
 msgid "Staff"
-msgstr "បុគ្គលិក"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:11
 msgid "Member"
-msgstr "សមាជិក"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:13
 msgid "Add New Member"
-msgstr "បន្ថែមសមាជិកថ្មី"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:14
 msgid "Edit Member"
-msgstr "កែប្រែសមាជិក"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:15
 msgid "New Member"
-msgstr "សមាជិកថ្មី"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:16
 msgid "View Member"
-msgstr "បង្ហាញសមាជិក"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:17
 msgid "Search Members"
-msgstr "ស្វែងរកសមាជិកផ្សេងៗ"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:18
 msgid "No members found"
-msgstr "គ្មានសមាជិកណាមួយដែលគេរកឃើញ"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:19
 msgid "No members found in Trash"
-msgstr "គ្មានសមាជិកណាមួយដែលគេរកឃើគនៅក្នុងកន្លែងសំណល់ទេTrash"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:20
 msgid "Parent Member:"
-msgstr "សមាជិកមេ:"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:54
 msgid "Photo"
-msgstr "រូបថត"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:56
 msgid "Job Title"
-msgstr "​ចំណងជើងការងារ"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:57
 msgid "Description"
-msgstr "ការពិពណ៏នា"
+msgstr ""
 
 #: framework/custom-post/teams-post-types.php:121
 msgid "Enter staff name here"
-msgstr "បញ្ជុលឈ្មោះបុគ្គលិកនៅទីនេះ"
+msgstr ""
 
 #: framework/functions/custom-functions.php:29
 msgid "Add Main menu"
-msgstr "បន្ថែម់Main menu"
+msgstr ""
 
 #: framework/functions/custom-functions.php:60
 msgid "Add Footer menu"
-msgstr "បន្ថែម Footer menu"
+msgstr ""
 
 #: framework/functions/custom-functions.php:175
 msgid "Next"
-msgstr "នៅបន្ទាប់"
+msgstr ""
 
 #: framework/functions/custom-functions.php:185
 msgid "Previous"
-msgstr "នៅខាងក្រោយ"
+msgstr ""
 
 #: framework/functions/custom-functions.php:245
 msgid "By: "
-msgstr "ដោយ:"
+msgstr ""
 
 #: framework/functions/custom-functions.php:248
 msgid " in: "
-msgstr "នៅក្នុង:"
+msgstr ""
 
 #: framework/functions/custom-functions.php:291
 #, php-format
 msgid "<time datetime=\"%1$s\" pubdate>%2$s</time>"
-msgstr "<time datetime=\"%1$s\" pubdate>%2$s</time>"
+msgstr ""
 
 #: framework/functions/setup-theme.php:35
 msgid "Primary Navigation"
-msgstr "Primary Navigation"
+msgstr ""
 
 #: framework/functions/setup-theme.php:36
 msgid "Footer Navigation"
-msgstr "Footer Navigation"
+msgstr ""
 
 #: framework/functions/setup-theme.php:137
 msgid "Main Sidebar"
-msgstr "Main Sidebar"
+msgstr ""
 
 #: framework/functions/setup-theme.php:146
 msgid "Home Sidebar"
-msgstr "Sidebar ទំព័រដើម"
+msgstr ""
 
 #: framework/functions/setup-theme.php:147
 msgid "For homepage under slideshow"
-msgstr "សំរាប់ទំព័រដើមនៅខាងក្រោមslideshow"
+msgstr ""
 
 #: framework/functions/setup-theme.php:156
 msgid "Footer Sidebar"
-msgstr "Footer Sidebar"
+msgstr ""
 
 #: framework/functions/setup-theme.php:157
 msgid ""
 "For place pages link in footer, can only support with Sub navigation widget"
 msgstr ""
-"សំរាប់ដាក់ទំព័រភ្ជាប់ទៅផ្សេងៗនៅក្នុងfooter ហើយអាចគាំទ្រតែជាមួយSub navigation នៃwidget​ប៉ុណ្ណោះ"
 
 #: framework/functions/setup-theme.php:332
 #, php-format
 msgid "Search results for %s"
-msgstr "ស្វែងរកលទ្ធផលផ្សេងៗសំរាប់ %s"
+msgstr ""
 
 #: framework/functions/setup-theme.php:335
 #: framework/functions/setup-theme.php:349
 #, php-format
 msgid "Page %s"
-msgstr "ទំព័រ %s"
+msgstr ""
 
 #: framework/functions/categories-images/categories-images.php:45
 #: framework/functions/categories-images/categories-images.php:61
@@ -686,67 +685,67 @@ msgstr "ដាក់បញ្ជូល/​បន្ថែមរូបភាព"
 #: framework/functions/categories-images/categories-images.php:64
 #: framework/functions/categories-images/categories-images.php:142
 msgid "Remove image"
-msgstr "លុបរូបភាពចោល"
+msgstr ""
 
 #: framework/functions/categories-images/categories-images.php:177
 msgid "Thumbnail"
-msgstr "រូបភាពតូចៗ"
+msgstr ""
 
 #: framework/meta-box/inc/classes/meta-box.php:285
 msgid "Please correct the errors highlighted below and try again."
-msgstr "សូមកែនូវកំហុសមួយចំនួនដែលបានគូសសំគាល់ខាងក្រោមហើយព្យាយាមម្តងទៀត"
+msgstr ""
 
 #: framework/meta-box/inc/classes/meta-box.php:343
 msgid "+"
-msgstr "+"
+msgstr ""
 
 #: framework/meta-box/inc/classes/meta-box.php:365
 msgid "&#8211;"
-msgstr "&#8211;"
+msgstr ""
 
 #: framework/meta-box/inc/fields/file.php:64
 msgid "Error: Cannot delete file"
-msgstr "កំហុសឆ្គង:​មិនអាចលុបឯកសារបាន"
+msgstr ""
 
 #: framework/meta-box/inc/fields/image.php:64
 msgid "Order saved"
-msgstr "ការបញ្ជាទិញដែលបានរក្សាទុក"
+msgstr ""
 
 #: framework/meta-box/inc/fields/map.php:46
 msgid "Find Address"
-msgstr "ស្វែងរកអាស័យដ្ឋាន"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:100
 #: framework/meta-box/inc/fields/slider-slides.php:278
 msgid "Click to toggle"
-msgstr "ចុចដើម្បី toggle"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:102
 #: framework/meta-box/inc/fields/slider-slides.php:280
 msgid "Slide"
-msgstr "ស្លាយ"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:110
 #: framework/meta-box/inc/fields/slider-slides.php:288
 msgid "Button"
-msgstr "ប៊ូតុង"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:111
 #: framework/meta-box/inc/fields/slider-slides.php:289
 msgid "Content"
-msgstr "មាតិការ"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:112
 #: framework/meta-box/inc/fields/slider-slides.php:290
 msgid "Link"
-msgstr "ភ្ជាប់ទៅ"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:120
 #: framework/meta-box/inc/fields/slider-slides.php:196
 #: framework/meta-box/inc/fields/slider-slides.php:298
 #: framework/meta-box/inc/fields/slider-slides.php:374
 msgid "Image URL"
-msgstr "រូបភាព ជា URL"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:125
 #: framework/meta-box/inc/fields/slider-slides.php:201
@@ -755,486 +754,486 @@ msgstr "រូបភាព ជា URL"
 #: framework/meta-box/inc/fields/slider-slides.php:379
 #: framework/meta-box/inc/fields/slider-slides.php:431
 msgid "Upload Image"
-msgstr "ការដាក់បញ្ជូលរូបភាព"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:137
 #: framework/meta-box/inc/fields/slider-slides.php:315
 msgid "Button Type"
-msgstr "ប្រភេទនៃប៊ូតុង"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:142
 #: framework/meta-box/inc/fields/slider-slides.php:320
 msgid "Text"
-msgstr "អត្តបទ"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:154
 #: framework/meta-box/inc/fields/slider-slides.php:332
 msgid "Dropcap"
-msgstr "អក្សរធ្លាក់"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:159
 #: framework/meta-box/inc/fields/slider-slides.php:184
 #: framework/meta-box/inc/fields/slider-slides.php:337
 #: framework/meta-box/inc/fields/slider-slides.php:362
 msgid "(optional)"
-msgstr "(តាមជំរើស)"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:167
 #: framework/meta-box/inc/fields/slider-slides.php:345
 msgid "Title"
-msgstr "ចំណងជើង"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:215
 #: framework/meta-box/inc/fields/slider-slides.php:393
 msgid "Slide Content"
-msgstr "ស្លាយមាតិការ"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:220
 #: framework/meta-box/inc/fields/slider-slides.php:398
 msgid "(optional) HTML tags and WordPress shortcodes are allowed."
-msgstr "(តាមជំរើស) HTML កូតហើយWordPress shortcodes​គឺត្រូវបានគេអនុញ្ញាត្តិ"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:232
 #: framework/meta-box/inc/fields/slider-slides.php:410
 msgid "Lightbox"
-msgstr "Lightbox"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:237
 #: framework/meta-box/inc/fields/slider-slides.php:415
 msgid "Disabled"
-msgstr "ដែលប្រើលែងបាន"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:239
 #: framework/meta-box/inc/fields/slider-slides.php:417
 msgid "Iframe"
-msgstr "អាយហ្វ្រេម"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:248
 #: framework/meta-box/inc/fields/slider-slides.php:426
 msgid "URL"
-msgstr "URL"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:254
 #: framework/meta-box/inc/fields/slider-slides.php:432
 msgid "(optional) Any valid URL is allowed, doesn't have to be an image"
-msgstr "(តាមជំរើស) URL​ដែលមានសុពលភាពណាមួយគឺត្រូវបានគេអនុញ្ញាត្តិ ហើយមិនមែនជារូបភាព"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:263
 #: framework/meta-box/inc/fields/slider-slides.php:441
 msgid "Remove Slide"
-msgstr "លុបស្លាយចោល"
+msgstr ""
 
 #: framework/meta-box/inc/fields/slider-slides.php:453
 msgid "Add New Slide"
-msgstr "បន្ថែមស្លាយថ្មី"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:35
 msgid "All shortcodes"
-msgstr "រាល់shortcode​ទាំងអស់"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:42
 msgid "Pick a Shortcode"
-msgstr "រើស​Shortcode​មួយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:43
 msgid "General"
-msgstr "ជាទូទៅ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:44
 msgid "Divider"
-msgstr "Divider"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:45
 msgid "Slogan"
-msgstr "ពាក្យស្លោក"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:48
 msgid "Info Box"
-msgstr "ប្រអប់ពត៏មាន"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:49
 msgid "List"
-msgstr "បញ្ចី"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:50
 msgid "Quote"
-msgstr "សំរង់ចេញពីប្រភពណាមួយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:51
 msgid "Content Tabs"
-msgstr "ស្លាកមាតិការ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:53
 msgid "Accordion Content"
-msgstr "មាតិការ អាគ័រដៀន"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:54
 msgid "Pricing Tables"
-msgstr "តារាងតំលៃ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:55
 msgid "Video Player"
-msgstr "Video Player"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:56
 msgid "Audio Player"
-msgstr "Audio Player"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:58
 msgid "Alert Boxes"
-msgstr "ប្រអប់ផ្ដល់សញ្ញា"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:59
 msgid "Error"
-msgstr "កំហុស"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:60
 msgid "Success"
-msgstr "ជោគជ័យ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:61
 msgid "Info"
-msgstr "ពត៏មាន"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:62
 msgid "Notice"
-msgstr "កំណត់ចំណាំ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:64
 msgid "Layout"
-msgstr "Layout"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:65 framework/tinymce/tinymce.php:1149
 #: framework/tinymce/tinymce.php:1282
 msgid "1/2"
-msgstr "1/2"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:66
 msgid "1/2 Last"
-msgstr "1/2 ចុងក្រោយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:67 framework/tinymce/tinymce.php:1150
 #: framework/tinymce/tinymce.php:1283
 msgid "1/3"
-msgstr "1/3"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:68
 msgid "1/3 Last"
-msgstr "1/3 ចុងក្រោយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:69 framework/tinymce/tinymce.php:1151
 #: framework/tinymce/tinymce.php:1284
 msgid "1/4"
-msgstr "1/4"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:70
 msgid "1/4 Last"
-msgstr "1/4 ចុងក្រោយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:71
 msgid "2/3"
-msgstr "2/3"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:72
 msgid "2/3 Last"
-msgstr "2/3ចុងក្រោយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:73
 msgid "3/4"
-msgstr "3/4"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:74
 msgid "3/4 Last"
-msgstr "3/4ចុងក្រោយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:76
 msgid "Template Tags"
-msgstr "ផ្ទាំងគ្រោងTemplate"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:77
 msgid "Post Carousel"
-msgstr "Post Carousel"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:78
 msgid "Projects Carousel"
-msgstr "គំរោង Carousel"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:79
 msgid "Portfolio"
-msgstr "ផលប័ត្រ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:81 framework/tinymce/tinymce.php:1244
 msgid "Team Member"
-msgstr "សមាជិកក្រុម"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:83
 msgid "Misc"
-msgstr "ផ្សេងៗពីគ្នា"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:84
 msgid "Fullwidth Map"
-msgstr "ផែនទីដែលមានទំហំពេញ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:85
 msgid "Raw (disable editor formatting)"
-msgstr "ទំរង់ដើម(ទំរង់លក្ខណះដែលអ្នកកែប្រែមិនអាចកែប្រែបាន)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:99
 msgid "Dotted line"
-msgstr "បន្ទាត់ចុច"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:132
 msgid "Align"
-msgstr "តំរង់"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:139 framework/tinymce/tinymce.php:194
 #: framework/tinymce/tinymce.php:521 framework/tinymce/tinymce.php:665
 msgid "Normal"
-msgstr "ធម្មតា"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:140 framework/tinymce/tinymce.php:232
 msgid "Left"
-msgstr "ឆ្វេង"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:141
 msgid "Center"
-msgstr "កណ្តាល"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:142 framework/tinymce/tinymce.php:231
 msgid "Right"
-msgstr "ស្តាំ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:187
 msgid "Size"
-msgstr "ទំហំ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:195
 msgid "Medium"
-msgstr "មធ្យម"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:196
 msgid "Large"
-msgstr "ធំ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:207
 msgid "Remove background"
-msgstr "លុបផ្ទាំងខាងក្រោយចោល"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:223 framework/tinymce/tinymce.php:360
 msgid "Arrow"
-msgstr "Arrow"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:230 framework/tinymce/tinymce.php:779
 msgid "No"
-msgstr "ទេ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:261
 msgid "Background"
-msgstr "ផ្ទាំងខាងក្រោយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:268
 msgid "Light"
-msgstr "ធ្វើអោយស្រាល"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:269
 msgid "Dark"
-msgstr "ធ្វើអោយងងឹត"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:299
 msgid "Author"
-msgstr "អ្នកនិពន្ធ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:315 framework/tinymce/tinymce.php:412
 msgid "Type"
-msgstr "ប្រភេទ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:322
 msgid "Default"
-msgstr "គំរូដើម"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:323 framework/tinymce/tinymce.php:631
 msgid "Simple"
-msgstr "សាមញ្ញ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:352
 msgid "Icon"
-msgstr "រូបតំណាង"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:359
 msgid "None"
-msgstr "គ្មាន"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:361
 msgid "Arrow 2"
-msgstr "Arrow 2"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:362
 msgid "Check"
-msgstr "Check"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:363
 msgid "Check 2"
-msgstr "Check 2"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:364
 msgid "Circle"
-msgstr "រង្វង់"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:365
 msgid "Plus"
-msgstr "បូក"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:366
 msgid "Dash"
-msgstr "សញ្ញាដកឃ្លា"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:367
 msgid "Star"
-msgstr "ផ្កាយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:378
 msgid "Dotted Bottom Border"
-msgstr "ស៊ុំផ្នែកខាងក្រោមចុចៗ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:419
 msgid "Single image"
-msgstr "រូបភាពតែមួយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:420
 msgid "Image gallery"
-msgstr "កន្លែងផ្ទុករូបភាព"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:432
 msgid "Full (URL)"
-msgstr "ពេញ(URL)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:464
 msgid "Group name (lowercase)"
-msgstr "ឈ្មោះក្រុម(អក្សរតូច)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:464
 msgid "(Only for image gallery)"
-msgstr "(សំរាប់តែកន្លែងដាក់រូបភាព)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:514
 msgid "Title size"
-msgstr "ទំហំចំណងជើង"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:522
 msgid "Heading 6"
-msgstr "ចំណងជើងទី៦"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:523
 msgid "Heading 5"
-msgstr "ចំណងជើងទី៥"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:524
 msgid "Heading 4"
-msgstr "ចំណងជើងទី៤"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:525
 msgid "Heading 3"
-msgstr "ចំណងជើងទី៣"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:553
 msgid "Single tab"
-msgstr " tabតែមួយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:553 framework/tinymce/tinymce.php:642
 msgid "(Remove wrapping shortcode)"
-msgstr "(លុបចោលshortcode​ដែលរុំពីលើ)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:603
 msgid "Table column count"
-msgstr "រាបជួរឈររបស់តារាង់"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:610
 msgid "1"
-msgstr "1"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:611
 msgid "2"
-msgstr "2"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:612
 msgid "3"
-msgstr "3"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:613
 msgid "4"
-msgstr "4"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:614
 msgid "5"
-msgstr "5"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:624
 msgid "Table type"
-msgstr "ប្រភេទតារាង"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:632
 msgid "Extended"
-msgstr "អាចពង្រីកបាន"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:642
 msgid "Single column"
-msgstr "ជួរឈរតែមួយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:658
 msgid "Column type"
-msgstr "ប្រភេទជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:666
 msgid "Features list (only for Extended tables)"
-msgstr "បញ្ចីពិសេស(សំរាប់តែតារាងដែលអាចពង្រីកបាន)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:676
 msgid "Column title"
-msgstr "ចំណងជើងជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:692
 msgid "Column price"
-msgstr "តំលៃជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:692
 msgid "(With currency)"
-msgstr "(ជាមួយរូបិយប័ន្រ)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:708
 msgid "Column period"
-msgstr "កំឡុងពេលជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:724
 msgid "Column description"
-msgstr "ពិពណ័នាជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:724
 msgid "(Only for Simple tables)"
-msgstr "(សំរាប់តែតារាងធម្មតា)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:740
 msgid "Column Sign Up button title"
-msgstr "ចំណងជើងប៊ូតុងចុះឈ្មោះជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:756
 msgid "Column Sign Up button URL"
-msgstr "URL​ប៊ូតុងចុះឈ្មោះជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:772
 msgid "Special column"
-msgstr "ជួរឈរពិសេស"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:780
 msgid "Free"
-msgstr "មិនគិតលុយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:781
 msgid "Featured"
-msgstr "លក្ខណះពិសេស"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:791
 msgid "Column content (list items)"
-msgstr "មាតិការជួរឈរ(មុខបញ្ជីនិមួយៗ)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:798
 #, php-format
@@ -1242,238 +1241,230 @@ msgid ""
 "(Use %1$s shortcode to create a tooltip and %2$s shortcode to create a check "
 "icon.)"
 msgstr ""
-"(ប្រើប្រាស់ %1$s shortcode ដើម្បីបង្កើត tooltipមួយ ហើយ%2$s shortcode ដើម្បីបង្កើតcheck "
-"icon មួយ.)"
 
 #: framework/tinymce/tinymce.php:810
 msgid "MP4 file URL"
-msgstr "MP4 ឯកសារជា URL"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:817
 msgid ""
 "(For Safari, Internet Explorer 9, iPhone, iPad, Android, and Windows Phone 7)"
 msgstr ""
-"(សំរាប់ Safari, Internet Explorer 9, iPhone, iPad, Android, and Windows Phone "
-"7)"
 
 #: framework/tinymce/tinymce.php:827
 msgid "WebM file URL"
-msgstr "WebM ឯកសារជា URL"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:834
 msgid "(For Firefox4, Opera, and Chrome)"
-msgstr "(សំរាប់ Firefox4, Opera, and Chrome)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:844
 msgid "OGG file URL"
-msgstr "OGG ឯកសារជា URL"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:851
 msgid "(For older Firefox and Opera versions)"
-msgstr "(សំរាប់តែ Firefox ហើយ Opera​ដែលជាស៊េរីចាស់ )"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:861
 msgid "Preview image URL"
-msgstr "បង្ហាញរូបភាពជាURL"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:878
 msgid "Aspect ratio"
-msgstr "អនុបាតនៃទស្សនះវិស័យ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:894 framework/tinymce/tinymce.php:963
 msgid "Extra Info"
-msgstr "ពត៏មានបន្ថែម"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:900
 msgid ""
 "If video element isn't displayed properly, try to wrap it inside of <code>"
 "[raw]</code> shortcode."
 msgstr ""
-"ប្រសិនបើធាតុនៃវីដេអូមិនត្រូវបានគេបង្ហាញត្រឹមត្រូវទេ សូមព្យាយាមដាក់វាក្នុង <code>[raw]</code> "
-"shortcode."
 
 #: framework/tinymce/tinymce.php:909
 msgid "Video Embed Code"
-msgstr "កូតដែលបានបង្កប់ជាមួយវីដេអូ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:936
 msgid "(For Safari, Internet Explorer, Chrome)"
-msgstr "(សំរាប់ Safari, Internet Explorer, Chrome)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:953
 msgid "(For Firefox, Opera, Chrome)"
-msgstr "(សំរាប់ Firefox, Opera, Chrome)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:969
 msgid ""
 "If audio element isn't displayed properly, try to wrap it inside of <code>"
 "[raw]</code> shortcode."
 msgstr ""
-"ប្រសិនបើធាតុនៃសំលេងaudioមិនត្រូវបានគេបង្ហាញត្រឹមត្រូវទេ សូមព្យាយាមដាក់វាក្នុង <code>[raw]</"
-"code> shortcode."
 
 #: framework/tinymce/tinymce.php:1017 framework/tinymce/tinymce.php:1079
 msgid "Custom Title"
-msgstr "ចំណង Custom"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1024
 msgid "(Default: Latest stuff from our blog)"
-msgstr "(គំរូដើម: របស់ថ្មីបំផុតពីប្លុករបស់យើង)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1033 framework/tinymce/tinymce.php:1095
 #: framework/tinymce/tinymce.php:1164
 msgid "Limit"
-msgstr "ការកំណត់"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1040 framework/tinymce/tinymce.php:1102
 msgid "(Only numbers! Default: 8)"
-msgstr "(សំរាប់តែលេខ! គំរូដើម: 8)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1049 framework/tinymce/tinymce.php:1112
 #: framework/tinymce/tinymce.php:1181
 msgid "Categories"
-msgstr "Categories"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1057 framework/tinymce/tinymce.php:1120
 #: framework/tinymce/tinymce.php:1189
 msgid "All"
-msgstr "ទាំងអស់"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1067 framework/tinymce/tinymce.php:1130
 #: framework/tinymce/tinymce.php:1199
 msgid "(You can select multiple categories by pressing CTRL key)"
-msgstr "(អ្នកអាចជ្រើសរើសប្រភេទcategoriesជាច្រើនដោយចុចCTRL ឃី)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1086
 msgid "(Default: Latest projects)"
-msgstr "(គំរូដើម:​គំរោងថ្មីបំផុត)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1142 framework/tinymce/tinymce.php:1275
 msgid "Column"
-msgstr "ជួរឈរ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1171
 msgid "(Only numbers! Default: All)"
-msgstr "(សំរាប់តែលេខ! គំរូដើម: ទាំងអស់)"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1211
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1219
 msgid "Select slider"
-msgstr "ជ្រើសរើសស្លាយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1252
 msgid "Select team member"
-msgstr "ជ្រើសរើសសមាជិកក្រុម"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1295
 msgid "Last column"
-msgstr "ជួរឈរចុងក្រោយ"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1313
 msgid "Map shortcode"
-msgstr "Map shortcode"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1349
 msgid "Current shortcode with all available attributes"
-msgstr "shortcode​នេះជាមួយតំលៃរបស់វាដែលអាចប្រើបាន"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1350
 msgid "red"
-msgstr "ក្រហម"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1350
 msgid "required"
-msgstr "ទាមទារអោយមាន"
+msgstr ""
 
 #: framework/tinymce/tinymce.php:1370
 msgid "Insert Shortcode"
-msgstr "បញ្ជូល Shortcode"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:13
 msgid "Facebook Like Box"
-msgstr "Facebook Like Box"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:15
 msgid "BFC - Facebook Likebox"
-msgstr "BFC - Facebook Likebox"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:67
 msgid "Facebook"
-msgstr "ហ្វេសប៊ុក"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:77
 #: framework/widgets/posts-type-widget.php:82
 #: framework/widgets/video-widget.php:78
 msgid "Title:"
-msgstr "ចំណងជើង:"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:82
 msgid "Width:"
-msgstr "បណ្តោយ:"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:87
 msgid "Height:"
-msgstr "កំពស់:"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:92
 msgid "Background Color: (color code without #)"
-msgstr "ពណ៍រូបភាពខាងក្រោយ: (ដាក់កូតពណ៏ដោយគ្មានសញ្ញា #)"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:96
 msgid "Box border Color: (color code without #)"
-msgstr "ពណ៏ស៊ុំប្រអប់: (ដាក់កូតពណ័ដោយគ្មានសញ្ញា #)"
+msgstr ""
 
 #: framework/widgets/fb-likebox-widget.php:101
 msgid "Facebook Page URL:"
-msgstr "ទំព័រFacebook Page​ជា  URL:"
+msgstr ""
 
 #: framework/widgets/posts-type-widget.php:13
 msgid "Widget display Posts from a certain category"
-msgstr "Widget​បង្ហាញPosts​ប្រភេទcategoryមួយជាក់លាក់"
+msgstr ""
 
 #: framework/widgets/posts-type-widget.php:14
 msgid "BFC - Posts by Category"
-msgstr "BFC - Posts ដោយប្រភេទCategory"
+msgstr ""
 
 #: framework/widgets/posts-type-widget.php:76
 msgid "Post Type"
-msgstr "ប្រភេទPost"
+msgstr ""
 
 #: framework/widgets/posts-type-widget.php:86
 msgid "select category:"
-msgstr "ជ្រើសរើសប្រភេទcategory:"
+msgstr ""
 
 #: framework/widgets/posts-type-widget.php:102
 msgid "Number Of Posts:"
-msgstr "ចំនួននៃការ Posts:"
+msgstr ""
 
 #: framework/widgets/text-image-widget.php:15
 msgid "Arbitrary link with a simple image."
-msgstr "Arbitrary​ភ្ជាប់ជាមួយរូបភាពធម្មតា"
+msgstr ""
 
 #: framework/widgets/text-image-widget.php:20
 msgid "BFC: Text With Image"
-msgstr "BFC: អត្តបទជាមួយរូបភាព"
+msgstr ""
 
 #: framework/widgets/video-widget.php:17
 msgid "A widget that allows to view video to be added to a sidebar"
-msgstr "widget​មួយដែលអាចអនុញ្ញាត្តិបង្ហាញvideoហើយត្រូវបានគេបន្ថែមទៅកានsidebar់"
+msgstr ""
 
 #: framework/widgets/video-widget.php:20
 msgid "BFC: Video"
-msgstr "BFC: Video"
+msgstr ""
 
 #: framework/widgets/video-widget.php:74
 msgid "Video"
-msgstr "Video"
+msgstr ""
 
 #: framework/widgets/video-widget.php:83
 msgid "type"
-msgstr "ប្រភេទ"
+msgstr ""
 
 #: framework/widgets/video-widget.php:92
 msgid "Video ID:"
-msgstr "Video ID:"
+msgstr ""

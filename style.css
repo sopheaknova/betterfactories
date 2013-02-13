@@ -561,6 +561,16 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		.heading-image{
 			height:157px;	
 		}
+				.no-slide-status{
+					height:380px;
+					position:relative;	
+				}
+				.no-slide-status .wrap-status{
+					position:absolute;
+					top:170px;	
+					left:320px;
+					text-align:center;
+				}
 				.slide-items{
 					height:380px;	
 				}
