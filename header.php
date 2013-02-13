@@ -33,7 +33,8 @@
 			slideExpr: '.slide-items',
 			pager:  '.nav-slide',
 			timeout:   <?php echo $data['cycle_timeout']; ?>,
-			delay: <?php echo $data['cycle_speed']; ?>
+			delay: <?php echo $data['cycle_speed']; ?>,
+			pause: true
 		});
 		
 	});
@@ -50,7 +51,8 @@
 			slideExpr: '.staff-slide',
 			pager:  '.nav-slide',
 			timeout:   <?php echo $data['cycle_timeout']; ?>,
-			delay: <?php echo $data['cycle_speed']; ?>
+			delay: <?php echo $data['cycle_speed']; ?>,
+			pause: true
 		});
 		
 	});
@@ -71,6 +73,7 @@
 			after: feature_media_after,
 			before: feature_media_before,
 			pager: 'ul.slider-nav',
+			pause: true,
 			pagerAnchorBuilder: function(idx, slide) { 
 				// return selector string for existing anchor 
 				return 'ul.slider-nav li:eq(' + idx + ') a'; 
@@ -113,15 +116,24 @@
 
 <body <?php body_class(); ?>>
 
-<header id="header" class="container clearfix">
+<header id="header" class="custom-bg">
+<div class="container clearfix">
 	<div class="logo">
 	  	<h2>
         <a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
+        <?php if ( is_home() ) { ?>
         	<?php if($data['theme_logo'] !== '') : ?>
             <img src="<?php echo $data['theme_logo']; ?>" alt="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
             <?php else: ?>
             <h1><?php bloginfo('name'); ?></h1>
             <?php endif; ?>
+        <?php } else { ?>
+        	<?php if($data['subpage_logo'] !== '') : ?>
+        	<img src="<?php echo $data['subpage_logo']; ?>" alt="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
+            <?php else: ?>
+            <h1><?php bloginfo('name'); ?></h1>
+            <?php endif; ?>
+        <?php } ?>    
         </a>
         </h2>
   	</div><!-- end .logo -->
@@ -164,7 +176,7 @@
         	<p>
             <?php sp_excerpt_length(105); ?>
             </p>
-            <a class="learn-more" href="#"><?php _e( 'Learn more »', 'sptheme' ); ?></a>
+            <a class="learn-more button" href="<?php the_permalink(); ?>"><?php _e( 'Learn more »', 'sptheme' ); ?></a>
         </div>
       </div>  
         
@@ -180,11 +192,11 @@
     <?php echo sp_check_heading_image(); ?>
     </div>
     <?php endif; // end is_front_page?>
-    
-</header><!-- end .container.clearfix -->
+</div><!-- end .container.clearfix -->
+</header><!-- end #header -->
 
-<nav id="menu-bar" class="clearfix">
-<div class="container">
+<nav id="menu-bar">
+<div class="container clearfix">
     <?php echo sp_main_navigation(); ?>
     <?php get_search_form(); ?>
 </div>

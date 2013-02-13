@@ -52,7 +52,7 @@ Template Name: Publication Reports Page
     ?>
     <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
     <div class="entry-meta">
-        <?php echo sp_post_meta(); ?>
+        <span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
     </div><!-- end .entry-meta -->
     <p>
     <?php sp_excerpt_length(90); ?>
@@ -64,7 +64,7 @@ Template Name: Publication Reports Page
     
     <div class="more-posts">
     <ul>
-    <?php $report_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'cat' => $cat->term_id)); ?>	
+    <?php $report_query = new WP_Query(array('posts_per_page' => '5', 'offset' => '1', 'cat' => $cat->term_id)); ?>	
     <?php if ($report_query->have_posts()) : while ( $report_query->have_posts() ) : $report_query->the_post(); ?>
     <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
     <?php

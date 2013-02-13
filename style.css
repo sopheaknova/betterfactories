@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	line-height: 1.25;
 	margin-bottom: 10px;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Droid Sans', Arial, sans-serif;
 }
 
 h3, h4, h5 { font-weight: 600; }
@@ -429,6 +429,10 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	line-height:44px;
 	font-family: 'Droid Sans', sans-serif;
 }
+#menu-bar .container{
+	background:url(images/menu-shadow.png) 50% 46px no-repeat;	
+	padding-bottom:5px;
+}
 
 	ul.menu-nav {
 		margin-bottom:0;
@@ -531,7 +535,9 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	/* -------------------------------------------------- */
 	#header{
 		margin-bottom:1px;
+		background-color:#f35f29;
 	}
+	.home .custom-bg{background-color:#FCFCFC!important;}
 		.logo{
 			position:absolute;
 			z-index:11;
@@ -541,6 +547,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		.language{position:absolute; z-index:12; padding:3px; right:2px; top:2px;-moz-box-shadow: 0 1px 1px 0 #333; -webkit-box-shadow: 0 1px 1px 0 #333; box-shadow: 0 1px 1px 0 #333; background:#ffffff;}
 		.language ul{margin-bottom:0; font-size:11px;}
 		.language li{list-style:none; display:inline-block;margin-left:0; padding:0 3px;}
+		.language li.kh{font-family:'Suwannaphum', Arial;}
 		
 		/* -------------------------------------------------- */
 		/*	Homepage
@@ -549,13 +556,11 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 			width:980px;
 			height:380px;
 			overflow:hidden;
+			position:relative;
 		}
 		.heading-image{
 			height:157px;	
 		}
-			.featured-home{
-				position:relative;	
-			}
 				.slide-items{
 					height:380px;	
 				}
@@ -595,8 +600,8 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 			.featured-home .caption h4 a{
 				color:#F8F8F8;
 				display: inline;
-				font-family: 'Droid Sans', sans-serif;
-				font-size: 24px;
+				font-family: 'Droid Sans', Arial, sans-serif;
+				font-size: 20px;
 				font-weight: bold;	
 				text-transform:uppercase;
 				letter-spacing:1px;
@@ -812,6 +817,9 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		width:150px;
 		margin:20px 0 0;	
 	}
+	.zh-hans form.contact-page .message{
+		width:615px;	
+	}
 	
 	/* -------------------------------------------------- */
 	/*	Main
@@ -860,7 +868,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	.widget { margin: 0 0 30px;}
 	/*.widget{ font-size:0.9em; }*/
 
-		#sidebar .widget h5, #home-sidebar .widget h5{
+		.widget h5{
 			font-size:16px;
 			font-weight:normal;	
 			margin-bottom:0;
@@ -878,7 +886,9 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		}
 		
 		.widget .entry-meta{
-			margin-bottom:5px;	
+			margin-bottom:5px;
+			color:#AEAEAE;
+			font-size:12px;	
 		}
 		
 		.video-widget{
@@ -1406,7 +1416,7 @@ table tbody tr:hover td {
 		display:inline;	
 		color: #4e4e4e;
 		font-weight: 700;
-		font-family: 'Droid Sans', sans-serif;
+		font-family: 'Droid Sans', Arial, sans-serif;
 		font-size:18px;
 	}
 	
@@ -1431,6 +1441,9 @@ table tbody tr:hover td {
 		width:375px;
 		height:50px;
 	}	
+	.zh-hans .icon-email-newsletter{
+		margin-left:75px;
+	}
 
 /* -------------------------------------------------- */
 /*	Pagination

@@ -16,15 +16,11 @@
 	?>	
 		<div class="non-widget">
 		<h3><?php _e('About This Sidebar', 'sptheme'); ?></h3>
-		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place Newsletter widgets into the <strong><em>Home sidebar 1</em></strong> Area', 'sptheme'); ?></p>
+		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place text widgets into the <strong><em>Home sidebar 1</em></strong> Area', 'sptheme'); ?></p>
 		</div>
 	<?php	
 		endif;
 	?>
-    	<!--<div class="promo-msg">
-		<h4><strong>Better Factories Cambodia</strong> monitor factories, <strong>train management</strong> and <strong>workers</strong>, and provide guidance and advice on factory improvements that help enterprises preserve profits while respecting workers' rights.</h4>
-        <p class="clients-link">List of all factories monitored by BFC. <a href="http://localhost:8888/betterfactory/?page_id=975">Check it out!</a></p>
-      </div>--><!-- end .promo-msg -->
     </div>
     <div class="one_third last">
     <?php 
@@ -33,16 +29,11 @@
 	?>	
 		<div class="non-widget">
 		<h3><?php _e('About This Sidebar', 'sptheme'); ?></h3>
-		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place Newsletter widgets into the <strong><em>Home Sidebar 2</em></strong> Area', 'sptheme'); ?></p>
+		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place Register widgets into the <strong><em>Home Sidebar 2</em></strong> Area', 'sptheme'); ?></p>
 		</div>
 	<?php	
 		endif;
 	?>
-    <!--	<div class="services-signup">
-    	<h4>Please join us!</h4>
-        <p>If you are a buyer or factory that would like to join our program or sign up for a training course, please</p>
-        <a class="button large" href="http://localhost:8888/betterfactory/?page_id=721">REGISTER TODAY</a>
-        </div>-->
     </div>
     <div class="clear"></div>
     
@@ -79,13 +70,17 @@
             
             <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
             <div class="entry-meta">
-				<?php echo sp_post_meta(); ?>
+				<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
             </div><!-- end .entry-meta -->
             <p>
             <?php sp_excerpt_length(150); ?>
             </p>
 		<?php
         endwhile;
+		else:
+		?>
+		<?php _e( $category_name.' are coming soon.', 'sptheme' ); ?>
+		<?php	  
         endif;
         ?>	
             
@@ -118,14 +113,14 @@
             <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
 			<?php } ?>
             <div class="entry-meta">
-                <?php echo sp_post_meta(); ?>
+                <span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
             </div><!-- end .entry-meta -->
                 
 			<?php
             endwhile;
             else:
             ?>
-            <?php _e( 'Video are coming soon.', 'sptheme' ); ?>
+            <?php _e( $category_name.' are coming soons.', 'sptheme' ); ?>
             <?php	  
             endif; 
             ?>    
@@ -153,14 +148,14 @@
                 <li>
                     <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
                     <div class="entry-meta">
-                        <span class="title"><?php _e( 'Posted on: ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
+                        <span class="title"><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
                     </div>
                 </li>
             <?php
             endwhile;
             else:
             ?>
-            <?php _e( 'Latest news are coming soon.', 'sptheme' ); ?>
+            <?php _e( $category_name.' are coming soon.', 'sptheme' ); ?>
             <?php	  
             endif;
             ?>    

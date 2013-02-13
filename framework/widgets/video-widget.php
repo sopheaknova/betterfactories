@@ -14,7 +14,7 @@ class sp_Video_Widgets extends WP_Widget {
 	function sp_Video_Widgets() {
 	
 		/* Widget settings. */
-		$widget_ops = array('classname' => 'o2-videos', 'description' => esc_html__('A widget that allows to view video to be added to a sidebar', 'sp_framework'));
+		$widget_ops = array('classname' => 'o2-videos', 'description' => esc_html__('A widget that allows to view video to be added to a sidebar', 'sptheme'));
 		
 		/* Create the widget. */
 		$this->WP_Widget('o2-videos', esc_html__('BFC: Video', 'sptheme'), $widget_ops );

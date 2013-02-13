@@ -8,7 +8,7 @@
 	?>	
 		<div class="non-widget">
 		<h3>About This Sidebar</h3>
-		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place Newsletter widgets into the <strong><em>Footer Bottom sidebar</em></strong> Area', 'sptheme'); ?></p>
+		<p class="noside"><?php _e('To edit this sidebar, go to admin backend\'s <strong><em>Appearance -&gt; Widgets</em></strong> and place Newsletter widgets into the <strong><em>Footer Bottom Sidebar</em></strong> Area', 'sptheme'); ?></p>
 		</div>
 	<?php	
 		endif;

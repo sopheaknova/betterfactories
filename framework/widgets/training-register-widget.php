@@ -30,7 +30,7 @@ class sp_training_register_widget extends WP_Widget {
 		
 		echo $txt; 
 	?>
-        <a class="button large" href="<?php echo $link_btn; ?>">REGISTER TODAY</a>
+        <a class="button large" href="<?php echo $link_btn; ?>"><?php echo $signup_btn; ?></a>
 	<?php	
 		 echo $after_widget;
 		

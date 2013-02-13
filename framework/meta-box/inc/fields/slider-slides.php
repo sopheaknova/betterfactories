@@ -97,19 +97,19 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 
 						$html .= '<li class="slide postbox">
 
-									<div class="handlediv" title="' . __('Click to toggle', 'ss_framework') . '">&nbsp;</div>
+									<div class="handlediv" title="' . __('Click to toggle', 'sptheme') . '">&nbsp;</div>
 
-									<h3 class="hndle"><span>' . __('Slide', 'ss_framework') . '</span></h3>
+									<h3 class="hndle"><span>' . __('Slide', 'sptheme') . '</span></h3>
 
 									<div class="inside">
 
 										<div class="slider-slide-tabs">
 
 											<ul>
-												<li><a href="#slide-image">' . __('Image', 'ss_framework') . '</a></li>
-												<li><a href="#slide-button">' . __('Button', 'ss_framework') . '</a></li>
-												<li><a href="#slide-content">' . __('Content', 'ss_framework') . '</a></li>
-												<li><a href="#slide-link">' . __('Link', 'ss_framework') . '</a></li>
+												<li><a href="#slide-image">' . __('Image', 'sptheme') . '</a></li>
+												<li><a href="#slide-button">' . __('Button', 'sptheme') . '</a></li>
+												<li><a href="#slide-content">' . __('Content', 'sptheme') . '</a></li>
+												<li><a href="#slide-link">' . __('Link', 'sptheme') . '</a></li>
 											</ul>
 
 											<div id="slide-image" class="tabs-content">
@@ -117,12 +117,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Image URL', 'ss_framework') . '</label>
+														<label>' . __('Image URL', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<input type="text" name="slide-img-src[]" class="rwmb-text" size="30" value="' . $slide_img_src . '">
-														<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'ss_framework') . '">
+														<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'sptheme') . '">
 													</div><!-- end .rwmb-input -->
 
 												</div><!-- end .rwmb-field -->											
@@ -134,13 +134,13 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Button Type', 'ss_framework') . '</label>
+														<label>' . __('Button Type', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<select name="slide-button-type[]" class="rwmb-select">
-															<option value="" ' . selected( $slide_button_type, "", false ) . '>' . __('Text', 'ss_framework') . '</option>
-															<option value="image" ' . selected( $slide_button_type, "image", false ) . '>' . __('Image', 'ss_framework') . '</option>
+															<option value="" ' . selected( $slide_button_type, "", false ) . '>' . __('Text', 'sptheme') . '</option>
+															<option value="image" ' . selected( $slide_button_type, "image", false ) . '>' . __('Image', 'sptheme') . '</option>
 														</select>
 													</div><!-- end .rwmb-input -->
 
@@ -151,12 +151,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Dropcap', 'ss_framework') . '</label>
+															<label>' . __('Dropcap', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
 															<input type="text" name="slide-button-dropcap[]" class="rwmb-text" size="30" value="' . $slide_button_dropcap . '">
-															<p class="description">' . __('(optional)', 'ss_framework') . '</p>
+															<p class="description">' . __('(optional)', 'sptheme') . '</p>
 														</div><!-- end .rwmb-input -->
 
 													</div><!-- end .rwmb-field -->
@@ -164,7 +164,7 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Title', 'ss_framework') . '</label>
+															<label>' . __('Title', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
@@ -176,12 +176,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Description', 'ss_framework') . '</label>
+															<label>' . __('Description', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
 															<input type="text" name="slide-button-description[]" class="rwmb-text" size="30" value="' . $slide_button_description . '">
-															<p class="description">' . __('(optional)', 'ss_framework') . '</p>
+															<p class="description">' . __('(optional)', 'sptheme') . '</p>
 														</div><!-- end .rwmb-input -->
 
 													</div><!-- end .rwmb-field -->
@@ -193,12 +193,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Image URL', 'ss_framework') . '</label>
+															<label>' . __('Image URL', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
 															<input type="text" name="slide-button-img-src[]" class="rwmb-text" size="30" value="' . $slide_button_img_src . '">
-															<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'ss_framework') . '">
+															<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'sptheme') . '">
 														</div><!-- end .rwmb-input -->
 
 													</div><!-- end .rwmb-field -->
@@ -212,12 +212,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Slide Content', 'ss_framework') . '</label>
+														<label>' . __('Slide Content', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<textarea name="slide-content[]" class="rwmb-textarea large-text" cols="60" rows="5">' . $slide_content . '</textarea>
-														<p class="description">' . __('(optional) HTML tags and WordPress shortcodes are allowed.', 'ss_framework') . '</p>
+														<p class="description">' . __('(optional) HTML tags and WordPress shortcodes are allowed.', 'sptheme') . '</p>
 													</div><!-- end .rwmb-input -->
 
 												</div><!-- end .rwmb-field -->
@@ -229,14 +229,14 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Lightbox', 'ss_framework') . '</label>
+														<label>' . __('Lightbox', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<select name="slide-link-lightbox[]" class="rwmb-select">
-															<option value="" ' . selected( $slide_link_lightbox, "", false ) . '>' . __('Disabled', 'ss_framework') . '</option>
-															<option value="single-image" ' . selected( $slide_link_lightbox, "image", false ) . '>' . __('Image', 'ss_framework') . '</option>
-															<option value="iframe" ' . selected( $slide_link_lightbox, "iframe", false ) . '>' . __('Iframe', 'ss_framework') . '</option>
+															<option value="" ' . selected( $slide_link_lightbox, "", false ) . '>' . __('Disabled', 'sptheme') . '</option>
+															<option value="single-image" ' . selected( $slide_link_lightbox, "image", false ) . '>' . __('Image', 'sptheme') . '</option>
+															<option value="iframe" ' . selected( $slide_link_lightbox, "iframe", false ) . '>' . __('Iframe', 'sptheme') . '</option>
 														</select>
 													</div><!-- end .rwmb-input -->
 
@@ -245,13 +245,13 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('URL', 'ss_framework') . '</label>
+														<label>' . __('URL', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<input type="text" name="slide-link-url[]" class="rwmb-text" size="30" value="' . $slide_link_url . '">
-														<input type="button" name="upload-image" class="upload-image slide-link-lightbox" value="' . __('Upload Image', 'ss_framework') . '">
-														<p class="description">' . __('(optional) Any valid URL is allowed, doesn\'t have to be an image', 'ss_framework') . '.</p>
+														<input type="button" name="upload-image" class="upload-image slide-link-lightbox" value="' . __('Upload Image', 'sptheme') . '">
+														<p class="description">' . __('(optional) Any valid URL is allowed, doesn\'t have to be an image', 'sptheme') . '.</p>
 													</div><!-- end .rwmb-input -->
 
 												</div><!-- end .rwmb-field -->
@@ -260,7 +260,7 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 
 										</div><!-- end .slider-slide-tabs -->
 
-										<button class="remove-slide button-secondary">' . __('Remove Slide', 'ss_framework') . '</button>
+										<button class="remove-slide button-secondary">' . __('Remove Slide', 'sptheme') . '</button>
 										
 										<input type="hidden" name="' . $id . '[]" class="rwmb-text" size="30" value="">
 								
@@ -275,19 +275,19 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 
 						$html .= '<li class="slide postbox">
 
-									<div class="handlediv" title="' . __('Click to toggle', 'ss_framework') . '">&nbsp;</div>
+									<div class="handlediv" title="' . __('Click to toggle', 'sptheme') . '">&nbsp;</div>
 
-									<h3 class="hndle"><span>' . __('Slide', 'ss_framework') . '</span></h3>
+									<h3 class="hndle"><span>' . __('Slide', 'sptheme') . '</span></h3>
 
 									<div class="inside">
 
 										<div class="slider-slide-tabs">
 
 											<ul>
-												<li><a href="#slide-image">' . __('Image', 'ss_framework') . '</a></li>
-												<li><a href="#slide-button">' . __('Button', 'ss_framework') . '</a></li>
-												<li><a href="#slide-content">' . __('Content', 'ss_framework') . '</a></li>
-												<li><a href="#slide-link">' . __('Link', 'ss_framework') . '</a></li>
+												<li><a href="#slide-image">' . __('Image', 'sptheme') . '</a></li>
+												<li><a href="#slide-button">' . __('Button', 'sptheme') . '</a></li>
+												<li><a href="#slide-content">' . __('Content', 'sptheme') . '</a></li>
+												<li><a href="#slide-link">' . __('Link', 'sptheme') . '</a></li>
 											</ul>
 
 											<div id="slide-image" class="tabs-content">
@@ -295,12 +295,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Image URL', 'ss_framework') . '</label>
+														<label>' . __('Image URL', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<input type="text" name="slide-img-src[]" class="rwmb-text" size="30" value="">
-														<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'ss_framework') . '">
+														<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'sptheme') . '">
 													</div><!-- end .rwmb-input -->
 
 												</div><!-- end .rwmb-field -->											
@@ -312,13 +312,13 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Button Type', 'ss_framework') . '</label>
+														<label>' . __('Button Type', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<select name="slide-button-type[]" class="rwmb-select">
-															<option value="" selected>' . __('Text', 'ss_framework') . '</option>
-															<option value="image">' . __('Image', 'ss_framework') . '</option>
+															<option value="" selected>' . __('Text', 'sptheme') . '</option>
+															<option value="image">' . __('Image', 'sptheme') . '</option>
 														</select>
 													</div><!-- end .rwmb-input -->
 
@@ -329,12 +329,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Dropcap', 'ss_framework') . '</label>
+															<label>' . __('Dropcap', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
 															<input type="text" name="slide-button-dropcap[]" class="rwmb-text" size="30" value="">
-															<p class="description">' . __('(optional)', 'ss_framework') . '</p>
+															<p class="description">' . __('(optional)', 'sptheme') . '</p>
 														</div><!-- end .rwmb-input -->
 
 													</div><!-- end .rwmb-field -->
@@ -342,7 +342,7 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Title', 'ss_framework') . '</label>
+															<label>' . __('Title', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
@@ -354,12 +354,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Description', 'ss_framework') . '</label>
+															<label>' . __('Description', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
 															<input type="text" name="slide-button-description[]" class="rwmb-text" size="30" value="">
-															<p class="description">' . __('(optional)', 'ss_framework') . '</p>
+															<p class="description">' . __('(optional)', 'sptheme') . '</p>
 														</div><!-- end .rwmb-input -->
 
 													</div><!-- end .rwmb-field -->
@@ -371,12 +371,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 													<div class="rwmb-field">
 
 														<div class="rwmb-label">
-															<label>' . __('Image URL', 'ss_framework') . '</label>
+															<label>' . __('Image URL', 'sptheme') . '</label>
 														</div><!-- end .rwmb-label -->
 
 														<div class="rwmb-input">
 															<input type="text" name="slide-button-img-src[]" class="rwmb-text" size="30" value="">
-															<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'ss_framework') . '">
+															<input type="button" name="upload-image" class="upload-image" value="' . __('Upload Image', 'sptheme') . '">
 														</div><!-- end .rwmb-input -->
 
 													</div><!-- end .rwmb-field -->
@@ -390,12 +390,12 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Slide Content', 'ss_framework') . '</label>
+														<label>' . __('Slide Content', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<textarea name="slide-content[]" class="rwmb-textarea large-text" cols="60" rows="5"></textarea>
-														<p class="description">' . __('(optional) HTML tags and WordPress shortcodes are allowed.', 'ss_framework') . '</p>
+														<p class="description">' . __('(optional) HTML tags and WordPress shortcodes are allowed.', 'sptheme') . '</p>
 													</div><!-- end .rwmb-input -->
 
 												</div><!-- end .rwmb-field -->
@@ -407,14 +407,14 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('Lightbox', 'ss_framework') . '</label>
+														<label>' . __('Lightbox', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<select name="slide-link-lightbox[]" class="rwmb-select">
-															<option value=""  selected>' . __('Disabled', 'ss_framework') . '</option>
-															<option value="single-image">' . __('Image', 'ss_framework') . '</option>
-															<option value="iframe">' . __('Iframe', 'ss_framework') . '</option>
+															<option value=""  selected>' . __('Disabled', 'sptheme') . '</option>
+															<option value="single-image">' . __('Image', 'sptheme') . '</option>
+															<option value="iframe">' . __('Iframe', 'sptheme') . '</option>
 														</select>
 													</div><!-- end .rwmb-input -->
 
@@ -423,13 +423,13 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 												<div class="rwmb-field">
 
 													<div class="rwmb-label">
-														<label>' . __('URL', 'ss_framework') . '</label>
+														<label>' . __('URL', 'sptheme') . '</label>
 													</div><!-- end .rwmb-label -->
 
 													<div class="rwmb-input">
 														<input type="text" name="slide-link-url[]" class="rwmb-text" size="30" value="">
-														<input type="button" name="upload-image" class="upload-image slide-link-lightbox" value="' . __('Upload Image', 'ss_framework') . '">
-														<p class="description">' . __('(optional) Any valid URL is allowed, doesn\'t have to be an image', 'ss_framework') . '.</p>
+														<input type="button" name="upload-image" class="upload-image slide-link-lightbox" value="' . __('Upload Image', 'sptheme') . '">
+														<p class="description">' . __('(optional) Any valid URL is allowed, doesn\'t have to be an image', 'sptheme') . '.</p>
 													</div><!-- end .rwmb-input -->
 
 												</div><!-- end .rwmb-field -->
@@ -438,7 +438,7 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 
 										</div><!-- end .slider-slide-tabs -->
 
-										<button class="remove-slide button-secondary">' . __('Remove Slide', 'ss_framework') . '</button>
+										<button class="remove-slide button-secondary">' . __('Remove Slide', 'sptheme') . '</button>
 										
 										<input type="hidden" name="' . $id . '[]" class="rwmb-text" size="30" value="">
 								
@@ -450,7 +450,7 @@ if ( ! class_exists( 'RWMB_Slider_Slides_Field' ) )
 
 				$html .= '</ul><!-- end #slider-slides -->
 
-						  <p> <button id="add-slider-slide" class="button-primary">' . __('Add New Slide', 'ss_framework') . '</button> </p>
+						  <p> <button id="add-slider-slide" class="button-primary">' . __('Add New Slide', 'sptheme') . '</button> </p>
 
 						  <input type="hidden" name="slider-meta-info" value="' . $post->ID . '|' . $id . '">';
 

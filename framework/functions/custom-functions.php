@@ -10,7 +10,7 @@ if( !function_exists('languages_list_header')) {
 		if(!empty($languages)){
 			echo '<div class="language"><ul>';
 			foreach($languages as $l){
-				echo '<li>';
+				echo '<li class="'.$l['language_code'].'">';
 				
 				if(!$l['active']) echo '<a href="'.$l['url'].'">';
 				echo $l['native_name'];

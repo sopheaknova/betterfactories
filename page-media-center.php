@@ -37,12 +37,13 @@ Template Name: Media Center Page
         <div class="caption">
         	<h4><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
         	<p>
-            <?php sp_excerpt_length(120); ?>
+            <?php sp_excerpt_length(100); ?>
             </p>
         </div>
         </div><!-- end .cat-slide-items -->
       <?php
 	  endwhile;
+	  
 	  endif;
 	  ?>   
         <ul class="slider-nav">
@@ -134,7 +135,7 @@ Template Name: Media Center Page
         <?php endif; ?>
             <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
             <div class="entry-meta">
-				<?php echo sp_post_meta(); ?>
+				<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
             </div><!-- end .entry-meta -->
             <p>
             <?php sp_excerpt_length(90); ?>
@@ -145,7 +146,7 @@ Template Name: Media Center Page
         ?>
         <div class="more-posts">
             <ul>
-        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'category_name' => $category_name)); ?>	
+        <?php $media_query = new WP_Query(array('posts_per_page' => '4', 'offset' => '1', 'cat' => $category_id)); ?>	
         <?php if ($media_query->have_posts()) : while ( $media_query->have_posts() ) : $media_query->the_post(); ?>
         <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
         <?php
@@ -153,7 +154,7 @@ Template Name: Media Center Page
         endif;
         ?>
             </ul>
-        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_name ); ?> »</a>   
+        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more ', 'sptheme')?> <?php echo $category_name; ?> »</a>   
         </div><!-- end .more-posts-->
             
         </div>
@@ -186,7 +187,7 @@ Template Name: Media Center Page
 		<?php } ?>
         
 		<div class="entry-meta">
-			<?php echo sp_post_meta(); ?>
+			<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
 		</div><!-- end .entry-meta -->
             
         <?php
@@ -200,7 +201,7 @@ Template Name: Media Center Page
         
         <div class="more-posts">
             <ul>
-        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'category_name' => $category_name)); ?>	
+        <?php $media_query = new WP_Query(array('posts_per_page' => '4', 'offset' => '1', 'cat' => $category_id)); ?>	
         <?php if ($media_query->have_posts()) : while ( $media_query->have_posts() ) : $media_query->the_post(); ?>
         <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
         <?php
@@ -208,7 +209,7 @@ Template Name: Media Center Page
         endif;
         ?>
             </ul>
-        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_name ); ?> »</a>   
+        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more ', 'sptheme')?> <?php echo $category_name; ?> »</a>    
         </div><!-- end .more-posts-->
             
         </div>
@@ -241,7 +242,7 @@ Template Name: Media Center Page
         <?php endif; ?>
             <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
             <div class="entry-meta">
-				<?php echo sp_post_meta(); ?>
+				<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
             </div><!-- end .entry-meta -->
             <p>
             <?php sp_excerpt_length(90); ?>
@@ -253,7 +254,7 @@ Template Name: Media Center Page
         
         <div class="more-posts">
             <ul>
-        <?php $media_query = new WP_Query(array('posts_per_page' => '3', 'offset' => '1', 'category_name' => $category_name)); ?>	
+        <?php $media_query = new WP_Query(array('posts_per_page' => '4', 'offset' => '1', 'cat' => $category_id)); ?>	
         <?php if ($media_query->have_posts()) : while ( $media_query->have_posts() ) : $media_query->the_post(); ?>
         <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
         <?php
@@ -261,7 +262,7 @@ Template Name: Media Center Page
         endif;
         ?>
             </ul>
-        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more', 'sptheme')?> <?php echo get_cat_name( $category_name ); ?> »</a>   
+        <a href="<?php echo esc_url( $category_link ); ?>" class="learn-more"><?php _e('See more ', 'sptheme')?> <?php echo $category_name; ?> »</a>    
         </div><!-- end .more-posts-->
         
         </div>

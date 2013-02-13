@@ -1,0 +1,9 @@
+body {
+	font: 13px/1.5 'Suwannaphum', Arial;
+}
+
+#menu-bar, #email-subscribe form label
+h1, h2, h3, h4, h5, h6, blockquote, 
+.wp-caption p.wp-caption-text, .featured-home .caption h4 a{
+	font-family:'Suwannaphum', Arial;
+}
