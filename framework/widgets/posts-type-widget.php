@@ -31,20 +31,25 @@ class sp_widget_posts_type extends WP_Widget {
 			global $post;
 ?>
 
-	
 		<ul class="blog-posts-widget">
-			<?php 
-			$category_id = get_cat_ID($category);
-			query_posts(array(   "ignore_sticky_posts" => 1, 'cat' => $category_id, 'showposts' => $count  )); 
-			if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-			?>
+		<?php 
+        $category_id = get_cat_ID($category);
+        
+        $args = array (
+            'cat' 	=> $category_id,
+            'posts_per_page'	=> $count
+        );
+        $posttype_query = new WP_Query($args);
+        if ($posttype_query->have_posts()) :
+        while ( $posttype_query->have_posts() ) : $posttype_query->the_post();
+        ?>
 
-		<li class="blog-post">
-                 
+		<li class="blog-post">       
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		<div class="entry-meta">
 		<?php _e( 'Posted on: ', 'sptheme' ); ?><?php echo sp_posted_on(); ?>
         </div><!-- end .entry-meta -->
+        
 		</li>
 
 			<?php endwhile; ?>

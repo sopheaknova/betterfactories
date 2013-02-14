@@ -117,21 +117,6 @@ function sp_widgets_init() {
 	
 	global $data;
 	
-	$generate_sidebars = $data['sidebar_options']; 
-	if($generate_sidebars){
-		foreach ($generate_sidebars as $sidebar) { 
-			if ( function_exists('register_sidebar') )
-			register_sidebar(array(
-			'name' 			=> $sidebar['title'],
-			'id'			=> $sidebar['title'],
-			'description' 	=> 'Widgets in this area will be shown in the sidebar.',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h6>',
-			));
-		}
-	}
 	// Main Widget Area
 	register_sidebar(array(
 		'name'          => __('Main Sidebar', 'sptheme'),
@@ -180,6 +165,22 @@ function sp_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h6>',
 	));
+	
+	$generate_sidebars = $data['sidebar_options']; 
+	if($generate_sidebars){
+		foreach ($generate_sidebars as $sidebar) { 
+			if ( function_exists('register_sidebar') )
+			register_sidebar(array(
+			'name' 			=> $sidebar['title'],
+			'id'			=> $sidebar['title'],
+			'description' 	=> 'Widgets in this area will be shown in the sidebar.',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h6>',
+			));
+		}
+	}
 	
 	
 	

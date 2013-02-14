@@ -34,6 +34,8 @@ Template Name: Publication Reports Page
     <aside class="one_third <?php if ( ($cat_items % 3) ==  0) echo 'last'; ?>">
     <div class="widget">
     <h3 class="widget-title"><a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>"><?php echo $cat->name; ?></a></h3>
+    
+    <?php if ($data['disable_cat_img'] != 'yes') :?>
     <?php if ($image) : ?>
     	<a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>">
         <img src="<?php echo $image;?>" alt="<?php the_title(); ?>" />
@@ -41,6 +43,7 @@ Template Name: Publication Reports Page
     <?php else:	?>
         <img src="<?php echo $cat_image_url; ?>" alt="Blank photo" />
     <?php endif; ?>
+    <?php endif; // end disable cat image ?>
     <?php
     $args = array (
             'cat' 	=> $cat->term_id,

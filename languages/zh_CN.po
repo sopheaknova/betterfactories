@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Betterfactories\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-13 16:14+0700\n"
-"PO-Revision-Date: 2013-02-13 16:16+0700\n"
+"PO-Revision-Date: 2013-02-13 16:59+0700\n"
 "Last-Translator: Dara <dara@fhi.org.kh>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1496,7 +1496,7 @@ msgstr "想要得到通知，当我们更新吗？在下面输入您的电子邮
 
 #: framework/widgets/newsletter-widget.php:26
 msgid "Email subscription"
-msgstr "邮件订阅"
+msgstr "得到的消息通过E-mail"
 
 #: framework/widgets/newsletter-widget.php:27
 msgid "Enter your email"
@@ -1504,7 +1504,7 @@ msgstr "输入您的电子邮件"
 
 #: framework/widgets/newsletter-widget.php:51
 msgid "Subscribe to our newsletter"
-msgstr "订阅我们的时事通讯"
+msgstr "得到的消息通过E-mail"
 
 #: framework/widgets/newsletter-widget.php:57
 msgid "feedburner name: (your name without http://feeds.feedburner.com/) "

@@ -275,6 +275,16 @@ $of_options[] = array( "name" => "Select Publication and Reports",
 					"type" => "select",
 					"options" => $of_categories
 					);					
+
+$of_options[] = array( "name" => "Disable category image",
+					"desc" => "If Yes, Will be disable category image in Publication and Reports landing page.",
+					"id" => "disable_cat_img",
+					"std" => "no",
+					"type" => "radio",
+					"options" => array(
+						'yes' => 'Yes',
+						'no' => 'No')
+					);					
 					
 // Contact
 $of_options[] = array( "name" => "Contact",

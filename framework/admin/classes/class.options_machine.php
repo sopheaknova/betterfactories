@@ -384,7 +384,7 @@ class Options_Machine {
 					$output .= '<div class="slider"><ul id="'.$value['id'].'" rel="'.$int.'">';
 					$slides = $data[$value['id']];
 					$count = count($slides);
-					/*if ($count < 2) {
+					if ($count < 2) {
 						$oldorder = 1;
 						$order = 1;
 						$output .= Options_Machine::optionsframework_sidebar_function($value['id'],$value['std'],$oldorder,$order,$int);
@@ -396,13 +396,6 @@ class Options_Machine {
 							$order = $i;
 							$output .= Options_Machine::optionsframework_sidebar_function($value['id'],$value['std'],$oldorder,$order,$int);
 						}
-					}*/	
-					$i = 0;
-					foreach ($slides as $slide) {
-						$oldorder = $slide['order'];
-						$i++;
-						$order = $i;
-						$output .= Options_Machine::optionsframework_sidebar_function($value['id'],$value['std'],$oldorder,$order,$int);
 					}
 							
 					$output .= '</ul>';
@@ -712,8 +705,10 @@ class Options_Machine {
 		//begin slider interface	
 		if (!empty($val['title'])) {
 			$sidebar .= '<li><div class="slide_header"><strong>'.stripslashes($val['title']).'</strong>';
+			$first_sidebar_name = stripslashes($val['title']);
 		} else {
 			$sidebar .= '<li><div class="slide_header"><strong>Sidebar '.$order.'</strong>';
+			$first_sidebar_name = 'Sidebar' .$order;
 		}
 		
 		$sidebar .= '<input type="hidden" class="slide of-input order" name="'. $id .'['.$order.'][order]" id="'. $id.'_'.$order .'_slide_order" value="'.$order.'" />';
@@ -723,7 +718,7 @@ class Options_Machine {
 		$sidebar .= '<div class="slide_body">';
 		
 		$sidebar .= '<label>Title</label>';
-		$sidebar .= '<input class="slide of-input of-slider-title" name="'. $id .'['.$order.'][title]" id="'. $id .'_'.$order .'_slide_title" value="'. stripslashes($val['title']) .'" />';
+		$sidebar .= '<input class="slide of-input of-slider-title" name="'. $id .'['.$order.'][title]" id="'. $id .'_'.$order .'_slide_title" value="'. $first_sidebar_name . '" />';
 	
 		$sidebar .= '<a class="slide_delete_button" href="#">Delete</a>';
 		$sidebar .= '<div class="clear"></div>' . "\n";
