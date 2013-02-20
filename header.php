@@ -116,24 +116,16 @@
 
 <body <?php body_class(); ?>>
 
-<header id="header" class="custom-bg">
+<header id="header">
 <div class="container clearfix">
 	<div class="logo">
 	  	<h2>
         <a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
-        <?php if ( is_home() ) { ?>
-        	<?php if($data['theme_logo'] !== '') : ?>
-            <img src="<?php echo $data['theme_logo']; ?>" alt="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
-            <?php else: ?>
-            <h1><?php bloginfo('name'); ?></h1>
-            <?php endif; ?>
-        <?php } else { ?>
-        	<?php if($data['subpage_logo'] !== '') : ?>
-        	<img src="<?php echo $data['subpage_logo']; ?>" alt="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
-            <?php else: ?>
-            <h1><?php bloginfo('name'); ?></h1>
-            <?php endif; ?>
-        <?php } ?>    
+		<?php if($data['theme_logo'] !== '') : ?>
+        <img src="<?php echo $data['theme_logo']; ?>" alt="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
+        <?php else: ?>
+        <h1><?php bloginfo('name'); ?></h1>
+        <?php endif; ?>
         </a>
         </h2>
   	</div><!-- end .logo -->
@@ -176,7 +168,7 @@
         <div class="caption">
         	<h4><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
         	<p>
-            <?php sp_excerpt_length(105); ?>
+            <?php echo sp_excerpt_length(15); ?>
             </p>
             <a class="learn-more button" href="<?php the_permalink(); ?>"><?php _e( 'Learn more »', 'sptheme' ); ?></a>
         </div>

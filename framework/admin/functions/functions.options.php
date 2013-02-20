@@ -147,14 +147,15 @@ $of_options[] = array( "name" => "Tracking Code",
 
 //Feature Slide
 
-$of_options[] = array( "name" => 'Feature Slider',
+$of_options[] = array( "name" => 'Featured Slideshow',
 						"type" => "heading",
 						"slug" => "feature"
 						);
 
-$of_options[] = array( "name" => 'Feature Category',
+$of_options[] = array( "name" => 'Slidshow Homepage',
 					"id" => "feature_category",
 					"type" => "select",
+					"desc" => "Please Slideshow category to show post as slideshow on homepage",
 					"options" => $of_categories
 					);
 
@@ -303,14 +304,14 @@ $of_options[] = array( "name" => "Disable value bellow in contact page",
 $of_options[] = array( "name" => "Latitude",
 					"desc" => "Latitude of google map see <a href='http://itouchmap.com'>itouchmap.com</a>",
 					"id" => "map_lat",
-					"std" => "11.551327",
+					"std" => "11.551249",
 					"type" => "text"
 					);
 
 $of_options[] = array( "name" => "Longitude",
 					"desc" => "Longitude of google map see <a href='http://itouchmap.com'>itouchmap.com</a>",
 					"id" => "map_long",
-					"std" => "104.928328",
+					"std" => "104.927920",
 					"type" => "text"
 					);										
 					
@@ -372,14 +373,7 @@ $of_options[] = array( "name" => "URl for ILO (International Labour Organization
 					"id" => "ilo_url",
 					"std" => "http://www.ilo.org",
 					"type" => "text"
-					);
-
-$of_options[] = array( "name" => "URl for IFC (International Finance Corporation)",
-					"desc" => "Enter the url of IFC website address",
-					"id" => "ifc_url",
-					"std" => "http://www.ifc.org",
-					"type" => "text"
-					);											
+					);										
 					
 $of_options[] = array( "name" => "Copyright",
 					"desc" => "footer copyrights text",

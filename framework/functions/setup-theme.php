@@ -1,19 +1,5 @@
 <?php
 
-if( !isset( $content_width ) )
-	$content_width = 600;
-
-if( !function_exists( 'sp_content_width' ) ) {
-    function sp_content_width() {
-		$has_sidebar = sp_check_page_layout();
-        if( !$has_sidebar || is_attachment() ) {
-            global $content_width;
-            $content_width = 960;
-        }
-    }
-}	
-add_action( 'template_redirect', 'sp_content_width' );
-	
 if( !function_exists('sp_theme_setup') ) {
 
 	function sp_theme_setup() {
@@ -39,8 +25,8 @@ if( !function_exists('sp_theme_setup') ) {
 		// Post thumbnails
 		add_theme_support('post-thumbnails');
 
-		add_image_size( 'thumbnail', 139, 105, true );
-		add_image_size( 'medium', 300, 200, true );
+		add_image_size( 'thumbnail', 228, null, true );
+		add_image_size( 'medium', 300, null, true );
 		add_image_size( 'large', 600, null, true );
 		/*add_image_size( 'portrait', 228, 9999 );
 		add_image_size( 'landscape', 300, 9999 );*/
@@ -314,14 +300,17 @@ add_filter('wp_page_menu_args', 'sp_page_menu_args');
 function sp_excerpt_length( $length ) {
 	global $post;
 	
-	$excerpt = $post->post_excerpt;
-	if($excerpt==''){
-	$excerpt = get_the_content('');
-	$excerpt = apply_filters( 'the_content', $excerpt );
-	$excerpt = str_replace( ']]>', ']]&gt;', $excerpt );
-	}
-	if ($excerpt !== '') 
-	echo wp_html_excerpt($excerpt,$length) . ' ...';
+	$content = $post->post_content;
+	$words = explode(' ', $content, $length + 1);
+	if(count($words) > $length) :
+		array_pop($words);
+		array_push($words, '...');
+		$content = implode(' ', $words);
+	endif;
+  
+	$content = strip_tags(strip_shortcodes($content));
+  
+	return $content;
 
 }
 add_filter('excerpt_length', 'sp_excerpt_length');

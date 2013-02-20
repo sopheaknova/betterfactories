@@ -54,6 +54,7 @@ require_once( $path_to_wp.'/wp-load.php' );
 							<option value="pricing-tables"><?php _e('Pricing Tables', 'sptheme'); ?></option>
 							<option value="video-player"><?php _e('Video Player', 'sptheme'); ?></option>
 							<option value="audio-player"><?php _e('Audio Player', 'sptheme'); ?></option>-->
+                            <option value="video-youtube"><?php _e('Video Youtube', 'sptheme'); ?></option>
 						</optgroup>
 						<optgroup label="- <?php _e('Alert Boxes', 'sptheme'); ?> -">
 							<option value="alert-error"><?php _e('Error', 'sptheme'); ?></option>
@@ -77,8 +78,10 @@ require_once( $path_to_wp.'/wp-load.php' );
 							<!--<option value="post-carousel"><?php _e('Post Carousel', 'sptheme'); ?></option>
 							<option value="projects-carousel"><?php _e('Projects Carousel', 'sptheme'); ?></option>
 							<option value="portfolio"><?php _e('Portfolio', 'sptheme'); ?></option>
-							<option value="slider"><?php _e('Slider', 'sptheme'); ?></option>-->
-							<option value="team-member"><?php _e('Team Member', 'sptheme'); ?></option>
+							<option value="slider"><?php _e('Slider', 'sptheme'); ?></option>
+							<option value="team-member"><?php _e('Team Member', 'sptheme'); ?></option>-->
+                            <option value="postlist"><?php _e('Post list', 'sptheme'); ?></option>
+                            <option value="pagelist"><?php _e('Page list', 'sptheme'); ?></option>
 						</optgroup>
 						<!--<optgroup label="- <?php _e('Misc', 'sptheme'); ?> -">
 							<option value="fullwidth-map"><?php _e('Fullwidth Map', 'sptheme'); ?></option>
@@ -920,6 +923,26 @@ require_once( $path_to_wp.'/wp-load.php' );
             
             
 			<!-- end video-player -->
+            
+            <!-- start vdieo-youtube -->
+            <tr class="option video-youtube">
+            
+				<th class="label">
+
+					<label><?php _e('Video id', 'sptheme'); ?></label>
+
+				</th>
+
+				<td class="field">
+					
+                    <input type="text" name="video-youtube-id" id="video-youtube-id" value="" class="widefat">
+
+				</td>
+
+			</tr>
+            <!-- end vdieo-youtube -->
+            
+            </tr>
 
 			<!-- start audio-player -->
 			<tr class="option audio-player">
@@ -1092,7 +1115,7 @@ require_once( $path_to_wp.'/wp-load.php' );
 
 				<th class="label">
 
-					<label for="projects-carousel-limit"><?php _e('Limit', 'sptheme'); ?> <em></label>
+					<label for="projects-carousel-limit"><?php _e('Limit', 'sptheme'); ?> </label>
 
 				</th>
 
@@ -1161,7 +1184,7 @@ require_once( $path_to_wp.'/wp-load.php' );
 
 				<th class="label">
 
-					<label for="portfolio-limit"><?php _e('Limit', 'sptheme'); ?> <em></label>
+					<label for="portfolio-limit"><?php _e('Limit', 'sptheme'); ?> </label>
 
 				</th>
 
@@ -1304,6 +1327,57 @@ require_once( $path_to_wp.'/wp-load.php' );
 
 			</tr>
 			<!-- end team-member -->
+            
+            <!-- start postlist -->
+            <tr class="option postlist">
+            
+            	<th class="label">
+
+					<label for="pagelist-id"><?php _e('Post list', 'sptheme'); ?><span class="red">*</span></label>
+
+				</th>
+
+				<td class="field">
+                    
+                    <?php wp_dropdown_categories( array( 'hierarchical' => 1, 'depth' => '2', 'name' => 'postlist-category', 'orderby' => 'name' ) ); ?>
+
+				</td>
+           
+           </tr>
+           <tr class="option postlist">
+           
+           <th class="label">
+
+                <label for="postlist-num"><?php _e('Number of post', 'sptheme'); ?> </label>
+
+            </th>
+
+            <td class="field">
+            
+                <input type="text" name="postlist-num" id="postlist-num" value="5" class="widefat">
+
+           </td>
+           
+           </tr>
+            <!-- start postlist -->
+            
+            <!-- start pagelist -->
+            <tr class="option pagelist">
+            
+            	<th class="label">
+
+					<label for="pagelist-id"><?php _e('Page list', 'sptheme'); ?><span class="red">*</span></label>
+
+				</th>
+
+				<td class="field">
+                    
+                    <?php wp_dropdown_pages( array( 'sort_column'  => 'post_title', 'depth' => '2', 'name' => 'pagelist-page-id' ) ); ?>
+
+				</td>
+           
+           </tr>
+            <!-- start pagelist -->
 
 			<!-- start fullwidth-map -->
 			<tr class="option fullwidth-map">

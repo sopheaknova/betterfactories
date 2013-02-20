@@ -267,8 +267,23 @@ function sp_video_sc( $atts ) {
 add_shortcode('video', 'sp_video_sc');
 
 /* ---------------------------------------------------------------------- */
-/*	Video Embed Code
+/*	Video Youtube 
 /* ---------------------------------------------------------------------- */
+function sp_video_youtube_sc( $atts ) {
+
+	extract( shortcode_atts( array(
+		'id'          => '',
+	), $atts ) );
+
+	global $post;
+
+	$output = '<div class="entry-video">';
+	$output .= '<iframe width="600" height="338" src="http://www.youtube.com/embed/'.$id.'?rel=0" frameborder="0" allowfullscreen></iframe>';
+	$output .= '</div>';
+	
+	return $output;
+}
+add_shortcode('video_youtube', 'sp_video_youtube_sc');
 	
 /* ---------------------------------------------------------------------- */
 /*	HTML5 Audio
@@ -468,7 +483,125 @@ add_shortcode('audio', 'sp_audio_sc');
 		return '<div class="three_fourth last">' . do_shortcode( $content ) . '</div><div class="clear"></div>';
 
 	}
-	add_shortcode('three_fourth_last', 'sp_three_fourth_last_sc');		
+	add_shortcode('three_fourth_last', 'sp_three_fourth_last_sc');
+	
+	/* -------------------------------------------------- */
+	/*	 Post list base on category
+	/* -------------------------------------------------- */
+	function sp_postlist_sc( $atts ){
+		global $post;
+		
+		extract(shortcode_atts(array(
+			'category' => '',
+			'num' => ''
+		),$atts));	
+		
+		$output = '';
+		$category_link = get_category_link( $category );
+		
+		$args = array(
+						'cat' 				=> $category,
+						'posts_per_page' 	=> $num
+				  );
+		query_posts( $args );	
+		
+		if( have_posts() ) while ( have_posts() ) : the_post();
+		
+		$format = get_post_format();
+		
+		$post_thumb = get_post_thumbnail_id( $post->ID );
+		$image_src = wp_get_attachment_image_src($post_thumb, 'large');
+		$image = aq_resize( $image_src[0], 267, 175, true ); //resize & crop the image
+		
+		$output .= '<div class="pagelist-items">';
+		$output .= '<div class="one_third">';
+		
+		if ( ( function_exists( 'get_post_format' ) && 'video' == get_post_format( $post->ID ) )  ) : 
+		$output .= '<a href="'.get_permalink().'">';
+		$output .= '<img src="http://img.youtube.com/vi/' . sp_get_custom_field( 'sp_video_id', $post->ID ) . '/0.jpg" width="267" height="175"	/>';
+		$output .= '</a>';
+		else:
+			if ($image) {
+			$output .= '<a href="'.get_permalink().'"><img src="' . $image . '" class="alignnone" /></a>';
+			} else {
+			$output .= '<img src="' . SP_BASE_URL . 'images/blank-pagelist-photo.gif" alt="Blank photo" class="alignnone" />';
+			}
+		endif;
+		
+		$output .= '</div>';
+		
+		$output .= '<div class="two_third last">';
+		$output .= '<h3 class="name"><a href="'.get_permalink().'">' . get_the_title() .'</a></h3>';
+
+		$output .= '<p>' . sp_excerpt_length(40) . '</p>';
+		$output .= '<a href="'.get_permalink().'" class="learn-more button">' . __( 'Learn more »', 'sptheme' ) . '</a>';
+		
+		$output .= '</div>';
+		$output .= '<div class="clear"></div>';
+		$output .= '</div>';
+		
+		endwhile;
+
+		wp_reset_query();
+		
+		$output .= '<a href="'.esc_url( $category_link ).'" class="learn-more button">' . __('See more ', 'sptheme') .'</a>';
+
+		return $output;	  	  
+	}
+	add_shortcode('postlist', 'sp_postlist_sc');
+		
+	
+	/* -------------------------------------------------- */
+	/*	 Child pages list base on parent page
+	/* -------------------------------------------------- */	
+	function sp_pagelist_sc( $atts ){
+		global $post;
+		
+		extract(shortcode_atts(array(
+			"page_id" => ''
+		),$atts));	
+
+		$output = '';
+		
+		$args = array('post_parent'           => $page_id,
+					  'post_type'      => 'page',
+					  'orderby' => 'title',
+					  'order' => 'ASC'
+				  );
+		query_posts( $args );	
+		
+		if( have_posts() ) while ( have_posts() ) : the_post();
+		
+		$post_thumb = get_post_thumbnail_id( $post->ID );
+		$image_src = wp_get_attachment_image_src($post_thumb, 'large');
+		$image = aq_resize( $image_src[0], 267, 175, true ); //resize & crop the image
+		
+		$output .= '<div class="pagelist-items">';
+		$output .= '<div class="one_third">';
+		if ($image) {
+			$output .= '<a href="'.get_permalink().'"><img src="' . $image . '" class="alignnone" /></a>';
+		} else {
+			$output .= '<img src="' . SP_BASE_URL . 'images/blank-pagelist-photo.gif" alt="Blank photo" class="alignnone" />';
+		}
+		$output .= '</div>';
+		
+		$output .= '<div class="two_third last">';
+		$output .= '<h3 class="name"><a href="'.get_permalink().'">' . get_the_title() .'</a></h3>';
+
+		$output .= '<p>' . sp_excerpt_length(40) . '</p>';
+		$output .= '<a href="'.get_permalink().'" class="learn-more button">' . __( 'Learn more »', 'sptheme' ) . '</a>';
+		
+		$output .= '</div>';
+		$output .= '<div class="clear"></div>';
+		$output .= '</div>';
+		
+		endwhile;
+
+		wp_reset_query();
+
+		return $output;	  	  
+	}
+	add_shortcode('pagelist', 'sp_pagelist_sc');	
 
 /* ---------------------------------------------------------------------- */
 /*	Misc

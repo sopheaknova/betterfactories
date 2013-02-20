@@ -19,8 +19,9 @@
             <h1 class="page-title"><?php echo the_title(); ?></h1>
             
 			<?php the_content(); ?>
-			
+			<div class="clear"></div>
 			<p><?php edit_post_link( __( 'Edit', 'sptheme' ), '', '' ); ?></p>
+            
         </div>    
 
 		<?php endwhile; ?>

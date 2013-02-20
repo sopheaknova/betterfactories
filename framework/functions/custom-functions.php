@@ -196,7 +196,7 @@ if ( !function_exists('sp_pagination') ) {
 				// $output .= '<a href="' . get_pagenum_link( 1 ) . '" class="next">&laquo; ' . __('First', 'sptheme') . '</a>';
 
 			if( $paged > 1 /*&& $showitems < $pages*/ )
-				$output .= '<a href="' . get_pagenum_link( $paged - 1 ) . '" class="next">&larr; ' . __('Next', 'sptheme') . '</a>';
+				$output .= '<a href="' . get_pagenum_link( $paged - 1 ) . '" class="next">&larr; ' . __('Previous', 'sptheme') . '</a>';
 
 			for ( $i = 1; $i <= $pages; $i++ )  {
 
@@ -206,7 +206,7 @@ if ( !function_exists('sp_pagination') ) {
 			}
 
 			if ( $paged < $pages /*&& $showitems < $pages*/ )
-				$output .= '<a href="' . get_pagenum_link( $paged + 1 ) . '" class="prev">' . __('Previous', 'sptheme') . ' &rarr;</a>';
+				$output .= '<a href="' . get_pagenum_link( $paged + 1 ) . '" class="prev">' . __('Next', 'sptheme') . ' &rarr;</a>';
 
 			// if ( $paged < $pages - 1 && $paged + $range - 1 <= $pages /*&& $showitems < $pages*/ )
 				// $output .= '<a href="' . get_pagenum_link( $pages ) . '" class="prev">' . __('Last', 'sptheme') . ' &raquo;</a>';
@@ -244,7 +244,7 @@ if( !function_exists('sp_post_content')) {
 			$output .= wp_link_pages( array( 'echo' => false ) );
 
 		} else {
-			$output = sp_excerpt_length(120);	
+			$output = sp_excerpt_length(40) ;	
 		}
 		
 		/*if( user_can( $user_ID, 'edit_posts' ) )

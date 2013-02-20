@@ -12,15 +12,11 @@
     
     </div><!-- end .entry-meta -->
 
-    
+    <?php if( sp_get_custom_field( 'sp_video_id', $post->ID ) ) { ?>
     <div class="entry-video">
-	<?php if( sp_get_custom_field( 'sp_video_id', $post->ID ) ) { ?>
-	
     <iframe width="600" height="338" src="http://www.youtube.com/embed/<?php echo sp_get_custom_field( 'sp_video_id', $post->ID ); ?>?rel=0" frameborder="0" allowfullscreen></iframe>		
-			
-	<?php } ?>
-    
 	</div><!-- end .entry-video -->
+    <?php } ?>
 
 	<?php echo sp_post_content(); ?>
 

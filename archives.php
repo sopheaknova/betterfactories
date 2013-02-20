@@ -34,14 +34,16 @@
             
 		<?php endif; ?>
 		<div class="entry-body">
-            <div class="one_third">
+            <div class="one_half">
             
             <h4><?php esc_html_e('Pages', 'sptheme'); ?></h4>
             <ul class="arrow dotted">
                 <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
                 <?php wp_list_pages('title_li='); ?>
             </ul>
-           
+            </div><!-- end .one_half -->
+            
+            <div class="one_half last">
             <h4><?php esc_html_e('Archives by Year:', 'sptheme'); ?></h4>
             <ul class="arrow">
             <?php wp_get_archives('type=yearly'); ?>
@@ -53,22 +55,13 @@
             </ul>
         
             <h4><?php esc_html_e('Archives by Subject:', 'sptheme'); ?></h4>
+            <?php 
+			$excluded_cat_name = $data['feature_category']; 
+			$excluded_cat_id = get_cat_ID($excluded_cat_name);
+			?>
             <ul class="arrow">
-            <?php wp_list_categories(); ?>
+            <?php wp_list_categories(array('title_li' => '', 'exclude' => $excluded_cat_id)); ?>
             </ul>
-            
-            </div><!-- end .one_half -->
-            
-            <div class="two_third last">
-            
-            <h3><?php esc_html_e('All Articles', 'sptheme'); ?></h3>
-            <ol class="circle">
-            <?php query_posts('showposts=-1');
-                if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <li style="margin-bottom:10px;"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a><br /><?php the_time('j-M-y') ?> &bull; <?php the_author_posts_link(); ?></li>
-            <?php endwhile; endif; ?>
-            <?php wp_reset_query(); ?>
-            </ol>
             
             </div><!-- end .one_half .last -->
             <div class="clear"></div>

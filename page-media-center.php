@@ -11,7 +11,7 @@ Template Name: Media Center Page
     <?php 
 	$category_name = $data['infocus_cat'];
 	$category_id = get_cat_ID($category_name);
-	$category_link = get_category_link( get_cat_ID($category_name) ); 
+	$category_link = get_category_link( $category_id ); 
 	?>
     	<h3 class="featured-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
     <?php
@@ -37,7 +37,7 @@ Template Name: Media Center Page
         <div class="caption">
         	<h4><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
         	<p>
-            <?php sp_excerpt_length(100); ?>
+            <?php echo sp_excerpt_length(40); ?>
             </p>
         </div>
         </div><!-- end .cat-slide-items -->
@@ -72,7 +72,7 @@ Template Name: Media Center Page
             <?php 
 			$category_name = $data['latest_news_cat'];
 			$category_id = get_cat_ID($category_name);
-			$category_link = get_category_link( get_cat_ID($category_name) ); 
+			$category_link = get_category_link( $category_id ); 
 			?>
             <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <ul class="latest-news">
@@ -113,7 +113,7 @@ Template Name: Media Center Page
 		<?php 
         $category_name = $data['bfc_voice_cat'];
 		$category_id = get_cat_ID($category_name);
-        $category_link = get_category_link( get_cat_ID($category_name) ); 
+        $category_link = get_category_link( $category_id ); 
         ?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
@@ -138,7 +138,8 @@ Template Name: Media Center Page
 				<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
             </div><!-- end .entry-meta -->
             <p>
-            <?php sp_excerpt_length(90); ?>
+            <?php echo sp_excerpt_length(16); ?>
+            <a class="learn-more" href="<?php the_permalink(); ?>"><?php _e( 'Learn more »', 'sptheme' ); ?></a>
             </p>
 		<?php
         endwhile;
@@ -165,7 +166,7 @@ Template Name: Media Center Page
 		<?php 
         $category_name = $data['video_cat'];
 		$category_id = get_cat_ID($category_name);
-        $category_link = get_category_link( get_cat_ID($category_name) ); 
+        $category_link = get_category_link( $category_id ); 
         ?>
             <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
@@ -201,7 +202,7 @@ Template Name: Media Center Page
         
         <div class="more-posts">
             <ul>
-        <?php $media_query = new WP_Query(array('posts_per_page' => '4', 'offset' => '1', 'cat' => $category_id)); ?>	
+        <?php $media_query = new WP_Query(array('posts_per_page' => '2', 'offset' => '1', 'cat' => $category_id)); ?>	
         <?php if ($media_query->have_posts()) : while ( $media_query->have_posts() ) : $media_query->the_post(); ?>
         <li><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
         <?php
@@ -220,7 +221,7 @@ Template Name: Media Center Page
         <?php 
         $category_name = $data['press_release_cat'];
 		$category_id = get_cat_ID($category_name);
-        $category_link = get_category_link( get_cat_ID($category_name) ); 
+        $category_link = get_category_link( $category_id ); 
         ?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
@@ -231,22 +232,18 @@ Template Name: Media Center Page
 		$media_query = new WP_Query($args);
 		if ($media_query->have_posts()) :
 		while ( $media_query->have_posts() ) : $media_query->the_post();
-		$post_thumb = get_post_thumbnail_id( $post->ID );
-	  	$image_src = wp_get_attachment_image_src($post_thumb, 'medium');
-	  	$image = aq_resize( $image_src[0], 300, 145, true ); //resize & crop the image	
 		?>
-        <?php if ($image) : ?>
-            <img src="<?php echo $image;?>" alt="<?php the_title(); ?>" />
-		<?php else:	?>
-        	<img src="<?php echo SP_BASE_URL; ?>images/blank-photo-300.gif" alt="Blank photo" />
-        <?php endif; ?>
-            <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
-            <div class="entry-meta">
-				<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
-            </div><!-- end .entry-meta -->
-            <p>
-            <?php sp_excerpt_length(90); ?>
-            </p>
+        
+        <h5><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h5>
+        <div class="entry-meta">
+            <span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
+        </div><!-- end .entry-meta -->
+        <p>
+		<?php echo sp_excerpt_length(18); ?>
+        <a class="learn-more" href="<?php the_permalink(); ?>"><?php _e( 'Learn more »', 'sptheme' ); ?></a>
+        </p>
+        
+
 		<?php
         endwhile;
         endif;

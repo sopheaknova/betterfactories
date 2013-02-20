@@ -119,11 +119,19 @@
 
 			sp_show_option('.video-player');
 			shortcode = '[video mp4="" webm="" ogg="" poster="" aspect_ratio=""]';
+		
+		/* -------------------------------------------------- */
+		/*	Video Youtube
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'video-youtube' ) {
+			
+			sp_show_option('.video-youtube');
+			shortcode = '[video_youtube id=""]';	
 
 		/* -------------------------------------------------- */
 		/*	Audio Player
 		/* -------------------------------------------------- */
-
 		} else if( $currentShortcode === 'audio-player' ) {
 
 			sp_show_option('.audio-player');
@@ -313,6 +321,24 @@
 
 			sp_show_option('.team-member');
 			shortcode = '[team-member <span class="red">id=""</span> column="" last=""]';
+			
+		/* -------------------------------------------------- */
+		/*	Post list
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'postlist' ) {
+
+			sp_show_option('.postlist');
+			shortcode = '[postlist postlist="" num=""]';
+			
+		/* -------------------------------------------------- */
+		/*	Page list
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'pagelist' ) {
+
+			sp_show_option('.pagelist');
+			shortcode = '[pagelist page_id=""]';		
 
 		/* -------------------------------------------------- */
 		/*	Fullwidth map
@@ -645,8 +671,22 @@
 
 			if(audioPlayerOgg) shortcode += ' ogg="' + audioPlayerOgg + '"';
 
-			shortcode += ']';
+			shortcode += ']';	
 
+		/* -------------------------------------------------- */
+		/*	Video Youtube
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'video-youtube' ) {
+
+		var videoId = $('#video-youtube-id').val();
+			
+			shortcode = '[video_youtube id="';
+			
+			if (videoId) shortcode += videoId;
+				
+			shortcode += '"]';
+		
 		/* -------------------------------------------------- */
 		/*	Alert Boxes
 		/* -------------------------------------------------- */
@@ -807,6 +847,37 @@
 				shortcode += ' last="last"';
 
 			shortcode += ']';
+		
+		/* -------------------------------------------------- */
+		/*	Post list
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'postlist' ) {
+
+			var category = $('#postlist-category').val(),
+				postNum = $('#postlist-num').val();
+
+			shortcode = '[postlist';
+			
+			shortcode += ' category="' + category + '"';
+			
+			shortcode += ' num="' + postNum + '"'; 
+
+			shortcode += ']';
+			
+		/* -------------------------------------------------- */
+		/*	Page list
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'pagelist' ) {
+
+			var pageId = $('#pagelist-page-id').val();
+
+			shortcode = '[pagelist';
+			
+			shortcode += ' page_id="' + pageId + '"';
+
+			shortcode += ']';	
 
 		/* -------------------------------------------------- */
 		/*	Fullwidth map

@@ -58,7 +58,7 @@ Template Name: Publication Reports Page
         <span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
     </div><!-- end .entry-meta -->
     <p>
-    <?php sp_excerpt_length(90); ?>
+    <?php echo sp_excerpt_length(16); ?>
     </p>
     <?php
     endwhile;

@@ -44,7 +44,7 @@
         <?php 
 			$category_name = $data['infocus_cat'];
 			$category_id = get_cat_ID($category_name);
-			$category_link = get_category_link( get_cat_ID($category_name) ); 
+			$category_link = get_category_link( $category_id ); 
 			?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
         <?php
@@ -73,13 +73,15 @@
 				<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
             </div><!-- end .entry-meta -->
             <p>
-            <?php sp_excerpt_length(150); ?>
+            <?php echo sp_excerpt_length(40); ?>
+            <a class="learn-more" href="<?php the_permalink(); ?>"><?php _e( 'Learn more »', 'sptheme' ); ?></a>
             </p>
-		<?php
+            
+			<?php
         endwhile;
 		else:
 		?>
-		<?php _e( $category_name.' are coming soon.', 'sptheme' ); ?>
+		<?php _e( 'We will update soon.', 'sptheme' ); ?>
 		<?php	  
         endif;
         ?>	
@@ -91,7 +93,7 @@
             <?php
 			$category_name = $data['video_cat'];
 			$category_id = get_cat_ID($category_name);
-			$category_link = get_category_link( get_cat_ID($category_name) ); 
+			$category_link = get_category_link( $category_id ); 
 			?>
 				<h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <?php
@@ -120,7 +122,7 @@
             endwhile;
             else:
             ?>
-            <?php _e( $category_name.' are coming soons.', 'sptheme' ); ?>
+            <?php _e( 'We will update soon.', 'sptheme' ); ?>
             <?php	  
             endif; 
             ?>    
@@ -132,7 +134,7 @@
         <?php 
 		$category_name = $data['latest_news_cat'];
 		$category_id = get_cat_ID($category_name);
-		$category_link = get_category_link( get_cat_ID($category_name) ); 
+		$category_link = get_category_link( $category_id ); 
 		?>
             <h3 class="widget-title"><a href="<?php echo esc_url( $category_link ); ?>"><?php echo $category_name; ?></a></h3>
             <ul class="latest-news">
@@ -155,7 +157,7 @@
             endwhile;
             else:
             ?>
-            <?php _e( $category_name.' are coming soon.', 'sptheme' ); ?>
+            <?php _e('We will update soon.', 'sptheme' ); ?>
             <?php	  
             endif;
             ?>    

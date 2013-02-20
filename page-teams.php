@@ -47,8 +47,8 @@ Template Name: Teams Page
         </div>
         <div class="two_third last">
             <h3><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-            <?php sp_excerpt_length(550); ?>
-            <a class="learn-more" href="<?php the_permalink(); ?>"><?php _e('View detail', 'sptheme'); ?></a>
+            <p><?php echo sp_excerpt_length(80); ?></p>
+            <a class="learn-more button" href="<?php the_permalink(); ?>"><?php _e('View detail', 'sptheme'); ?></a>
         </div>
         <div class="clear"></div>
     </article>            

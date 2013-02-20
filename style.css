@@ -55,7 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 10px;
 	font-family: 'Droid Sans', Arial, sans-serif;
 }
-
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #4e4e4e!important;
+}
 h3, h4, h5 { font-weight: 600; }
 
 a, a > * {
@@ -443,7 +445,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		list-style: none;
 		margin-left:0;
 		float:left;
-		padding:0 15px;
+		padding:0 13px;
 		position:relative;
 		border-left:1px solid #464e57;
 		border-right:1px solid #9aacb5;
@@ -459,11 +461,12 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		font-size:15px;
 		font-weight:bold;
 		text-shadow: 0 1px 1px #333;
+		display:block;
 	}
 	ul.menu-nav li a:hover, ul.menu-nav li.current-menu-item a, ul.menu-nav li.current_page_item a {
 		color:#fff;
 	}
-	ul.menu-nav li.current-menu-item, ul.menu-nav li.current_page_item, ul.menu-nav li.current_page_parent{
+	ul.menu-nav li.current-menu-item, ul.menu-nav li.current_page_item, ul.menu-nav li.current_page_parent, ul.menu-nav li:hover{
 		background:url(images/bg-menu-bar.gif) 0 -46px repeat-x;
 	}
 	/*dropdown*/
@@ -535,9 +538,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	/* -------------------------------------------------- */
 	#header{
 		margin-bottom:1px;
-		background-color:#f35f29;
 	}
-	.home .custom-bg{background-color:#FCFCFC!important;}
 		.logo{
 			position:absolute;
 			z-index:11;
@@ -608,7 +609,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 				margin-bottom:5px;	
 			}
 			.featured-home .caption h4 a{
-				color:#F8F8F8;
+				color:#F8F8F8!important;
 				display: inline;
 				font-family: 'Droid Sans', Arial, sans-serif;
 				font-size: 20px;
@@ -658,7 +659,6 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		}
 		#featured-media .caption h4{margin:15px 0 0 15px;}
 		#featured-media .caption p{margin-left:15px; color:#D8D8D8;font-size:12px;}
-		#featured-media .caption a:hover{color:#ff6633;}
 		h3.featured-title{
 			font-size: 18px;
 			font-weight: 600;
@@ -949,6 +949,16 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		}
 		ul.latest-news li a{color:#4E4E4E;}
 		
+		/* ---------------------------------------- */
+		/*	Sub page navigation
+		/* ---------------------------------------- */
+		.nav-menu-widget ul li ul{
+			padding-left:20px;	
+		}
+		.nav-menu-widget ul li.current_page_item, .nav-menu-widget ul li:hover{	
+			background-color:#eaeaea;
+		}
+		.nav-menu-widget ul li.current_page_item ul, .nav-menu-widget ul li ul{background-color:#FCFCFC;}
 		
 		/* ---------------------------------------- */
 		/*	Accordion Content
@@ -1205,7 +1215,6 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		/* ---------------------------------------- */
 		.blog-posts-widget li a{ padding-bottom:0;}
 		.blog-posts-widget li a, .textwidget, .textwidget a{color:#4e4e4e;}
-		.blog-posts-widget li a:hover, .textwidget a:hover{color:#ff6633;}
 		.blog-posts-widget .entry-meta{padding-left:20px;}
 		.blog-posts-widget, .textwidget{ background:#ececec;}
 		
@@ -1214,13 +1223,12 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		.home .textwidget {padding:0; background:none;}
 		.home .textwidget h2{font-size:24px; margin-bottom:30px;}
 		.home .textwidget p{font-size:18px;}
-		.home .textwidget a{color:#ff6633;}
 		.home .textwidget a:hover{color:#4e4e4e;}
 		.home .textwidget p{color:#808080;}
 			
 
 /* ---------------------------------------------------------------------- */
-/*	Job
+/*	table
 /* ---------------------------------------------------------------------- */
 table {
     font-size: 12px;
@@ -1254,7 +1262,19 @@ table tbody td {
 table tbody tr:hover td {
     background-color:#efefef;
 }
+.entry-body table{background-color:#fcfcfc;}
 		
+/* ---------------------------------------------------------------------- */
+/*	Pagelist
+/* ---------------------------------------------------------------------- */
+.pagelist-items{
+	padding:12px 12px 3px;
+	margin:12px 0;
+	background-color:#fcfcfc;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+			border-radius: 6px;
+}
 
 /* ---------------------------------------------------------------------- */
 /*	Columns
@@ -1324,12 +1344,13 @@ table tbody tr:hover td {
 	.category .page-header, .page-template-archives-php .page-header, .page-template-page-publication-reports-php .page-header, .archive .page-header, .search .page-header{
 		margin-bottom:30px;	
 	}
-	.category .page-title span, .archive .page-title span, .search .page-title span{color:#ff6633;}
+	
 	.category .entry-body h1, .archive .entry-body h1, .search .entry-body h1{
 		font-size:18px;	
 		margin-bottom:0;
 	}
-	.single .entry-meta{margin-bottom:20px;}
+	
+	.single .entry-meta, .archive .entry-meta, .category .entry-meta{margin-bottom:20px;}
 		.page-title, h1.title{
 			text-shadow:0 2px 0px #ffffff;	
 		}
@@ -1496,6 +1517,19 @@ table tbody tr:hover td {
 		}
 
 	.pagination .next, .pagination .prev { border: none; }
+	
+/* ---------------------------------------------------------------------- */
+/*	Group of Color Link group
+/* ---------------------------------------------------------------------- */
+.nav-menu-widget ul li.current_page_item ul li a, .page-template-archives-php .entry-body a{color:#868686;}
+
+.page-template-archives-php .entry-body a:hover,.home .textwidget a,
+.category .page-title span, .archive .page-title span, .search .page-title span,
+.blog-posts-widget li a:hover, .textwidget a:hover, .nav-menu-widget ul li.current_page_item a, .nav-menu-widget ul li ul li a:hover, 
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+#featured-media .caption a:hover, #footer-cols a:hover, #footer-bottom a:hover, #footer-cols .widget .sub-menu li a:hover{
+	color:#ff6633!important;
+}	
 
 /* ---------------------------------------------------------------------- */
 /*	BACK TO TOP
@@ -1569,9 +1603,7 @@ table tbody tr:hover td {
 #footer-cols .widget .sub-menu{
 	margin-top:5px;
 }
-#footer-cols a:hover, #footer-bottom a:hover, #footer-cols .widget .sub-menu li a:hover{
-	color:#ff6633;
-}
+
 #footer-bottom .power-by{
 	text-align:right;
 	margin-top:10px;

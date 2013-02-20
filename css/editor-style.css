@@ -249,7 +249,7 @@ img {
 	img.alignleft, img.alignright, img.aligncenter { margin-bottom: 1.625em; }
 
 .wp-caption {
-	background: #eee;
+	background: #FCFCFC;
 	border: none;
 	margin-bottom: 1.625em;
 	max-width: 96%;
@@ -269,7 +269,7 @@ img {
 		font-family: Georgia, serif !important;
 		font-size: 12px;
 		margin: 0 0 0.6em 0 !important;
-		padding: 0 0 5px 40px;
+		padding: 0 0 5px 5px;
 		position: relative;
 		text-align: left;
 	}

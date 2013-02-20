@@ -6,7 +6,10 @@ jQuery( document ).ready( function($) {
 		$postdivrich   = $('#postdivrich'),
 		$generalSettings  = $('#general-settings'), 
 		$headingImage  = $('#heading-image'),
-		$postFormat    = $('#post-formats-select input[name="post_format"]');
+		$postFormat    = $('#post-formats-select input[name="post_format"]'),
+		$pageTempalte = $('#page_template'),
+		$pageLayout = $('.rwmb-label-radio-image input[name="sp_page_layout"]'),
+		$selectSidebar = $('.rwmb-sidebar-wrapper').hide();
 	
 	$postFormat.each(function() {
 		
@@ -24,7 +27,7 @@ jQuery( document ).ready( function($) {
 	});
 
 	function changePostFormat( val ) {
-
+		
 		$videoSettings.hide();
 		$audioSettings.hide();
 		$linkSettings.hide();
@@ -48,6 +51,38 @@ jQuery( document ).ready( function($) {
 			
 		}
 
+	}
+	
+	$('#page_template').change(function() {
+		changePageTemplate( $(this).val() );
+	});
+	
+	function changePageTemplate( val ) {
+		
+		$generalSettings.show();
+		
+		if( val === 'page-contact.php' || val === 'jobs-page.php' || val === 'page-media-center.php' || val === 'page-publication-reports.php' || val === 'page-teams.php' ) {
+
+			$generalSettings.hide();
+			
+		}
+	}	
+	
+	$pageLayout.change(function() {
+		changePageLayout( $(this).val() );
+	})
+	
+	function changePageLayout( val ) {
+		
+		$selectSidebar.show();
+		
+		if( val === '1col' ) {
+
+			$selectSidebar.hide();
+			
+		} else if( val === '2cr' ) {
+			$selectSidebar.show();
+		}
 	}
 
 });
