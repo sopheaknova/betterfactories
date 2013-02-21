@@ -16,7 +16,7 @@ Template Name: Teams Page
     
     <?php
     	// Featured staff
-		$staff_query = array ('post_type' => 'staff', 'meta_key' => 'sp_staff_slide', 'meta_value' => 1, 'posts_per_page' => 3);
+		$staff_query = array ('post_type' => 'staff', 'meta_key' => 'sp_staff_slide', 'meta_value' => 1, 'posts_per_page' => 5);
         
         query_posts($staff_query);
         
@@ -47,7 +47,8 @@ Template Name: Teams Page
         </div>
         <div class="two_third last">
             <h3><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-            <p><?php echo sp_excerpt_length(80); ?></p>
+            <p class="postmetadata"><?php echo sp_get_custom_field( 'sp_job_title', $post->ID ); ?></p>
+            <p><?php echo sp_excerpt_length(50); ?></p>
             <a class="learn-more button" href="<?php the_permalink(); ?>"><?php _e('View detail', 'sptheme'); ?></a>
         </div>
         <div class="clear"></div>

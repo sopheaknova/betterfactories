@@ -182,7 +182,7 @@
       <div class="no-slide-status">
       <div class="wrap-status">
       <h3><?php _e('Slideshow are not available.', 'sptheme'); ?></h3>
-      <p><?php _e('Make sure the post/article was checked in Featured category', 'sptheme'); ?></p>
+      <p><?php _e('Make sure the post/article was checked in Slideshow category', 'sptheme'); ?></p>
       </div>
       </div>  
       <?php

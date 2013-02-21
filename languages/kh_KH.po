@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betterfactories\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 14:30+0700\n"
-"PO-Revision-Date: 2013-02-14 14:35+0700\n"
+"POT-Creation-Date: 2013-02-21 16:06+0700\n"
+"PO-Revision-Date: 2013-02-21 16:09+0700\n"
 "Last-Translator: Dara <dara@fhi.org.kh>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -66,37 +66,34 @@ msgstr "<p class=\"serif\">អានផ្នែកដែលនៅសល់ត�
 msgid "Pages"
 msgstr "ទំព័រ"
 
-#: archives.php:45
+#: archives.php:47
 msgid "Archives by Year:"
 msgstr "ឯកសារ តាមឆ្នាំ"
 
-#: archives.php:50
+#: archives.php:52
 msgid "Archives by Month:"
 msgstr "ឯកសារ តាមខែ"
 
-#: archives.php:55
+#: archives.php:57
 msgid "Archives by Subject:"
 msgstr "ឯកសារ តាមមុខវិជ្ជា"
-
-#: archives.php:64
-msgid "All Articles"
-msgstr "អត្ថបទ ទាំងអស់"
 
 #: category.php:13
 #, php-format
 msgid "Category Archives: %s"
 msgstr "ឯកសារ តាមផ្នែក: %s"
 
+#: content-audio.php:5
 #: content-link.php:5
 #: content-video.php:5
 #: content.php:5
+#: header.php:161
 #: header.php:169
-#: header.php:177
 #: index.php:64
 #: index.php:71
-#: index.php:109
-#: index.php:113
-#: index.php:149
+#: index.php:111
+#: index.php:115
+#: index.php:151
 #, php-format
 msgid "Permalink to %s"
 msgstr "ភ្ជាបទៅកាន់ %s"
@@ -122,17 +119,18 @@ msgstr "ដើម្បីបង្ហាញទិន្ន័យក្នុង
 msgid "To edit this sidebar, go to admin backend's <strong><em>Appearance -&gt; Widgets</em></strong> and place Custom Menu widgets into the <strong><em>Footer sidebar</em></strong> Area"
 msgstr "ដើម្បីបង្ហាញទិន្ន័យក្នុង sidebar នេះសូមទៅកាន់ទំព័រ admin <strong><em>Appearance -&gt; Widgets</em></strong> ហើយទាញយក Custom Menu widgets ដាក់នៅក្នុង <strong><em>Footer sidebar</em></strong> Area"
 
-#: header.php:181
+#: header.php:173
+#: index.php:77
 msgid "Learn more »"
 msgstr "អានបន្ថែម»"
 
-#: header.php:192
+#: header.php:184
 msgid "Slideshow are not available."
 msgstr "សូមទោស Slideshow មិនទាន់មានទេ"
 
-#: header.php:193
-msgid "Make sure the post/article was checked in Featured category"
-msgstr "ត្រូវប្រាកដថា post/article ត្រូវបានជ្រើសរើសនៅក្នុង​ Featured category"
+#: header.php:185
+msgid "Make sure the post/article was checked in Slideshow category"
+msgstr "ត្រូវប្រាកដថា post/article ត្រូវបានជ្រើសរើសនៅក្នុង​ Slideshow category"
 
 #: index.php:18
 #: index.php:31
@@ -148,16 +146,16 @@ msgid "To edit this sidebar, go to admin backend's <strong><em>Appearance -&gt; 
 msgstr "ដើម្បីបង្ហាញទិន្ន័យក្នុង sidebar នេះសូមទៅកាន់ទំព័រ admin <strong><em>Appearance -&gt; Widgets</em></strong> ហើយទាញយក Register widgets ដាក់នៅក្នុង <strong><em>Home Sidebar 2</em></strong> Area"
 
 #: index.php:73
-#: index.php:116
-#: index.php:151
+#: index.php:118
+#: index.php:153
 msgid "Posted on: &mdash; "
 msgstr "Posted on: &mdash; "
 
-#: index.php:82
-#: index.php:123
-#: index.php:158
+#: index.php:84
+#: index.php:125
+#: index.php:160
 msgid "We will update soon."
-msgstr "យើងនឹងធ្វើការកែប្រែបន្ងែម ក្នុងពេលឆាប់ៗ"
+msgstr "យើងនឹងធ្វើការកែប្រែបន្ថែម ក្នុងពេលឆាប់ៗ"
 
 #: page-contact.php:12
 msgid "Please enter your name."
@@ -203,13 +201,14 @@ msgstr "Posted on: "
 msgid "Latest news are coming soon."
 msgstr "ពត័មានថ្មីបំផុតនឹងមកដល់បន្តិចទៀត "
 
-#: page-media-center.php:157
-#: page-media-center.php:212
-#: page-media-center.php:265
+#: page-media-center.php:158
+#: page-media-center.php:213
+#: page-media-center.php:262
+#: framework/shortcodes.php:547
 msgid "See more "
 msgstr "សូមមើលបន្ថែមអំពី"
 
-#: page-media-center.php:197
+#: page-media-center.php:198
 msgid "Video are coming soon."
 msgstr "Video នឺងមកដល់នៅពេលបន្តិចទៀត "
 
@@ -225,15 +224,15 @@ msgstr "បុគ្គលិកពិសេស"
 msgid "This post have no photo"
 msgstr "អត្ថបទនេះពុំមានរូបភាពទេ"
 
-#: page-teams.php:51
+#: page-teams.php:52
 msgid "View detail"
 msgstr "បង្ហាញលំអិត"
 
-#: page-teams.php:78
+#: page-teams.php:79
 msgid "Management Teams"
 msgstr "ក្រុមអ្នកគ្រប់គ្រង"
 
-#: page-teams.php:110
+#: page-teams.php:111
 msgid "Sorry, we will update our teams soon."
 msgstr "សូមអភ័យទោស យើងនឹងធ្វើការកែប្រែបន្ងែមក្នុងពេលឆាប់ៗ"
 
@@ -641,11 +640,11 @@ msgid "Add Footer menu"
 msgstr ""
 
 #: framework/functions/custom-functions.php:199
-msgid "Next"
+msgid "Previous"
 msgstr ""
 
 #: framework/functions/custom-functions.php:209
-msgid "Previous"
+msgid "Next"
 msgstr ""
 
 #: framework/functions/custom-functions.php:269
@@ -661,54 +660,54 @@ msgstr ""
 msgid "<time datetime=\"%1$s\" pubdate>%2$s</time>"
 msgstr ""
 
-#: framework/functions/setup-theme.php:35
+#: framework/functions/setup-theme.php:21
 msgid "Primary Navigation"
 msgstr ""
 
-#: framework/functions/setup-theme.php:36
+#: framework/functions/setup-theme.php:22
 msgid "Footer Navigation"
 msgstr ""
 
-#: framework/functions/setup-theme.php:122
+#: framework/functions/setup-theme.php:108
 msgid "Main Sidebar"
 msgstr ""
 
-#: framework/functions/setup-theme.php:131
+#: framework/functions/setup-theme.php:117
 msgid "Home Sidebar 1"
 msgstr ""
 
-#: framework/functions/setup-theme.php:132
-#: framework/functions/setup-theme.php:142
+#: framework/functions/setup-theme.php:118
+#: framework/functions/setup-theme.php:128
 msgid "For homepage under slideshow"
 msgstr ""
 
-#: framework/functions/setup-theme.php:141
+#: framework/functions/setup-theme.php:127
 msgid "Home Sidebar 2"
 msgstr ""
 
-#: framework/functions/setup-theme.php:151
+#: framework/functions/setup-theme.php:137
 msgid "Footer Bottom Sidebar"
 msgstr ""
 
-#: framework/functions/setup-theme.php:152
+#: framework/functions/setup-theme.php:138
 msgid "For place email subscibe box like Newsletter widget"
 msgstr ""
 
-#: framework/functions/setup-theme.php:161
+#: framework/functions/setup-theme.php:147
 msgid "Footer Sidebar"
 msgstr ""
 
-#: framework/functions/setup-theme.php:162
+#: framework/functions/setup-theme.php:148
 msgid "For place pages link in footer, can only support with Sub navigation widget"
 msgstr ""
 
-#: framework/functions/setup-theme.php:365
+#: framework/functions/setup-theme.php:354
 #, php-format
 msgid "Search results for %s"
 msgstr ""
 
-#: framework/functions/setup-theme.php:368
-#: framework/functions/setup-theme.php:382
+#: framework/functions/setup-theme.php:357
+#: framework/functions/setup-theme.php:371
 #, php-format
 msgid "Page %s"
 msgstr ""
@@ -922,521 +921,539 @@ msgstr ""
 msgid "Audio Player"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:58
-msgid "Alert Boxes"
+#: framework/tinymce/tinymce.php:57
+msgid "Video Youtube"
 msgstr ""
 
 #: framework/tinymce/tinymce.php:59
-msgid "Error"
+msgid "Alert Boxes"
 msgstr ""
 
 #: framework/tinymce/tinymce.php:60
-msgid "Success"
+msgid "Error"
 msgstr ""
 
 #: framework/tinymce/tinymce.php:61
-msgid "Info"
+msgid "Success"
 msgstr ""
 
 #: framework/tinymce/tinymce.php:62
+msgid "Info"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:63
 msgid "Notice"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:64
+#: framework/tinymce/tinymce.php:65
 msgid "Layout"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:65
-#: framework/tinymce/tinymce.php:1149
-#: framework/tinymce/tinymce.php:1282
+#: framework/tinymce/tinymce.php:66
+#: framework/tinymce/tinymce.php:1172
+#: framework/tinymce/tinymce.php:1305
 msgid "1/2"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:66
+#: framework/tinymce/tinymce.php:67
 msgid "1/2 Last"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:67
-#: framework/tinymce/tinymce.php:1150
-#: framework/tinymce/tinymce.php:1283
+#: framework/tinymce/tinymce.php:68
+#: framework/tinymce/tinymce.php:1173
+#: framework/tinymce/tinymce.php:1306
 msgid "1/3"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:68
+#: framework/tinymce/tinymce.php:69
 msgid "1/3 Last"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:69
-#: framework/tinymce/tinymce.php:1151
-#: framework/tinymce/tinymce.php:1284
+#: framework/tinymce/tinymce.php:70
+#: framework/tinymce/tinymce.php:1174
+#: framework/tinymce/tinymce.php:1307
 msgid "1/4"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:70
+#: framework/tinymce/tinymce.php:71
 msgid "1/4 Last"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:71
+#: framework/tinymce/tinymce.php:72
 msgid "2/3"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:72
+#: framework/tinymce/tinymce.php:73
 msgid "2/3 Last"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:73
+#: framework/tinymce/tinymce.php:74
 msgid "3/4"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:74
+#: framework/tinymce/tinymce.php:75
 msgid "3/4 Last"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:76
+#: framework/tinymce/tinymce.php:77
 msgid "Template Tags"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:77
+#: framework/tinymce/tinymce.php:78
 msgid "Post Carousel"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:78
+#: framework/tinymce/tinymce.php:79
 msgid "Projects Carousel"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:79
+#: framework/tinymce/tinymce.php:80
 msgid "Portfolio"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:81
-#: framework/tinymce/tinymce.php:1244
+#: framework/tinymce/tinymce.php:82
+#: framework/tinymce/tinymce.php:1267
 msgid "Team Member"
 msgstr ""
 
 #: framework/tinymce/tinymce.php:83
-msgid "Misc"
+#: framework/tinymce/tinymce.php:1336
+msgid "Post list"
 msgstr ""
 
 #: framework/tinymce/tinymce.php:84
+#: framework/tinymce/tinymce.php:1369
+msgid "Page list"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:86
+msgid "Misc"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:87
 msgid "Fullwidth Map"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:85
+#: framework/tinymce/tinymce.php:88
 msgid "Raw (disable editor formatting)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:99
+#: framework/tinymce/tinymce.php:102
 msgid "Dotted line"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:132
+#: framework/tinymce/tinymce.php:135
 msgid "Align"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:139
-#: framework/tinymce/tinymce.php:194
-#: framework/tinymce/tinymce.php:521
-#: framework/tinymce/tinymce.php:665
+#: framework/tinymce/tinymce.php:142
+#: framework/tinymce/tinymce.php:197
+#: framework/tinymce/tinymce.php:524
+#: framework/tinymce/tinymce.php:668
 msgid "Normal"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:140
-#: framework/tinymce/tinymce.php:232
+#: framework/tinymce/tinymce.php:143
+#: framework/tinymce/tinymce.php:235
 msgid "Left"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:141
+#: framework/tinymce/tinymce.php:144
 msgid "Center"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:142
-#: framework/tinymce/tinymce.php:231
+#: framework/tinymce/tinymce.php:145
+#: framework/tinymce/tinymce.php:234
 msgid "Right"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:187
+#: framework/tinymce/tinymce.php:190
 msgid "Size"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:195
+#: framework/tinymce/tinymce.php:198
 msgid "Medium"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:196
+#: framework/tinymce/tinymce.php:199
 msgid "Large"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:207
+#: framework/tinymce/tinymce.php:210
 msgid "Remove background"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:223
-#: framework/tinymce/tinymce.php:360
+#: framework/tinymce/tinymce.php:226
+#: framework/tinymce/tinymce.php:363
 msgid "Arrow"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:230
-#: framework/tinymce/tinymce.php:779
+#: framework/tinymce/tinymce.php:233
+#: framework/tinymce/tinymce.php:782
 msgid "No"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:261
+#: framework/tinymce/tinymce.php:264
 msgid "Background"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:268
+#: framework/tinymce/tinymce.php:271
 msgid "Light"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:269
+#: framework/tinymce/tinymce.php:272
 msgid "Dark"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:299
+#: framework/tinymce/tinymce.php:302
 msgid "Author"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:315
-#: framework/tinymce/tinymce.php:412
+#: framework/tinymce/tinymce.php:318
+#: framework/tinymce/tinymce.php:415
 msgid "Type"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:322
+#: framework/tinymce/tinymce.php:325
 msgid "Default"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:323
-#: framework/tinymce/tinymce.php:631
+#: framework/tinymce/tinymce.php:326
+#: framework/tinymce/tinymce.php:634
 msgid "Simple"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:352
+#: framework/tinymce/tinymce.php:355
 msgid "Icon"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:359
+#: framework/tinymce/tinymce.php:362
 msgid "None"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:361
+#: framework/tinymce/tinymce.php:364
 msgid "Arrow 2"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:362
+#: framework/tinymce/tinymce.php:365
 msgid "Check"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:363
+#: framework/tinymce/tinymce.php:366
 msgid "Check 2"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:364
+#: framework/tinymce/tinymce.php:367
 msgid "Circle"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:365
+#: framework/tinymce/tinymce.php:368
 msgid "Plus"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:366
+#: framework/tinymce/tinymce.php:369
 msgid "Dash"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:367
+#: framework/tinymce/tinymce.php:370
 msgid "Star"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:378
+#: framework/tinymce/tinymce.php:381
 msgid "Dotted Bottom Border"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:419
+#: framework/tinymce/tinymce.php:422
 msgid "Single image"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:420
+#: framework/tinymce/tinymce.php:423
 msgid "Image gallery"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:432
+#: framework/tinymce/tinymce.php:435
 msgid "Full (URL)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:464
+#: framework/tinymce/tinymce.php:467
 msgid "Group name (lowercase)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:464
+#: framework/tinymce/tinymce.php:467
 msgid "(Only for image gallery)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:514
+#: framework/tinymce/tinymce.php:517
 msgid "Title size"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:522
+#: framework/tinymce/tinymce.php:525
 msgid "Heading 6"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:523
+#: framework/tinymce/tinymce.php:526
 msgid "Heading 5"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:524
+#: framework/tinymce/tinymce.php:527
 msgid "Heading 4"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:525
+#: framework/tinymce/tinymce.php:528
 msgid "Heading 3"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:553
+#: framework/tinymce/tinymce.php:556
 msgid "Single tab"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:553
-#: framework/tinymce/tinymce.php:642
+#: framework/tinymce/tinymce.php:556
+#: framework/tinymce/tinymce.php:645
 msgid "(Remove wrapping shortcode)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:603
+#: framework/tinymce/tinymce.php:606
 msgid "Table column count"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:610
+#: framework/tinymce/tinymce.php:613
 msgid "1"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:611
+#: framework/tinymce/tinymce.php:614
 msgid "2"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:612
+#: framework/tinymce/tinymce.php:615
 msgid "3"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:613
+#: framework/tinymce/tinymce.php:616
 msgid "4"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:614
+#: framework/tinymce/tinymce.php:617
 msgid "5"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:624
+#: framework/tinymce/tinymce.php:627
 msgid "Table type"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:632
+#: framework/tinymce/tinymce.php:635
 msgid "Extended"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:642
+#: framework/tinymce/tinymce.php:645
 msgid "Single column"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:658
+#: framework/tinymce/tinymce.php:661
 msgid "Column type"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:666
+#: framework/tinymce/tinymce.php:669
 msgid "Features list (only for Extended tables)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:676
+#: framework/tinymce/tinymce.php:679
 msgid "Column title"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:692
+#: framework/tinymce/tinymce.php:695
 msgid "Column price"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:692
+#: framework/tinymce/tinymce.php:695
 msgid "(With currency)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:708
+#: framework/tinymce/tinymce.php:711
 msgid "Column period"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:724
+#: framework/tinymce/tinymce.php:727
 msgid "Column description"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:724
+#: framework/tinymce/tinymce.php:727
 msgid "(Only for Simple tables)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:740
+#: framework/tinymce/tinymce.php:743
 msgid "Column Sign Up button title"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:756
+#: framework/tinymce/tinymce.php:759
 msgid "Column Sign Up button URL"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:772
+#: framework/tinymce/tinymce.php:775
 msgid "Special column"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:780
+#: framework/tinymce/tinymce.php:783
 msgid "Free"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:781
+#: framework/tinymce/tinymce.php:784
 msgid "Featured"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:791
+#: framework/tinymce/tinymce.php:794
 msgid "Column content (list items)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:798
+#: framework/tinymce/tinymce.php:801
 #, php-format
 msgid "(Use %1$s shortcode to create a tooltip and %2$s shortcode to create a check icon.)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:810
+#: framework/tinymce/tinymce.php:813
 msgid "MP4 file URL"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:817
+#: framework/tinymce/tinymce.php:820
 msgid "(For Safari, Internet Explorer 9, iPhone, iPad, Android, and Windows Phone 7)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:827
+#: framework/tinymce/tinymce.php:830
 msgid "WebM file URL"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:834
+#: framework/tinymce/tinymce.php:837
 msgid "(For Firefox4, Opera, and Chrome)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:844
+#: framework/tinymce/tinymce.php:847
 msgid "OGG file URL"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:851
+#: framework/tinymce/tinymce.php:854
 msgid "(For older Firefox and Opera versions)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:861
+#: framework/tinymce/tinymce.php:864
 msgid "Preview image URL"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:878
+#: framework/tinymce/tinymce.php:881
 msgid "Aspect ratio"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:894
-#: framework/tinymce/tinymce.php:963
+#: framework/tinymce/tinymce.php:897
+#: framework/tinymce/tinymce.php:986
 msgid "Extra Info"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:900
+#: framework/tinymce/tinymce.php:903
 msgid "If video element isn't displayed properly, try to wrap it inside of <code>[raw]</code> shortcode."
 msgstr ""
 
-#: framework/tinymce/tinymce.php:909
+#: framework/tinymce/tinymce.php:912
 msgid "Video Embed Code"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:936
+#: framework/tinymce/tinymce.php:959
 msgid "(For Safari, Internet Explorer, Chrome)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:953
+#: framework/tinymce/tinymce.php:976
 msgid "(For Firefox, Opera, Chrome)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:969
+#: framework/tinymce/tinymce.php:992
 msgid "If audio element isn't displayed properly, try to wrap it inside of <code>[raw]</code> shortcode."
-msgstr ""
-
-#: framework/tinymce/tinymce.php:1017
-#: framework/tinymce/tinymce.php:1079
-msgid "Custom Title"
-msgstr ""
-
-#: framework/tinymce/tinymce.php:1024
-msgid "(Default: Latest stuff from our blog)"
-msgstr ""
-
-#: framework/tinymce/tinymce.php:1033
-#: framework/tinymce/tinymce.php:1095
-#: framework/tinymce/tinymce.php:1164
-msgid "Limit"
 msgstr ""
 
 #: framework/tinymce/tinymce.php:1040
 #: framework/tinymce/tinymce.php:1102
+msgid "Custom Title"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:1047
+msgid "(Default: Latest stuff from our blog)"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:1056
+#: framework/tinymce/tinymce.php:1118
+#: framework/tinymce/tinymce.php:1187
+msgid "Limit"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:1063
+#: framework/tinymce/tinymce.php:1125
 msgid "(Only numbers! Default: 8)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1049
-#: framework/tinymce/tinymce.php:1112
-#: framework/tinymce/tinymce.php:1181
+#: framework/tinymce/tinymce.php:1072
+#: framework/tinymce/tinymce.php:1135
+#: framework/tinymce/tinymce.php:1204
 msgid "Categories"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1057
-#: framework/tinymce/tinymce.php:1120
-#: framework/tinymce/tinymce.php:1189
+#: framework/tinymce/tinymce.php:1080
+#: framework/tinymce/tinymce.php:1143
+#: framework/tinymce/tinymce.php:1212
 msgid "All"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1067
-#: framework/tinymce/tinymce.php:1130
-#: framework/tinymce/tinymce.php:1199
+#: framework/tinymce/tinymce.php:1090
+#: framework/tinymce/tinymce.php:1153
+#: framework/tinymce/tinymce.php:1222
 msgid "(You can select multiple categories by pressing CTRL key)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1086
+#: framework/tinymce/tinymce.php:1109
 msgid "(Default: Latest projects)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1142
-#: framework/tinymce/tinymce.php:1275
+#: framework/tinymce/tinymce.php:1165
+#: framework/tinymce/tinymce.php:1298
 msgid "Column"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1171
+#: framework/tinymce/tinymce.php:1194
 msgid "(Only numbers! Default: All)"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1211
+#: framework/tinymce/tinymce.php:1234
 msgid "ID"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1219
+#: framework/tinymce/tinymce.php:1242
 msgid "Select slider"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1252
+#: framework/tinymce/tinymce.php:1275
 msgid "Select team member"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1295
+#: framework/tinymce/tinymce.php:1318
 msgid "Last column"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1313
+#: framework/tinymce/tinymce.php:1351
+msgid "Number of post"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:1387
 msgid "Map shortcode"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1349
+#: framework/tinymce/tinymce.php:1423
 msgid "Current shortcode with all available attributes"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1350
+#: framework/tinymce/tinymce.php:1424
 msgid "red"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1350
+#: framework/tinymce/tinymce.php:1424
 msgid "required"
 msgstr ""
 
-#: framework/tinymce/tinymce.php:1370
+#: framework/tinymce/tinymce.php:1444
 msgid "Insert Shortcode"
 msgstr ""
 
@@ -1527,6 +1544,14 @@ msgstr ""
 msgid "Number Of Posts:"
 msgstr ""
 
+#: framework/widgets/subnav-widget.php:27
+msgid "Show Page Name:"
+msgstr ""
+
+#: framework/widgets/subnav-widget.php:34
+msgid "Level:"
+msgstr ""
+
 #: framework/widgets/text-image-widget.php:15
 msgid "Arbitrary link with a simple image."
 msgstr ""
@@ -1578,6 +1603,9 @@ msgstr ""
 #: framework/widgets/video-widget.php:92
 msgid "Video ID:"
 msgstr ""
+
+#~ msgid "All Articles"
+#~ msgstr "អត្ថបទ ទាំងអស់"
 
 #~ msgid " are coming soon."
 #~ msgstr "Video នឺងមកដល់នៅពេលបន្តិចទៀត "

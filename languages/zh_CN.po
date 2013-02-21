@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Betterfactories\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-13 16:14+0700\n"
-"PO-Revision-Date: 2013-02-13 16:59+0700\n"
+"POT-Creation-Date: 2013-02-21 16:02+0700\n"
+"PO-Revision-Date: 2013-02-21 16:04+0700\n"
 "Last-Translator: Dara <dara@fhi.org.kh>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -66,37 +66,34 @@ msgstr "<p class=\"serif\">阅读其余本条目 &raquo;</p>"
 msgid "Pages"
 msgstr "页"
 
-#: archives.php:45
+#: archives.php:47
 msgid "Archives by Year:"
 msgstr "按年份档案："
 
-#: archives.php:50
+#: archives.php:52
 msgid "Archives by Month:"
 msgstr "档案馆月："
 
-#: archives.php:55
+#: archives.php:57
 msgid "Archives by Subject:"
 msgstr "档案主题："
-
-#: archives.php:64
-msgid "All Articles"
-msgstr "所有文章"
 
 #: category.php:13
 #, php-format
 msgid "Category Archives: %s"
 msgstr "分类存档： %s"
 
+#: content-audio.php:5
 #: content-link.php:5
 #: content-video.php:5
 #: content.php:5
+#: header.php:161
 #: header.php:169
-#: header.php:177
 #: index.php:64
 #: index.php:71
-#: index.php:109
-#: index.php:113
-#: index.php:149
+#: index.php:111
+#: index.php:115
+#: index.php:151
 #, php-format
 msgid "Permalink to %s"
 msgstr "连结到 %s"
@@ -122,17 +119,18 @@ msgstr "要编辑这个侧边栏，进入管理页面 <strong><em>Appearance -&g
 msgid "To edit this sidebar, go to admin backend's <strong><em>Appearance -&gt; Widgets</em></strong> and place Custom Menu widgets into the <strong><em>Footer sidebar</em></strong> Area"
 msgstr "要编辑这个侧边栏，进入管理页面 <strong><em>Appearance -&gt; Widgets</em></strong> 和地点 Custom Menu widgets 到 <strong><em>Footer sidebar</em></strong> 区域"
 
-#: header.php:181
+#: header.php:173
+#: index.php:77
 msgid "Learn more »"
 msgstr "了解更多»"
 
-#: header.php:192
+#: header.php:184
 msgid "Slideshow are not available."
 msgstr "幻灯片是不可用"
 
-#: header.php:193
+#: header.php:185
 msgid "Make sure the post/article was checked in Featured category"
-msgstr "请务必检查后/条 Featured 类别"
+msgstr "请务必检查后/条 Slideshow 类别"
 
 #: index.php:18
 #: index.php:31
@@ -148,19 +146,16 @@ msgid "To edit this sidebar, go to admin backend's <strong><em>Appearance -&gt; 
 msgstr "要编辑这个侧边栏，进入管理页面 <strong><em>Appearance -&gt; Widgets</em></strong> 和地点 Register widgets 到 <strong><em>Home sidebar 1</em></strong> 区域"
 
 #: index.php:73
-#: index.php:116
-#: index.php:151
+#: index.php:118
+#: index.php:153
 msgid "Posted on: &mdash; "
 msgstr "发表于： &mdash; "
 
-#: index.php:82
-#: index.php:158
-msgid " are coming soon."
-msgstr "即将推出"
-
-#: index.php:123
-msgid " are coming soons."
-msgstr "即将推出"
+#: index.php:84
+#: index.php:125
+#: index.php:160
+msgid "We will update soon."
+msgstr "很快，我们将更新"
 
 #: page-contact.php:12
 msgid "Please enter your name."
@@ -206,17 +201,18 @@ msgstr "发表于："
 msgid "Latest news are coming soon."
 msgstr "最新消息即将到来"
 
-#: page-media-center.php:157
-#: page-media-center.php:212
-#: page-media-center.php:265
+#: page-media-center.php:158
+#: page-media-center.php:213
+#: page-media-center.php:262
+#: framework/shortcodes.php:547
 msgid "See more "
 msgstr "查看更多"
 
-#: page-media-center.php:197
+#: page-media-center.php:198
 msgid "Video are coming soon."
 msgstr "视频即将推出。"
 
-#: page-publication-reports.php:75
+#: page-publication-reports.php:78
 msgid "See more"
 msgstr "查看更多"
 
@@ -228,15 +224,15 @@ msgstr "主要工作人员"
 msgid "This post have no photo"
 msgstr "这篇文章没有照片"
 
-#: page-teams.php:51
+#: page-teams.php:52
 msgid "View detail"
 msgstr "查看详细信息"
 
-#: page-teams.php:78
+#: page-teams.php:79
 msgid "Management Teams"
 msgstr "管理团队"
 
-#: page-teams.php:110
+#: page-teams.php:111
 msgid "Sorry, we will update our teams soon."
 msgstr "很抱歉，我们会尽快更新我们的团队。"
 
@@ -394,11 +390,11 @@ msgstr "源"
 msgid "Where is this new come from. e.g: Cambodia Daily or Phnom Penh Post..."
 msgstr "这是新在哪里从何而来。例如： Cambodia Daily or Phnom Penh Post..."
 
-#: framework/admin/classes/class.options_machine.php:488
+#: framework/admin/classes/class.options_machine.php:481
 msgid "Last Backup : "
 msgstr "上次备份："
 
-#: framework/admin/classes/class.options_machine.php:548
+#: framework/admin/classes/class.options_machine.php:541
 msgid "Upload"
 msgstr "上载"
 
@@ -644,12 +640,12 @@ msgid "Add Footer menu"
 msgstr "添加页脚“菜单”"
 
 #: framework/functions/custom-functions.php:199
-msgid "Next"
-msgstr "下"
-
-#: framework/functions/custom-functions.php:209
 msgid "Previous"
 msgstr "前"
+
+#: framework/functions/custom-functions.php:209
+msgid "Next"
+msgstr "下"
 
 #: framework/functions/custom-functions.php:269
 msgid "By: "
@@ -664,54 +660,54 @@ msgstr "在中："
 msgid "<time datetime=\"%1$s\" pubdate>%2$s</time>"
 msgstr "<time datetime=\"%1$s\" pubdate>%2$s</time>"
 
-#: framework/functions/setup-theme.php:35
+#: framework/functions/setup-theme.php:21
 msgid "Primary Navigation"
 msgstr "主导航"
 
-#: framework/functions/setup-theme.php:36
+#: framework/functions/setup-theme.php:22
 msgid "Footer Navigation"
 msgstr "页脚导航"
 
-#: framework/functions/setup-theme.php:137
+#: framework/functions/setup-theme.php:108
 msgid "Main Sidebar"
 msgstr "主要侧边栏"
 
-#: framework/functions/setup-theme.php:146
+#: framework/functions/setup-theme.php:117
 msgid "Home Sidebar 1"
 msgstr "Home Sidebar 1"
 
-#: framework/functions/setup-theme.php:147
-#: framework/functions/setup-theme.php:157
+#: framework/functions/setup-theme.php:118
+#: framework/functions/setup-theme.php:128
 msgid "For homepage under slideshow"
 msgstr "网页下幻灯片"
 
-#: framework/functions/setup-theme.php:156
+#: framework/functions/setup-theme.php:127
 msgid "Home Sidebar 2"
 msgstr "Home Sidebar 2"
 
-#: framework/functions/setup-theme.php:166
+#: framework/functions/setup-theme.php:137
 msgid "Footer Bottom Sidebar"
 msgstr "Footer Bottom Sidebar"
 
-#: framework/functions/setup-theme.php:167
+#: framework/functions/setup-theme.php:138
 msgid "For place email subscibe box like Newsletter widget"
 msgstr "For place email subscibe box like Newsletter widget"
 
-#: framework/functions/setup-theme.php:176
+#: framework/functions/setup-theme.php:147
 msgid "Footer Sidebar"
 msgstr "页脚侧边栏"
 
-#: framework/functions/setup-theme.php:177
+#: framework/functions/setup-theme.php:148
 msgid "For place pages link in footer, can only support with Sub navigation widget"
 msgstr "对于地方在页脚的页面链接，只能支持与辅助导航小工具"
 
-#: framework/functions/setup-theme.php:364
+#: framework/functions/setup-theme.php:354
 #, php-format
 msgid "Search results for %s"
 msgstr "搜索结果 %s"
 
-#: framework/functions/setup-theme.php:367
-#: framework/functions/setup-theme.php:381
+#: framework/functions/setup-theme.php:357
+#: framework/functions/setup-theme.php:371
 #, php-format
 msgid "Page %s"
 msgstr "页 %s"
@@ -925,521 +921,539 @@ msgstr "视频播放器"
 msgid "Audio Player"
 msgstr "音频播放器"
 
-#: framework/tinymce/tinymce.php:58
+#: framework/tinymce/tinymce.php:57
+msgid "Video Youtube"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:59
 msgid "Alert Boxes"
 msgstr "警告框"
 
-#: framework/tinymce/tinymce.php:59
+#: framework/tinymce/tinymce.php:60
 msgid "Error"
 msgstr "错误"
 
-#: framework/tinymce/tinymce.php:60
+#: framework/tinymce/tinymce.php:61
 msgid "Success"
 msgstr "成功"
 
-#: framework/tinymce/tinymce.php:61
+#: framework/tinymce/tinymce.php:62
 msgid "Info"
 msgstr "信息"
 
-#: framework/tinymce/tinymce.php:62
+#: framework/tinymce/tinymce.php:63
 msgid "Notice"
 msgstr "注意"
 
-#: framework/tinymce/tinymce.php:64
+#: framework/tinymce/tinymce.php:65
 msgid "Layout"
 msgstr "布局"
 
-#: framework/tinymce/tinymce.php:65
-#: framework/tinymce/tinymce.php:1149
-#: framework/tinymce/tinymce.php:1282
+#: framework/tinymce/tinymce.php:66
+#: framework/tinymce/tinymce.php:1172
+#: framework/tinymce/tinymce.php:1305
 msgid "1/2"
 msgstr "1/2"
 
-#: framework/tinymce/tinymce.php:66
+#: framework/tinymce/tinymce.php:67
 msgid "1/2 Last"
 msgstr "1/2上"
 
-#: framework/tinymce/tinymce.php:67
-#: framework/tinymce/tinymce.php:1150
-#: framework/tinymce/tinymce.php:1283
+#: framework/tinymce/tinymce.php:68
+#: framework/tinymce/tinymce.php:1173
+#: framework/tinymce/tinymce.php:1306
 msgid "1/3"
 msgstr "1/3"
 
-#: framework/tinymce/tinymce.php:68
+#: framework/tinymce/tinymce.php:69
 msgid "1/3 Last"
 msgstr "1/3尾"
 
-#: framework/tinymce/tinymce.php:69
-#: framework/tinymce/tinymce.php:1151
-#: framework/tinymce/tinymce.php:1284
+#: framework/tinymce/tinymce.php:70
+#: framework/tinymce/tinymce.php:1174
+#: framework/tinymce/tinymce.php:1307
 msgid "1/4"
 msgstr "1/4"
 
-#: framework/tinymce/tinymce.php:70
+#: framework/tinymce/tinymce.php:71
 msgid "1/4 Last"
 msgstr "1/4最后"
 
-#: framework/tinymce/tinymce.php:71
+#: framework/tinymce/tinymce.php:72
 msgid "2/3"
 msgstr "2/3"
 
-#: framework/tinymce/tinymce.php:72
+#: framework/tinymce/tinymce.php:73
 msgid "2/3 Last"
 msgstr "2/3尾"
 
-#: framework/tinymce/tinymce.php:73
+#: framework/tinymce/tinymce.php:74
 msgid "3/4"
 msgstr "3/4"
 
-#: framework/tinymce/tinymce.php:74
+#: framework/tinymce/tinymce.php:75
 msgid "3/4 Last"
 msgstr "3/4尾"
 
-#: framework/tinymce/tinymce.php:76
+#: framework/tinymce/tinymce.php:77
 msgid "Template Tags"
 msgstr "模板标签"
 
-#: framework/tinymce/tinymce.php:77
+#: framework/tinymce/tinymce.php:78
 msgid "Post Carousel"
 msgstr "发表畅饮"
 
-#: framework/tinymce/tinymce.php:78
+#: framework/tinymce/tinymce.php:79
 msgid "Projects Carousel"
 msgstr "项目旋转木马"
 
-#: framework/tinymce/tinymce.php:79
+#: framework/tinymce/tinymce.php:80
 msgid "Portfolio"
 msgstr "投资组合"
 
-#: framework/tinymce/tinymce.php:81
-#: framework/tinymce/tinymce.php:1244
+#: framework/tinymce/tinymce.php:82
+#: framework/tinymce/tinymce.php:1267
 msgid "Team Member"
 msgstr "队员"
 
 #: framework/tinymce/tinymce.php:83
+#: framework/tinymce/tinymce.php:1336
+msgid "Post list"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:84
+#: framework/tinymce/tinymce.php:1369
+msgid "Page list"
+msgstr ""
+
+#: framework/tinymce/tinymce.php:86
 msgid "Misc"
 msgstr "杂项"
 
-#: framework/tinymce/tinymce.php:84
+#: framework/tinymce/tinymce.php:87
 msgid "Fullwidth Map"
 msgstr "全角地图"
 
-#: framework/tinymce/tinymce.php:85
+#: framework/tinymce/tinymce.php:88
 msgid "Raw (disable editor formatting)"
 msgstr "RAW（禁用编辑器格式）"
 
-#: framework/tinymce/tinymce.php:99
+#: framework/tinymce/tinymce.php:102
 msgid "Dotted line"
 msgstr "虚线"
 
-#: framework/tinymce/tinymce.php:132
+#: framework/tinymce/tinymce.php:135
 msgid "Align"
 msgstr "对齐"
 
-#: framework/tinymce/tinymce.php:139
-#: framework/tinymce/tinymce.php:194
-#: framework/tinymce/tinymce.php:521
-#: framework/tinymce/tinymce.php:665
+#: framework/tinymce/tinymce.php:142
+#: framework/tinymce/tinymce.php:197
+#: framework/tinymce/tinymce.php:524
+#: framework/tinymce/tinymce.php:668
 msgid "Normal"
 msgstr "正常"
 
-#: framework/tinymce/tinymce.php:140
-#: framework/tinymce/tinymce.php:232
+#: framework/tinymce/tinymce.php:143
+#: framework/tinymce/tinymce.php:235
 msgid "Left"
 msgstr "左"
 
-#: framework/tinymce/tinymce.php:141
+#: framework/tinymce/tinymce.php:144
 msgid "Center"
 msgstr "中心"
 
-#: framework/tinymce/tinymce.php:142
-#: framework/tinymce/tinymce.php:231
+#: framework/tinymce/tinymce.php:145
+#: framework/tinymce/tinymce.php:234
 msgid "Right"
 msgstr "权"
 
-#: framework/tinymce/tinymce.php:187
+#: framework/tinymce/tinymce.php:190
 msgid "Size"
 msgstr "大小"
 
-#: framework/tinymce/tinymce.php:195
+#: framework/tinymce/tinymce.php:198
 msgid "Medium"
 msgstr "中"
 
-#: framework/tinymce/tinymce.php:196
+#: framework/tinymce/tinymce.php:199
 msgid "Large"
 msgstr "大"
 
-#: framework/tinymce/tinymce.php:207
+#: framework/tinymce/tinymce.php:210
 msgid "Remove background"
 msgstr "删除背景"
 
-#: framework/tinymce/tinymce.php:223
-#: framework/tinymce/tinymce.php:360
+#: framework/tinymce/tinymce.php:226
+#: framework/tinymce/tinymce.php:363
 msgid "Arrow"
 msgstr "箭头"
 
-#: framework/tinymce/tinymce.php:230
-#: framework/tinymce/tinymce.php:779
+#: framework/tinymce/tinymce.php:233
+#: framework/tinymce/tinymce.php:782
 msgid "No"
 msgstr "No"
 
-#: framework/tinymce/tinymce.php:261
+#: framework/tinymce/tinymce.php:264
 msgid "Background"
 msgstr "背景"
 
-#: framework/tinymce/tinymce.php:268
+#: framework/tinymce/tinymce.php:271
 msgid "Light"
 msgstr "光"
 
-#: framework/tinymce/tinymce.php:269
+#: framework/tinymce/tinymce.php:272
 msgid "Dark"
 msgstr "黑暗"
 
-#: framework/tinymce/tinymce.php:299
+#: framework/tinymce/tinymce.php:302
 msgid "Author"
 msgstr "作者"
 
-#: framework/tinymce/tinymce.php:315
-#: framework/tinymce/tinymce.php:412
+#: framework/tinymce/tinymce.php:318
+#: framework/tinymce/tinymce.php:415
 msgid "Type"
 msgstr "类型"
 
-#: framework/tinymce/tinymce.php:322
+#: framework/tinymce/tinymce.php:325
 msgid "Default"
 msgstr "默认"
 
-#: framework/tinymce/tinymce.php:323
-#: framework/tinymce/tinymce.php:631
+#: framework/tinymce/tinymce.php:326
+#: framework/tinymce/tinymce.php:634
 msgid "Simple"
 msgstr "Simple"
 
-#: framework/tinymce/tinymce.php:352
+#: framework/tinymce/tinymce.php:355
 msgid "Icon"
 msgstr "图标"
 
-#: framework/tinymce/tinymce.php:359
+#: framework/tinymce/tinymce.php:362
 msgid "None"
 msgstr "无"
 
-#: framework/tinymce/tinymce.php:361
+#: framework/tinymce/tinymce.php:364
 msgid "Arrow 2"
 msgstr "箭2"
 
-#: framework/tinymce/tinymce.php:362
+#: framework/tinymce/tinymce.php:365
 msgid "Check"
 msgstr "查"
 
-#: framework/tinymce/tinymce.php:363
+#: framework/tinymce/tinymce.php:366
 msgid "Check 2"
 msgstr "检查2"
 
-#: framework/tinymce/tinymce.php:364
+#: framework/tinymce/tinymce.php:367
 msgid "Circle"
 msgstr "圈"
 
-#: framework/tinymce/tinymce.php:365
+#: framework/tinymce/tinymce.php:368
 msgid "Plus"
 msgstr "加"
 
-#: framework/tinymce/tinymce.php:366
+#: framework/tinymce/tinymce.php:369
 msgid "Dash"
 msgstr "短跑"
 
-#: framework/tinymce/tinymce.php:367
+#: framework/tinymce/tinymce.php:370
 msgid "Star"
 msgstr "明星"
 
-#: framework/tinymce/tinymce.php:378
+#: framework/tinymce/tinymce.php:381
 msgid "Dotted Bottom Border"
 msgstr "虚线下边框"
 
-#: framework/tinymce/tinymce.php:419
+#: framework/tinymce/tinymce.php:422
 msgid "Single image"
 msgstr "单张图像"
 
-#: framework/tinymce/tinymce.php:420
+#: framework/tinymce/tinymce.php:423
 msgid "Image gallery"
 msgstr "图片库"
 
-#: framework/tinymce/tinymce.php:432
+#: framework/tinymce/tinymce.php:435
 msgid "Full (URL)"
 msgstr "全部（URL）"
 
-#: framework/tinymce/tinymce.php:464
+#: framework/tinymce/tinymce.php:467
 msgid "Group name (lowercase)"
 msgstr "组名（小写）"
 
-#: framework/tinymce/tinymce.php:464
+#: framework/tinymce/tinymce.php:467
 msgid "(Only for image gallery)"
 msgstr "（仅适用于影像图库）"
 
-#: framework/tinymce/tinymce.php:514
+#: framework/tinymce/tinymce.php:517
 msgid "Title size"
 msgstr "标题大小"
 
-#: framework/tinymce/tinymce.php:522
+#: framework/tinymce/tinymce.php:525
 msgid "Heading 6"
 msgstr "标题6"
 
-#: framework/tinymce/tinymce.php:523
+#: framework/tinymce/tinymce.php:526
 msgid "Heading 5"
 msgstr "标题5"
 
-#: framework/tinymce/tinymce.php:524
+#: framework/tinymce/tinymce.php:527
 msgid "Heading 4"
 msgstr "标题4"
 
-#: framework/tinymce/tinymce.php:525
+#: framework/tinymce/tinymce.php:528
 msgid "Heading 3"
 msgstr "标题3"
 
-#: framework/tinymce/tinymce.php:553
+#: framework/tinymce/tinymce.php:556
 msgid "Single tab"
 msgstr "单选项卡"
 
-#: framework/tinymce/tinymce.php:553
-#: framework/tinymce/tinymce.php:642
+#: framework/tinymce/tinymce.php:556
+#: framework/tinymce/tinymce.php:645
 msgid "(Remove wrapping shortcode)"
 msgstr "（删除包装简码）"
 
-#: framework/tinymce/tinymce.php:603
+#: framework/tinymce/tinymce.php:606
 msgid "Table column count"
 msgstr "表列数"
 
-#: framework/tinymce/tinymce.php:610
+#: framework/tinymce/tinymce.php:613
 msgid "1"
 msgstr "1"
 
-#: framework/tinymce/tinymce.php:611
+#: framework/tinymce/tinymce.php:614
 msgid "2"
 msgstr "2"
 
-#: framework/tinymce/tinymce.php:612
+#: framework/tinymce/tinymce.php:615
 msgid "3"
 msgstr "3"
 
-#: framework/tinymce/tinymce.php:613
+#: framework/tinymce/tinymce.php:616
 msgid "4"
 msgstr "4"
 
-#: framework/tinymce/tinymce.php:614
+#: framework/tinymce/tinymce.php:617
 msgid "5"
 msgstr "5"
 
-#: framework/tinymce/tinymce.php:624
+#: framework/tinymce/tinymce.php:627
 msgid "Table type"
 msgstr "表型"
 
-#: framework/tinymce/tinymce.php:632
+#: framework/tinymce/tinymce.php:635
 msgid "Extended"
 msgstr "扩展"
 
-#: framework/tinymce/tinymce.php:642
+#: framework/tinymce/tinymce.php:645
 msgid "Single column"
 msgstr "单柱"
 
-#: framework/tinymce/tinymce.php:658
+#: framework/tinymce/tinymce.php:661
 msgid "Column type"
 msgstr "列类型"
 
-#: framework/tinymce/tinymce.php:666
+#: framework/tinymce/tinymce.php:669
 msgid "Features list (only for Extended tables)"
 msgstr "功能列表（扩展表）"
 
-#: framework/tinymce/tinymce.php:676
+#: framework/tinymce/tinymce.php:679
 msgid "Column title"
 msgstr "列标题"
 
-#: framework/tinymce/tinymce.php:692
+#: framework/tinymce/tinymce.php:695
 msgid "Column price"
 msgstr "列价格"
 
-#: framework/tinymce/tinymce.php:692
+#: framework/tinymce/tinymce.php:695
 msgid "(With currency)"
 msgstr "（由于货币）"
 
-#: framework/tinymce/tinymce.php:708
+#: framework/tinymce/tinymce.php:711
 msgid "Column period"
 msgstr "柱周期"
 
-#: framework/tinymce/tinymce.php:724
+#: framework/tinymce/tinymce.php:727
 msgid "Column description"
 msgstr "栏目介绍"
 
-#: framework/tinymce/tinymce.php:724
+#: framework/tinymce/tinymce.php:727
 msgid "(Only for Simple tables)"
 msgstr "（仅适用于简单的表格）"
 
-#: framework/tinymce/tinymce.php:740
+#: framework/tinymce/tinymce.php:743
 msgid "Column Sign Up button title"
 msgstr "列注册按钮标题"
 
-#: framework/tinymce/tinymce.php:756
+#: framework/tinymce/tinymce.php:759
 msgid "Column Sign Up button URL"
 msgstr "列Sign up按钮URL"
 
-#: framework/tinymce/tinymce.php:772
+#: framework/tinymce/tinymce.php:775
 msgid "Special column"
 msgstr "专栏"
 
-#: framework/tinymce/tinymce.php:780
+#: framework/tinymce/tinymce.php:783
 msgid "Free"
 msgstr "免费"
 
-#: framework/tinymce/tinymce.php:781
+#: framework/tinymce/tinymce.php:784
 msgid "Featured"
 msgstr "精选"
 
-#: framework/tinymce/tinymce.php:791
+#: framework/tinymce/tinymce.php:794
 msgid "Column content (list items)"
 msgstr "列的内容（列表项）"
 
-#: framework/tinymce/tinymce.php:798
+#: framework/tinymce/tinymce.php:801
 #, php-format
 msgid "(Use %1$s shortcode to create a tooltip and %2$s shortcode to create a check icon.)"
 msgstr "(使用 %1$s shortcode创建一个 tooltip 和 %2$s shortcode 创建 a check icon.)"
 
-#: framework/tinymce/tinymce.php:810
+#: framework/tinymce/tinymce.php:813
 msgid "MP4 file URL"
 msgstr "MP4文件的URL"
 
-#: framework/tinymce/tinymce.php:817
+#: framework/tinymce/tinymce.php:820
 msgid "(For Safari, Internet Explorer 9, iPhone, iPad, Android, and Windows Phone 7)"
 msgstr "（对于Safari，Internet Explorer 9中，iPhone，iPad的，Android的，和Windows Phone 7）"
 
-#: framework/tinymce/tinymce.php:827
+#: framework/tinymce/tinymce.php:830
 msgid "WebM file URL"
 msgstr "WebM的文件URL"
 
-#: framework/tinymce/tinymce.php:834
+#: framework/tinymce/tinymce.php:837
 msgid "(For Firefox4, Opera, and Chrome)"
 msgstr "（对于Firefox4，Opera和Chrome浏览器）"
 
-#: framework/tinymce/tinymce.php:844
+#: framework/tinymce/tinymce.php:847
 msgid "OGG file URL"
 msgstr "OGG文件的URLs"
 
-#: framework/tinymce/tinymce.php:851
+#: framework/tinymce/tinymce.php:854
 msgid "(For older Firefox and Opera versions)"
 msgstr "（对于年龄较大的Firefox和Opera版本）"
 
-#: framework/tinymce/tinymce.php:861
+#: framework/tinymce/tinymce.php:864
 msgid "Preview image URL"
 msgstr "预览图像URL"
 
-#: framework/tinymce/tinymce.php:878
+#: framework/tinymce/tinymce.php:881
 msgid "Aspect ratio"
 msgstr "高宽比"
 
-#: framework/tinymce/tinymce.php:894
-#: framework/tinymce/tinymce.php:963
+#: framework/tinymce/tinymce.php:897
+#: framework/tinymce/tinymce.php:986
 msgid "Extra Info"
 msgstr "额外的资讯"
 
-#: framework/tinymce/tinymce.php:900
+#: framework/tinymce/tinymce.php:903
 msgid "If video element isn't displayed properly, try to wrap it inside of <code>[raw]</code> shortcode."
 msgstr "如果无法正确显示视频元素，试图用它里面的 <code>[raw]</code> shortcode."
 
-#: framework/tinymce/tinymce.php:909
+#: framework/tinymce/tinymce.php:912
 msgid "Video Embed Code"
 msgstr "视频嵌入代码"
 
-#: framework/tinymce/tinymce.php:936
+#: framework/tinymce/tinymce.php:959
 msgid "(For Safari, Internet Explorer, Chrome)"
 msgstr "（对于Safari浏览器，互联网浏览器，谷歌浏览器）"
 
-#: framework/tinymce/tinymce.php:953
+#: framework/tinymce/tinymce.php:976
 msgid "(For Firefox, Opera, Chrome)"
 msgstr "（火狐，Opera，Chrome浏览器）"
 
-#: framework/tinymce/tinymce.php:969
+#: framework/tinymce/tinymce.php:992
 msgid "If audio element isn't displayed properly, try to wrap it inside of <code>[raw]</code> shortcode."
 msgstr "如果无法正确显示音频元素，试图用它里面的 <code>[raw]</code> shortcode."
 
-#: framework/tinymce/tinymce.php:1017
-#: framework/tinymce/tinymce.php:1079
+#: framework/tinymce/tinymce.php:1040
+#: framework/tinymce/tinymce.php:1102
 msgid "Custom Title"
 msgstr "自定义头衔"
 
-#: framework/tinymce/tinymce.php:1024
+#: framework/tinymce/tinymce.php:1047
 msgid "(Default: Latest stuff from our blog)"
 msgstr "（默认值：最新的东西从我们的博客）"
 
-#: framework/tinymce/tinymce.php:1033
-#: framework/tinymce/tinymce.php:1095
-#: framework/tinymce/tinymce.php:1164
+#: framework/tinymce/tinymce.php:1056
+#: framework/tinymce/tinymce.php:1118
+#: framework/tinymce/tinymce.php:1187
 msgid "Limit"
 msgstr "限制"
 
-#: framework/tinymce/tinymce.php:1040
-#: framework/tinymce/tinymce.php:1102
+#: framework/tinymce/tinymce.php:1063
+#: framework/tinymce/tinymce.php:1125
 msgid "(Only numbers! Default: 8)"
 msgstr "（仅数默认值：8）"
 
-#: framework/tinymce/tinymce.php:1049
-#: framework/tinymce/tinymce.php:1112
-#: framework/tinymce/tinymce.php:1181
+#: framework/tinymce/tinymce.php:1072
+#: framework/tinymce/tinymce.php:1135
+#: framework/tinymce/tinymce.php:1204
 msgid "Categories"
 msgstr "分类"
 
-#: framework/tinymce/tinymce.php:1057
-#: framework/tinymce/tinymce.php:1120
-#: framework/tinymce/tinymce.php:1189
+#: framework/tinymce/tinymce.php:1080
+#: framework/tinymce/tinymce.php:1143
+#: framework/tinymce/tinymce.php:1212
 msgid "All"
 msgstr "所有"
 
-#: framework/tinymce/tinymce.php:1067
-#: framework/tinymce/tinymce.php:1130
-#: framework/tinymce/tinymce.php:1199
+#: framework/tinymce/tinymce.php:1090
+#: framework/tinymce/tinymce.php:1153
+#: framework/tinymce/tinymce.php:1222
 msgid "(You can select multiple categories by pressing CTRL key)"
 msgstr "（您可以选择多个类别，按CTRL键）"
 
-#: framework/tinymce/tinymce.php:1086
+#: framework/tinymce/tinymce.php:1109
 msgid "(Default: Latest projects)"
 msgstr "（默认：项目）"
 
-#: framework/tinymce/tinymce.php:1142
-#: framework/tinymce/tinymce.php:1275
+#: framework/tinymce/tinymce.php:1165
+#: framework/tinymce/tinymce.php:1298
 msgid "Column"
 msgstr "柱"
 
-#: framework/tinymce/tinymce.php:1171
+#: framework/tinymce/tinymce.php:1194
 msgid "(Only numbers! Default: All)"
 msgstr "（仅数默认值：全部）"
 
-#: framework/tinymce/tinymce.php:1211
+#: framework/tinymce/tinymce.php:1234
 msgid "ID"
 msgstr "ID"
 
-#: framework/tinymce/tinymce.php:1219
+#: framework/tinymce/tinymce.php:1242
 msgid "Select slider"
 msgstr "选择滑块"
 
-#: framework/tinymce/tinymce.php:1252
+#: framework/tinymce/tinymce.php:1275
 msgid "Select team member"
 msgstr "选择团队成员"
 
-#: framework/tinymce/tinymce.php:1295
+#: framework/tinymce/tinymce.php:1318
 msgid "Last column"
 msgstr "最后一列"
 
-#: framework/tinymce/tinymce.php:1313
+#: framework/tinymce/tinymce.php:1351
+msgid "Number of post"
+msgstr "后数"
+
+#: framework/tinymce/tinymce.php:1387
 msgid "Map shortcode"
 msgstr "地图 shortcode"
 
-#: framework/tinymce/tinymce.php:1349
+#: framework/tinymce/tinymce.php:1423
 msgid "Current shortcode with all available attributes"
 msgstr "目前所有可用的属性的简码"
 
-#: framework/tinymce/tinymce.php:1350
+#: framework/tinymce/tinymce.php:1424
 msgid "red"
 msgstr "红色"
 
-#: framework/tinymce/tinymce.php:1350
+#: framework/tinymce/tinymce.php:1424
 msgid "required"
 msgstr "需要"
 
-#: framework/tinymce/tinymce.php:1370
+#: framework/tinymce/tinymce.php:1444
 msgid "Insert Shortcode"
 msgstr "插入 Shortcode"
 
@@ -1456,7 +1470,7 @@ msgid "Facebook"
 msgstr "Facebook的"
 
 #: framework/widgets/fb-likebox-widget.php:77
-#: framework/widgets/posts-type-widget.php:82
+#: framework/widgets/posts-type-widget.php:87
 #: framework/widgets/training-register-widget.php:63
 #: framework/widgets/video-widget.php:78
 msgid "Title:"
@@ -1518,17 +1532,25 @@ msgstr "从某一个类别的窗口小部件显示帖子"
 msgid "BFC - Posts by Category"
 msgstr "BFC - 文章分类"
 
-#: framework/widgets/posts-type-widget.php:76
+#: framework/widgets/posts-type-widget.php:81
 msgid "Post Type"
 msgstr "文章类型"
 
-#: framework/widgets/posts-type-widget.php:86
+#: framework/widgets/posts-type-widget.php:91
 msgid "select category:"
 msgstr "选择产品类别："
 
-#: framework/widgets/posts-type-widget.php:102
+#: framework/widgets/posts-type-widget.php:107
 msgid "Number Of Posts:"
 msgstr "文章发表数："
+
+#: framework/widgets/subnav-widget.php:27
+msgid "Show Page Name:"
+msgstr ""
+
+#: framework/widgets/subnav-widget.php:34
+msgid "Level:"
+msgstr ""
 
 #: framework/widgets/text-image-widget.php:15
 msgid "Arbitrary link with a simple image."
@@ -1581,6 +1603,15 @@ msgstr "类型"
 #: framework/widgets/video-widget.php:92
 msgid "Video ID:"
 msgstr "视频ID："
+
+#~ msgid "All Articles"
+#~ msgstr "所有文章"
+
+#~ msgid " are coming soon."
+#~ msgstr "即将推出"
+
+#~ msgid " are coming soons."
+#~ msgstr "即将推出"
 
 #~ msgid "are coming soon."
 #~ msgstr "即将推出"

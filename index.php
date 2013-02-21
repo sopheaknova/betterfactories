@@ -73,7 +73,7 @@
 				<span><?php _e( 'Posted on: &mdash; ', 'sptheme' ); ?><?php echo sp_posted_on(); ?></span>
             </div><!-- end .entry-meta -->
             <p>
-            <?php echo sp_excerpt_length(40); ?>
+            <?php echo sp_excerpt_length(40); ?><br />
             <a class="learn-more" href="<?php the_permalink(); ?>"><?php _e( 'Learn more »', 'sptheme' ); ?></a>
             </p>
             

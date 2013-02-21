@@ -120,13 +120,6 @@ $of_options[] = array( "name" => "Custom logo upload",
 					"mod" => "min",
 					"type" => "media");
 					
-$of_options[] = array( "name" => "Custom sub page logo upload",
-					"desc" => "Upload your own logo (.png)",
-					"id" => "subpage_logo",
-					"std" => SP_BASE_URL . "images/logo-subpage.png",
-					"mod" => "min",
-					"type" => "media");					
-
 $of_options[] = array( "name" => "Custom favicon upload",
 					"desc" => "Upload your own favicon that display on browser address bar. (.ico). Anyway you can convert png to ico by click on<a href='http://www.convertico.com'> Convert ico</a>",
 					"id" => "theme_favico",

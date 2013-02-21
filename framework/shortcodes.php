@@ -518,7 +518,7 @@ add_shortcode('audio', 'sp_audio_sc');
 		
 		if ( ( function_exists( 'get_post_format' ) && 'video' == get_post_format( $post->ID ) )  ) : 
 		$output .= '<a href="'.get_permalink().'">';
-		$output .= '<img src="http://img.youtube.com/vi/' . sp_get_custom_field( 'sp_video_id', $post->ID ) . '/0.jpg" width="267" height="175"	/>';
+		$output .= '<img src="http://img.youtube.com/vi/' . sp_get_custom_field( 'sp_video_id', $post->ID ) . '/0.jpg" width="267" height="175" class="alignnone" />';
 		$output .= '</a>';
 		else:
 			if ($image) {
@@ -544,7 +544,7 @@ add_shortcode('audio', 'sp_audio_sc');
 
 		wp_reset_query();
 		
-		$output .= '<a href="'.esc_url( $category_link ).'" class="learn-more button">' . __('See more ', 'sptheme') .'</a>';
+		$output .= '<a href="'.esc_url( $category_link ).'" class="learn-more button">' . __('See more ', 'sptheme') . get_the_title($post->ID) .'</a>';
 
 		return $output;	  	  
 	}

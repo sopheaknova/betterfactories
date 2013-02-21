@@ -653,7 +653,7 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		width:100%;
 	}
 		#featured-media .caption a{
-			color:#fcfcfc;
+			color:#fcfcfc!important;
 			font-size:16px;
 			text-transform:uppercase;	
 		}
@@ -1677,6 +1677,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
 			}
 
 			.social-links li a:hover { background-position: 0 0; }
+
+/* ---------------------------------------------------------------------- */
+/*	Over-write plugin sytle
+/* ---------------------------------------------------------------------- */
+			
+.timeline{margin-top:20px!important;}	
+.timeline .issues span{margin-left:20px!important;}		
 
 /* END GENERAL LAYOUT */
 /* --------------------------------------------------------------------------------------------------- */

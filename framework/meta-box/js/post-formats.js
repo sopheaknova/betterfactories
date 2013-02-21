@@ -46,9 +46,6 @@ jQuery( document ).ready( function($) {
 		} else if( val === 'link' ) {
 
 			$linkSettings.show();
-			$postdivrich.hide();
-			$headingImage.hide();
-			
 		}
 
 	}
