@@ -190,6 +190,20 @@ jQuery(document).ready(function($) {
 	})();
 	
 	/* ---------------------------------------------------------------------- */
+	/*	Toggle Content
+	/* ---------------------------------------------------------------------- */
+	
+	$(".toggle-container").hide(); 
+	$(".trigger").toggle(function(){
+		$(this).addClass("active");
+		}, function () {
+		$(this).removeClass("active");
+	});
+	$(".trigger").click(function(){
+		$(this).next(".toggle-container").slideToggle();
+	});
+	
+	/* ---------------------------------------------------------------------- */
 	/*	Accordion Content
 	/* ---------------------------------------------------------------------- */
 
@@ -236,7 +250,8 @@ jQuery(document).ready(function($) {
 			var $this = $(this);
 
 			$this.next().children('.tab-content').hide()
-												 .first().show();
+												 .first().show()
+												 .css('background-color','#ffffff');
 
 			$this.children('li').first().addClass('active').show();
 		});
@@ -248,7 +263,8 @@ jQuery(document).ready(function($) {
 				 .addClass('active');
 			
 			$this.parent().next().children('.tab-content').hide()
-														  .siblings( $this.find('a').attr('href') ).fadeIn();
+														  .siblings( $this.find('a').attr('href') ).fadeIn()
+														  .css('background-color','#ffffff');
 
 			e.preventDefault();
 		});

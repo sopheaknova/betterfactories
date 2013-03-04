@@ -794,6 +794,18 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	}
 	
 	.type-staff .profile-photo-frame{margin-top:15px;}
+	
+	/* ---------------------------------------------------------------------- */
+	/*	Portfolio
+	/* ---------------------------------------------------------------------- */
+
+	#portfolio-items article { margin-bottom: 50px; }
+
+		#portfolio-items .project-meta {
+			display: block;
+			margin: 5px 0 0;
+			padding: 15px 0 0;
+		}
 		
 	/* -------------------------------------------------- */
 	/*	Contact
@@ -961,6 +973,40 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		.nav-menu-widget ul li.current_page_item ul, .nav-menu-widget ul li ul{background-color:#FCFCFC;}
 		
 		/* ---------------------------------------- */
+		/*	Toggle Content
+		/* ---------------------------------------- */
+		.toggle-wrap {
+			float: left;
+			width: 100%;
+			margin-bottom: 6px;
+		}
+		.trigger {
+		}
+		.trigger a {
+			display: block;
+			padding: 10px;
+			padding-left: 15px;
+			text-decoration: none;
+			font-weight: bold;
+			color: #676767;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.17);
+			-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.17);
+			-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.17);
+			-webkit-transition-duration: 0s; 
+			-moz-transition-duration: 0s; 
+			-o-transition-duration: 0s; 
+			background: url(images/bullet-toggle.png) no-repeat right 15px #f4f4f4;
+		}
+		.trigger.active a { 
+			background: url(images/bullet-toggle.png) no-repeat right -20px #f4f4f4;
+		}
+		.toggle-container {
+			overflow: hidden;
+			float: left;
+			padding: 15px;
+		}
+		
+		/* ---------------------------------------- */
 		/*	Accordion Content
 		/* ---------------------------------------- */
 
@@ -969,28 +1015,24 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 				cursor: pointer;
 				display: block;
 				margin: 0;
+				background-color:#F4F4F4;
 			}
-
-				.acc-trigger:last-of-type, .acc-container:last-of-type {
-					border-bottom: 1px dotted #ced8df;
-					margin-bottom: 20px;
-				}
 
 				.no-js .acc-trigger:last-of-type { border-bottom: none; }
 
 			.acc-trigger a {
-				background: url(images/accordion-content-buttons.png) no-repeat 20px 23px;
+				background: url(images/accordion-content-buttons.png) no-repeat 20px 14px;
 				display: block;
 				color: #959393;
 				outline: medium none;
-				padding: 25px 20px 25px 55px;
+				padding: 15px 10px 15px 55px;
 				text-decoration: none;
 				text-shadow: none;
 			}
 
-			h3.acc-trigger a, h4.acc-trigger a { background-position: 20px 24px; }
+			h3.acc-trigger a, h4.acc-trigger a { background-position: 20px 15px; }
 
-			h6.acc-trigger a { background-position: 20px 21px; }
+			h6.acc-trigger a { background-position: 20px 11px; }
 
 				.acc-trigger a:hover { background-color: #f8f8f8; }
 
@@ -1006,15 +1048,15 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 				}
 
 				.acc-trigger.active a {
-					background-position: 20px -88px;
+					background-position: 20px -96px;
 					cursor: default;
 				}
 
-				h3.acc-trigger.active a, h4.acc-trigger.active a { background-position: 20px -87px; }
+				h3.acc-trigger.active a, h4.acc-trigger.active a { background-position: 20px -95px; }
 
-				h6.acc-trigger.active a { background-position: 20px -90px; }
+				h6.acc-trigger.active a { background-position: 20px -98px; }
 
-			.acc-container .content { padding: 0 20px 25px 55px; }
+			.acc-container .content { padding: 20px 20px 25px 55px; }
 
 			.js .acc-container { margin-top: -15px; }
 		

@@ -49,8 +49,9 @@ require_once( $path_to_wp.'/wp-load.php' );
 							<option value="list"><?php _e('List', 'sptheme'); ?></option>
 							<option value="quote"><?php _e('Quote', 'sptheme'); ?></option>
 							<option value="content-tabs"><?php _e('Content Tabs', 'sptheme'); ?></option>
+                            <option value="accordion-content"><?php _e('Accordion Content', 'sptheme'); ?></option>
+                            <option value="toggle-content"><?php _e('Toggle Content', 'sptheme'); ?></option>
                             <!--<option value="lightbox"><?php _e('Lightbox', 'sptheme'); ?></option>
-							<option value="accordion-content"><?php _e('Accordion Content', 'sptheme'); ?></option>
 							<option value="pricing-tables"><?php _e('Pricing Tables', 'sptheme'); ?></option>
 							<option value="video-player"><?php _e('Video Player', 'sptheme'); ?></option>
 							<option value="audio-player"><?php _e('Audio Player', 'sptheme'); ?></option>-->
@@ -547,6 +548,24 @@ require_once( $path_to_wp.'/wp-load.php' );
 
 			</tr>
 			<!-- end accordion-content -->
+            
+            <!-- start toggle-content -->
+			<tr class="option toggle-content">
+
+				<th class="label">
+
+					<label for="toggle-content-title"><?php _e('Title', 'sptheme'); ?><span class="red">*</span></label>
+
+				</th>
+
+				<td class="field">
+				
+					<input type="text" name="toggle-content-title" id="toggle-content-title" value="" class="widefat">
+
+				</td>
+
+			</tr>
+            <!-- end toggle-content -->
 
 			<!-- start content-tabs -->
 			<tr class="option content-tabs">

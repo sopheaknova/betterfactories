@@ -150,20 +150,39 @@
 	add_shortcode('lightbox', 'sp_lightbox_sc');
 	
 	/* -------------------------------------------------- */
+	/*	Toggle Content
+	/* -------------------------------------------------- */
+	function sp_framework_toggle_content_sc( $atts, $content = null ) {
+
+		extract( shortcode_atts( array(
+			'title'      => ''
+		), $atts ) );
+		
+		$output = '<div class="toggle-wrap">';
+		$output .= '<span class="trigger"><a href="#">'  . esc_attr( $title ) .  '</a></span><div class="toggle-container">';
+		$output .= $content;  
+		$output .= '</div></div>';
+
+		return $output;
+	
+	}
+	add_shortcode('toggle_content', 'sp_framework_toggle_content_sc');
+	
+	/* -------------------------------------------------- */
 	/*	Accordion Content
 	/* -------------------------------------------------- */
 
-	function sp_accordion_content_sc( $atts, $content = null ) {
+	function sp_framework_accordion_content_sc( $atts, $content = null ) {
 
 		extract( shortcode_atts( array(
 			'title'      => '',
-			'title_size' => 'span'
+			'title_size' => 'div'
 		), $atts ) );
 
 		return '<' . esc_attr( $title_size ) . ' class="acc-trigger"><a href="#">' . esc_attr( $title ) . '</a></' . esc_attr( $title_size ) . '><div class="acc-container"><div class="content">' . do_shortcode( $content ) . '</div></div>';
 	
 	}
-	add_shortcode('accordion_content', 'sp_accordion_content_sc');
+	add_shortcode('accordion_content', 'sp_framework_accordion_content_sc');
 
 	/* -------------------------------------------------- */
 	/*	Content Tabs

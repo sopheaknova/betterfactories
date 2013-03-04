@@ -92,6 +92,15 @@
 
 			sp_show_option('.accordion-content');
 			shortcode = '[accordion_content <span class="red">title=""</span> title_size=""] [/accordion_content]';
+			
+		/* -------------------------------------------------- */
+		/*	Toggle Content
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'toggle-content' ) {
+
+			sp_show_option('.toggle-content');
+			shortcode = '[toggle_content <span class="red">title=""</span>] [/accordion_content]';	
 
 		/* -------------------------------------------------- */
 		/*	Content Tabs
@@ -544,6 +553,20 @@
 				shortcode += ' title_size="' + accordionContentTitleSize + '"';
 
 			shortcode += ']' + accordionContentContent + '[/accordion_content]';
+			
+		/* -------------------------------------------------- */
+		/*	Toggle Content
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'toggle-content' ) {
+
+			var toggleContentTitle     = $('#toggle-content-title').val();
+
+			shortcode = '[toggle_content';
+
+			shortcode += ' title="' + toggleContentTitle + '"';
+
+			shortcode += '][/toggle_content]';	
 
 		/* -------------------------------------------------- */
 		/*	Content Tabs
