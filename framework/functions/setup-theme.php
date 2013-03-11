@@ -109,7 +109,7 @@ function sp_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h6>',
+		'after_title'   => '</h3>',
 	));
 	
 	// Home Widget Area 1
@@ -119,7 +119,7 @@ function sp_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h6>',
+		'after_title'   => '</h3>',
 	));
 	
 	// Home Widget Area 2
@@ -129,7 +129,7 @@ function sp_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h6>',
+		'after_title'   => '</h3>',
 	));
 	
 	// Footer Bottom Widget Area
@@ -139,7 +139,7 @@ function sp_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h6>',
+		'after_title'   => '</h3>',
 	));
 	
 	// Footer Widget Area
@@ -149,7 +149,7 @@ function sp_widgets_init() {
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h6>',
+		'after_title'   => '</h3>',
 	));
 	
 	$generate_sidebars = $data['sidebar_options']; 
@@ -163,7 +163,7 @@ function sp_widgets_init() {
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h6>',
+			'after_title'   => '</h3>',
 			));
 		}
 	}
