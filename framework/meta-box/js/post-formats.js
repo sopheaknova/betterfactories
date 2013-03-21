@@ -63,7 +63,16 @@ jQuery( document ).ready( function($) {
 			$generalSettings.hide();
 			
 		}
-	}	
+	}
+	
+	$pageLayout.each(function() {
+		
+		var $this = $(this);
+
+		if( $this.is(':checked') )
+			changePageLayout( $this.val() );
+
+	});	
 	
 	$pageLayout.change(function() {
 		changePageLayout( $(this).val() );
