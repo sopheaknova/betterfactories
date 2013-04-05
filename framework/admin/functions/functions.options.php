@@ -185,16 +185,6 @@ $of_options[] = array( "name" => 'timeout',
 // Post Setting
 $of_options[] = array( "name" => "Post Setting",
 					"type" => "heading");																		
-
-$of_options[] = array( "name" => "Disable Share button",
-					"desc" => "Show or hide Share button for each news/events and latest offer",
-					"id" => "disable_share_post",
-					"std" => "no",
-					"type" => "radio",
-					"options" => array(
-						'yes' => 'Yes',
-						'no' => 'No')
-					);
 					
 $of_options[] = array( "name" => "Disable post meta",
 					"desc" => "Show or hide Posted By",
