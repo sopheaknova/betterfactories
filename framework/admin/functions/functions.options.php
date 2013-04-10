@@ -196,6 +196,59 @@ $of_options[] = array( "name" => "Disable post meta",
 						'no' => 'No')
 					);
 
+// Heading image
+$of_options[] = array( "name" => "Heading image",
+					"type" => "heading");
+									
+$of_options[] = array( "name" => "Custom heading image 01",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_1",
+					"std" => SP_BASE_URL . "images/default-heading-image-1.jpg",
+					"mod" => "min",
+					"type" => "media");	
+
+$of_options[] = array( "name" => "Custom heading image 02",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_2",
+					"std" => SP_BASE_URL . "images/default-heading-image-2.jpg",
+					"mod" => "min",
+					"type" => "media");	
+
+$of_options[] = array( "name" => "Custom heading image 03",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_3",
+					"std" => SP_BASE_URL . "images/default-heading-image-3.jpg",
+					"mod" => "min",
+					"type" => "media");	
+
+$of_options[] = array( "name" => "Custom heading image 04",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_4",
+					"std" => SP_BASE_URL . "images/default-heading-image-4.jpg",
+					"mod" => "min",
+					"type" => "media");	
+
+$of_options[] = array( "name" => "Custom heading image 05",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_5",
+					"std" => SP_BASE_URL . "images/default-heading-image-5.jpg",
+					"mod" => "min",
+					"type" => "media");	
+
+$of_options[] = array( "name" => "Custom heading image 06",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_6",
+					"std" => SP_BASE_URL . "images/default-heading-image-6.jpg",
+					"mod" => "min",
+					"type" => "media");	
+
+$of_options[] = array( "name" => "Custom heading image 07",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_7",
+					"std" => SP_BASE_URL . "images/default-heading-image-7.jpg",
+					"mod" => "min",
+					"type" => "media");																																			
+
 // Media Center Setting
 $of_options[] = array( "name" => "Media Center",
 					"type" => "heading");
@@ -350,6 +403,21 @@ $of_options[] = array( "name" => "Youtube URL",
 					"std" => "#",
 					"type" => "text"
 					);
+
+$of_options[] = array( "name" => "Logo of ILO (International Labour Organization)",
+					"desc" => "Upload logo of ILO",
+					"id" => "ilo_logo",
+					"std" => SP_BASE_URL . "images/ilo-logo.png",
+					"mod" => "min",
+					"type" => "media"
+					);
+					
+$of_options[] = array( "name" => "Custom heading image 07",
+					"desc" => "This image will display on head of each page, if page does not have heading image uploaded. Size should be 980px by 157px",
+					"id" => "heading_img_7",
+					"std" => SP_BASE_URL . "images/default-heading-image-7.jpg",
+					"mod" => "min",
+					"type" => "media");					
 					
 $of_options[] = array( "name" => "URl for ILO (International Labour Organization)",
 					"desc" => "Enter the url of ILO website address",

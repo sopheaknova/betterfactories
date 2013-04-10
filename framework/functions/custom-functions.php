@@ -284,10 +284,19 @@ if( !function_exists('sp_check_heading_image')) {
 
 	function sp_check_heading_image() {
 
-		global $post;
+		global $post, $data;
 		
 		$post_img =  rwmb_meta( 'sp_heading_image', $args = array('type' => 'plupload_image') );
 		$post_img_parent = rwmb_meta( 'sp_heading_image', $args = array('type' => 'plupload_image'), $post->post_parent );
+		$heading_img_array = array(
+			'1' => $data['heading_img_1'],
+			'2' => $data['heading_img_2'],
+			'3' => $data['heading_img_3'],
+			'4' => $data['heading_img_4'],
+			'5' => $data['heading_img_5'],
+			'6' => $data['heading_img_6'],
+			'7' => $data['heading_img_7']
+		);
 		
 		if( ( is_page() || is_page_template() || is_singular() || is_single() ) && ( $post_img ) ) {
 		
@@ -304,7 +313,7 @@ if( !function_exists('sp_check_heading_image')) {
 			}// end foreach
 		
 		} else {
-			$output = '<img src="' . SP_BASE_URL . 'images/default-heading-image-' . rand(1,7) . '.jpg' . '" width="980" height="157" />';
+			$output = '<img src="' . aq_resize( $heading_img_array[rand(1,7)], 980, 157, true ) . '" />';
 		}
 		
 		return $output;

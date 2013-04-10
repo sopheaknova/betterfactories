@@ -299,7 +299,7 @@ $meta_boxes[] = array(
 /* ---------------------------------------------------------------------- */
 /*	Post Format: Link
 /* ---------------------------------------------------------------------- */
-$meta_boxes[] = array(
+/*$meta_boxes[] = array(
 	'id'       => 'post-link-settings',
 	'title'    => __('Link Settings', 'sptheme'),
 	'pages'    => array('post'),
@@ -322,7 +322,7 @@ $meta_boxes[] = array(
 			'desc' => __('Where is this new come from. e.g: Cambodia Daily or Phnom Penh Post...', 'sptheme')
 		)
 	)
-);
+);*/
 
 /********************* META BOX REGISTERING ***********************/
 

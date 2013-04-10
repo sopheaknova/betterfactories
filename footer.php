@@ -66,7 +66,9 @@
         </ul>
         </div><!--end .two_third--> 
         <div class="power-by one_half last">
-        	<a href="<?php echo $data['ilo_url']; ?>" target="_blank" title="International labour organization"><img src="<?php echo SP_BASE_URL; ?>images/ilo-logo.png" alt="International labour organization" /></a>
+        <?php if ( $data['ilo_logo'] != '') : ?>
+        	<a href="<?php echo $data['ilo_url']; ?>" target="_blank" title="International labour organization"><img src="<?php echo $data['ilo_logo']; ?>" alt="International labour organization" /></a>
+        <?php endif; ?>       
         </div><!--end .one_third .last--> 
    </div><!--end .container--> 
 </footer> <!--end #footer-bottom-->   

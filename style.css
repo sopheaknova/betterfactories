@@ -972,6 +972,8 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		}
 		.nav-menu-widget ul li.current_page_item ul, .nav-menu-widget ul li ul{background-color:#FCFCFC;}
 		
+		.widget_categories .children .cat-item{margin-left:15px;}
+		
 		/* ---------------------------------------- */
 		/*	Toggle Content
 		/* ---------------------------------------- */

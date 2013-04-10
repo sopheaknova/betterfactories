@@ -26,8 +26,8 @@ Template Name: Publication Reports Page
 	
 	foreach (get_categories(array('parent' => $category_id)) as $cat) :  
 	
-	if (function_exists('z_taxonomy_image_url') && ( z_taxonomy_image_url($cat->term_id) !=''))
-		$cat_image_url = z_taxonomy_image_url($cat->term_id);
+	//if (function_exists('z_taxonomy_image_url') && ( z_taxonomy_image_url($cat->term_id) !=''))
+	$cat_image_url = z_taxonomy_image_url($cat->term_id);
 		
 		$image = aq_resize( $cat_image_url, 300, 145, true ); 
 	?>
@@ -41,7 +41,7 @@ Template Name: Publication Reports Page
         <img src="<?php echo $image;?>" alt="<?php the_title(); ?>" />
         </a>
     <?php else:	?>
-        <img src="<?php echo $cat_image_url; ?>" alt="Blank photo" />
+        <img src="<?php echo SP_BASE_URL; ?>images/blank-photo-300.gif" width="300" height="145" alt="Blank photo" />
     <?php endif; ?>
     <?php endif; // end disable cat image ?>
     <?php
