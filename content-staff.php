@@ -19,7 +19,7 @@
     <?php the_content(); ?>
     </div>
     
-    <a class="button" href="javascript: history.go(-1)"><?php _e('return to Our Teams', 'sptheme'); ?></a>
+    <a class="button" href="javascript: history.go(-1)"><?php _e('return to Our Team', 'sptheme'); ?></a>
     <div class="clear"></div>
     
 

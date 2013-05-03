@@ -787,10 +787,14 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 		box-shadow: 0 2px 4px #CCCCCC;
 		background:#ffffff;
 		margin-bottom:30px;	
+		overflow:hidden;
+		height:240px;
+		position:relative;
 	}
 	#featured-staff .staff-slide{
 		padding:10px;
 		height:220px;	
+		margin-bottom:0;
 	}
 	
 	.type-staff .profile-photo-frame{margin-top:15px;}

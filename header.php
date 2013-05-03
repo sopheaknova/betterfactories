@@ -53,6 +53,7 @@
 			delay: <?php echo $data['cycle_speed']; ?>,
 			pause: true
 		});
+		//$('#featured-staff').cycle('stop');
 		
 	});
 	</script>

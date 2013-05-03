@@ -76,7 +76,7 @@ Template Name: Teams Page
     ?>  
         
     <div id="teams">   
-    <h2><?php _e('Management Teams', 'sptheme'); ?></h2>
+    <h2><?php _e('Management Team', 'sptheme'); ?></h2>
     <?php while(have_posts()) : the_post(); ?>
     <?php
 	$post_thumb = get_post_thumbnail_id( $post->ID );
