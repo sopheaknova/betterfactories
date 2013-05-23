@@ -505,6 +505,76 @@ add_shortcode('audio', 'sp_audio_sc');
 	add_shortcode('three_fourth_last', 'sp_three_fourth_last_sc');
 	
 	/* -------------------------------------------------- */
+	/*	 Timeline
+	/* -------------------------------------------------- */
+	function sp_timeline_sc( $atts ){
+		global $post;
+		
+		extract(shortcode_atts(array(
+			'category' => '',
+			'auto_slide' => ''
+		),$atts));	
+		
+		$output = '<div class="timelines">';
+		$category_link = get_category_link( $category );
+		
+		$args = array(
+						'cat' 				=> $category,
+						'posts_per_page' 	=> -1
+				  );
+		query_posts( $args );	
+		
+		if( have_posts() ) while ( have_posts() ) : the_post();
+		
+		$format = get_post_format();
+		
+		$post_thumb = get_post_thumbnail_id( $post->ID );
+		$image_src = wp_get_attachment_image_src($post_thumb, 'large');
+		$image = aq_resize( $image_src[0], 267, 175, true ); //resize & crop the image
+		
+		$output .= '<div class="timeline-items">';
+		
+		
+		if ( ( function_exists( 'get_post_format' ) && 'video' == get_post_format( $post->ID ) )  ) : 
+		$output .= '<div class="one_third"><a href="http://www.youtube.com/watch?v=' . sp_get_custom_field( 'sp_video_id', $post->ID ) . '" rel="wp-prettyPhoto[]">';
+		$output .= '<img src="http://img.youtube.com/vi/' . sp_get_custom_field( 'sp_video_id', $post->ID ) . '/0.jpg" width="267" height="175" class="alignnone" />';
+		$output .= '</a></div>';
+		else:
+			if ($image) {
+			$output .= '<div class="one_third"><a href="' . $image_src[0] . '" rel="wp-prettyPhoto[]"><img src="' . $image . '" class="alignnone" /></a></div>';
+			}
+		endif;
+		
+		$output .= ( $image || ('video' == get_post_format( $post->ID )) ) ? '<div class="two_third last">' : '<div>';
+		$output .= '<h3 class="name">' . get_the_title() .'</h3>';
+		$output .= '<p>' . sp_excerpt_length(400) . '</p>';
+		$output .= '</div>';	
+		
+		if ( $image || ('video' == get_post_format( $post->ID )) )
+			$output .= '<div class="clear"></div>';	
+		
+		$output .= '</div>'; // end .timeline-items
+		
+		endwhile;
+
+		//wp_reset_query();
+		
+		$output .= '<ul class="timeline-nav">';
+		if( have_posts() ) while ( have_posts() ) : the_post();
+		
+		$output .='<li><a href="#"><div class="circle-line"></div><span>' . get_the_title() . '</span></a>';
+		
+		endwhile;
+		wp_reset_query();
+		$output .= '</ul>';
+		
+		$output .= '</div>';
+
+		return $output;	  	  
+	}
+	add_shortcode('timeline', 'sp_timeline_sc');
+	
+	/* -------------------------------------------------- */
 	/*	 Post list base on category
 	/* -------------------------------------------------- */
 	function sp_postlist_sc( $atts ){

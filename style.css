@@ -815,11 +815,11 @@ input.placeholder, textarea.placeholder, .wpcf7 .watermark { color: #b0b0b0; }
 	/*	Contact
 	/* -------------------------------------------------- */
 	#map-wide{
-		height:510px;
+		height:380px;
 	}
 	#c-map{
 		width:inherit;
-		height:510px;
+		height:380px;
 	}
 	form.contact-page .error{
 		background:none;
@@ -1323,6 +1323,61 @@ table tbody tr:hover td {
 	   -moz-border-radius: 6px;
 			border-radius: 6px;
 }
+
+.timelines{
+	height:340px;
+}
+
+	.timeline-items{
+		margin-top:50px;
+		padding:20px;
+		background-color:#fcfcfc;
+		-webkit-border-radius: 6px;
+			   -moz-border-radius: 6px;
+					border-radius: 6px;
+	}
+	
+	.timeline-items h3{ font-size: 22px;}
+	
+	.timeline-nav{margin-bottom:0; position:absolute; padding-top:5px; background:url(images/dot.gif) 0 35px repeat-x; width:100%;}
+		.timeline-nav li{list-style:none; float:left; margin:0 10px; text-align:center;}
+		.timeline-nav li:last-child{margin-right:0;}
+		.timeline-nav li a:focus { outline: none; }
+		.timeline-nav li a{
+			display:block; 
+			font-size:20px; 
+			font-family:Georgia, "Times New Roman", Times, serif;
+			color:#999;
+			position:relative;
+			width:80px;
+			height:45px;
+			filter:alpha(opacity=50);
+		   -moz-opacity:0.7;
+		   -khtml-opacity: 0.7;
+		   opacity: 0.7;	
+		}
+		.timeline-nav li a .circle-line{
+			background:#666;
+			height:13px;
+			width:13px;	
+			-webkit-border-radius: 13px;
+			   -moz-border-radius: 13px;
+					border-radius: 13px;
+			position:absolute;
+			left:44px;
+			bottom:7px;
+		}
+		.timeline-nav li.activeSlide a .circle-line, .timeline-nav li a:hover .circle-line{
+			background:#ff6633;
+		}
+		.timeline-nav li.activeSlide a { 
+			 
+			filter:alpha(opacity=100) !important;
+			-moz-opacity:1 !important;
+			-khtml-opacity: 1!important;
+			opacity: 1 !important;
+		}
+		.timeline-nav li.activeSlide a, .timeline-nav li.activeSlide a span{color:#FF6633;}
 
 /* ---------------------------------------------------------------------- */
 /*	Columns

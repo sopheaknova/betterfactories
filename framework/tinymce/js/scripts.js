@@ -330,6 +330,15 @@
 
 			sp_show_option('.team-member');
 			shortcode = '[team-member <span class="red">id=""</span> column="" last=""]';
+		
+		/* -------------------------------------------------- */
+		/*	Timeline
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'timeline' ) {
+
+			sp_show_option('.timeline');
+			shortcode = '[timeline category="" autoplay=""]';
 			
 		/* -------------------------------------------------- */
 		/*	Post list
@@ -868,6 +877,23 @@
 
 			if( teamMemberLast )
 				shortcode += ' last="last"';
+
+			shortcode += ']';
+		
+		/* -------------------------------------------------- */
+		/*	Timeline
+		/* -------------------------------------------------- */
+
+		} else if( $currentShortcode === 'timeline' ) {
+
+			var category = $('#timeline-category').val(),
+				autoPlay = $('#timeline-autoplay').val();
+
+			shortcode = '[timeline';
+			
+			shortcode += ' category="' + category + '"';
+			
+			shortcode += ' autoplay="' + autoPlay + '"'; 
 
 			shortcode += ']';
 		

@@ -63,8 +63,9 @@ if(isset($_POST['submitted'])) {
 		var latitude = <?php echo $data['map_lat'];?>;
 		var longitude = <?php echo $data['map_long'];?>;
 		var myLatlng = new google.maps.LatLng(latitude, longitude);
-		var myOptions = {							  
-		  zoom: 16,
+		var myOptions = {	
+		  scrollwheel: false, 						  
+		  zoom: 15,
 		  center: myLatlng,
 		  mapTypeId: google.maps.MapTypeId.ROADMAP
 		}

@@ -83,11 +83,12 @@ require_once( $path_to_wp.'/wp-load.php' );
 							<option value="team-member"><?php _e('Team Member', 'sptheme'); ?></option>-->
                             <option value="postlist"><?php _e('Post list', 'sptheme'); ?></option>
                             <option value="pagelist"><?php _e('Page list', 'sptheme'); ?></option>
+                            <option value="timeline"><?php _e('Timeline', 'sptheme'); ?></option>
 						</optgroup>
-						<!--<optgroup label="- <?php _e('Misc', 'sptheme'); ?> -">
-							<option value="fullwidth-map"><?php _e('Fullwidth Map', 'sptheme'); ?></option>
+						<optgroup label="- <?php _e('Misc', 'sptheme'); ?> -">
+							<!--<option value="fullwidth-map"><?php _e('Fullwidth Map', 'sptheme'); ?></option>-->
 							<option value="raw"><?php _e('Raw (disable editor formatting)', 'sptheme'); ?></option>
-						</optgroup>-->
+						</optgroup>
 					</select>
 
 				</td>
@@ -1352,7 +1353,7 @@ require_once( $path_to_wp.'/wp-load.php' );
             
             	<th class="label">
 
-					<label for="pagelist-id"><?php _e('Post list', 'sptheme'); ?><span class="red">*</span></label>
+					<label for="postlist-id"><?php _e('Post list', 'sptheme'); ?><span class="red">*</span></label>
 
 				</th>
 
@@ -1397,6 +1398,39 @@ require_once( $path_to_wp.'/wp-load.php' );
            
            </tr>
             <!-- start pagelist -->
+            
+            <!-- end timeline -->
+            <tr class="option timeline">
+            
+            	<th class="label">
+
+					<label for="timeline-id"><?php _e('Select timeline category', 'sptheme'); ?><span class="red">*</span></label>
+
+				</th>
+
+				<td class="field">
+                    
+                    <?php wp_dropdown_categories( array( 'hierarchical' => 1, 'depth' => '2', 'name' => 'timeline-category', 'orderby' => 'name' ) ); ?>
+
+				</td>
+           
+           </tr>
+           <tr class="option timeline">
+           
+           <th class="label">
+
+                <label for="timeline-num"><?php _e('Auto Play', 'sptheme'); ?> </label>
+                
+            </th>
+
+            <td class="field">
+            
+                <input type="checkbox" name="timeline-autoplay" id="timeline-autoplay" value="on">
+
+           </td>
+           
+           </tr>
+            <!-- end timeline -->
 
 			<!-- start fullwidth-map -->
 			<tr class="option fullwidth-map">

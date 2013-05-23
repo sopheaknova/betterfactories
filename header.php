@@ -22,6 +22,28 @@
     
 	<?php wp_head(); ?>
     
+    <script type="text/javascript">
+	jQuery(document).ready(function($) {
+		
+		//featured home
+		$('.timelines').cycle({
+			fx:       'scrollRight',
+			easing: 'easeInOutBack', //easeOutBounce
+            randomizeEffects: 0,
+			slideExpr: '.timeline-items',
+			timeout:   10000,
+			speed: 1000,
+			pager: 'ul.timeline-nav',
+			pause: true,
+			pagerAnchorBuilder: function(idx, slide) { 
+				// return selector string for existing anchor 
+				return 'ul.timeline-nav li:eq(' + idx + ') a'; 
+			} 
+		});
+		
+	});
+	</script>
+    
     <?php if ( is_home() ) { ?>
     <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -90,15 +112,15 @@
 		}
 		
 		//slider nav
-		$('.slider-nav li:not(.activeSlide) a').click( 
+		$('.slider-nav li:not(.activeSlide) a, .timeline-nav li:not(.activeSlide) a').click( 
 				function () {
-					$('.slider-nav li a').css('opacity', 0.7);
+					$('.slider-nav li a, .timeline-nav li a').css('opacity', 0.7);
 					$(this).css('opacity', 1);
 				}
 			);
 			
 		
-		$('.slider-nav li:not(.slider-nav) a').hover( 
+		$('.slider-nav li:not(.slider-nav) a, .timeline-nav li:not(.timeline-nav) a').hover( 
 				function () {
 					$(this).stop(true, true).animate({opacity: 1}, 300);
 				}, function () {
