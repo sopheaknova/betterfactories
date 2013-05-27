@@ -154,9 +154,9 @@
     
     <?php 
 	//WPML Language Switcher
-	if (function_exists('icl_get_languages')) {
+	/*if (function_exists('icl_get_languages')) {
 		languages_list_header(); 
-	}
+	}*/
 	?>
     
     <?php if(is_front_page()) : ?>

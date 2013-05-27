@@ -520,7 +520,8 @@ add_shortcode('audio', 'sp_audio_sc');
 		
 		$args = array(
 						'cat' 				=> $category,
-						'posts_per_page' 	=> -1
+						'posts_per_page' 	=> -1,
+						'order'				=> 'ASC'
 				  );
 		query_posts( $args );	
 		
