@@ -240,6 +240,7 @@ function sp_register_scripts() {
 	wp_register_script( 'audioplayerv1',     SP_BASE_URL . 'js/audioplayerv1.min.js', array('jquery'), '1.0', true ); 
 	wp_register_script( 'cycle',  			 SP_BASE_URL . 'js/jquery.cycle.all.min.js', array(), '1.3.2', true );
 	wp_register_script( 'easing',            SP_BASE_URL . 'js/jquery.easing-1.3.min.js', array('jquery'), '1.3', true );
+	wp_register_script( 'sliderTabs',            SP_BASE_URL . 'js/jquery.sliderTabs.min.js', array('jquery'), THEME_VERSION, true );
 	// PrettyPhoto script
 	if( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
 		wp_register_script('pretty_photo_lib', SP_BASE_URL . "js/prettyPhoto/js/jquery.prettyPhoto.js", array('jquery'), '3.1.3', false);
@@ -267,6 +268,7 @@ function sp_enqueue_scripts() {
 		wp_enqueue_script('cycle');
 		wp_enqueue_script('easing');
 		wp_enqueue_script('audioplayerv1');	
+		wp_enqueue_script('sliderTabs');
 		// PrettyPhoto script
 		if( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
 			wp_enqueue_script('pretty_photo_lib');

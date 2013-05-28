@@ -26,19 +26,23 @@
 	jQuery(document).ready(function($) {
 		
 		//featured home
-		$('.timelines').cycle({
-			fx:       'scrollRight',
-			easing: 'easeInOutBack', //easeOutBounce
-            randomizeEffects: 0,
-			slideExpr: '.timeline-items',
-			timeout:   10000,
-			speed: 1000,
-			pager: 'ul.timeline-nav',
-			pause: true,
-			pagerAnchorBuilder: function(idx, slide) { 
-				// return selector string for existing anchor 
-				return 'ul.timeline-nav li:eq(' + idx + ') a'; 
-			} 
+		
+	      var slider = $("div#mySliderTabs").sliderTabs({
+		  autoplay: 10000,
+		  mousewheel: false, //false
+		  defaultTab: 1,
+		  position: 'top',
+		  panelArrows: false,
+		  transition: 'slide',
+		  transitionSpeed: 500,
+		  transitionEasing: 'easeOutCubic',
+		  tabSlideSpeed: 200,
+		  indicators: false,
+		  tabHeight: 30,
+		  width: 940,
+		  //height: null,
+		  tabArrows: true
+		  //tabSlideLength: 150
 		});
 		
 	});

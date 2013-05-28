@@ -515,7 +515,7 @@ add_shortcode('audio', 'sp_audio_sc');
 			'auto_slide' => ''
 		),$atts));	
 		
-		$output = '<div class="timelines">';
+		$output = '<div id="mySliderTabs">';
 		$category_link = get_category_link( $category );
 		
 		$args = array(
@@ -523,9 +523,25 @@ add_shortcode('audio', 'sp_audio_sc');
 						'posts_per_page' 	=> -1,
 						'order'				=> 'ASC'
 				  );
-		query_posts( $args );	
+		//query_posts( $args );	
+		$query = new WP_Query($args);
+        
+        $output .= '<ul>'; //class="timeline-nav"
+		if( $query->have_posts() ) while ( $query->have_posts() ) : $query->the_post();
+
+        $getTitle = get_the_title();
+		$subStrTitle = str_replace(" ", "-", trim($getTitle));
+		$output .='<li><a href="#'.$subStrTitle.'">' . get_the_title() . '</a></li>';
 		
-		if( have_posts() ) while ( have_posts() ) : the_post();
+		endwhile;
+        $output .= '</ul>';
+
+		if( $query->have_posts() ) while ( $query->have_posts() ) : $query->the_post();
+
+		
+	
+		$getTitle = get_the_title();
+		$subStrTitle = str_replace(" ", "-", trim($getTitle));
 		
 		$format = get_post_format();
 		
@@ -533,7 +549,7 @@ add_shortcode('audio', 'sp_audio_sc');
 		$image_src = wp_get_attachment_image_src($post_thumb, 'large');
 		$image = aq_resize( $image_src[0], 267, 175, true ); //resize & crop the image
 		
-		$output .= '<div class="timeline-items">';
+		$output .= '<div id="'.$subStrTitle.'">'; //timeline-items
 		
 		
 		if ( ( function_exists( 'get_post_format' ) && 'video' == get_post_format( $post->ID ) )  ) : 
@@ -554,20 +570,16 @@ add_shortcode('audio', 'sp_audio_sc');
 		if ( $image || ('video' == get_post_format( $post->ID )) )
 			$output .= '<div class="clear"></div>';	
 		
-		$output .= '</div>'; // end .timeline-items
+		$output .= '</div>'; // end timeline-items
 		
 		endwhile;
 
+		
+		wp_reset_query();
+        
+		 
 		//wp_reset_query();
 		
-		$output .= '<ul class="timeline-nav">';
-		if( have_posts() ) while ( have_posts() ) : the_post();
-		
-		$output .='<li><a href="#"><div class="circle-line"></div><span>' . get_the_title() . '</span></a>';
-		
-		endwhile;
-		wp_reset_query();
-		$output .= '</ul>';
 		
 		$output .= '</div>';
 
