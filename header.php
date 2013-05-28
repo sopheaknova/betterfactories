@@ -27,22 +27,10 @@
 		
 		//Timeline shortcode
 		
-	      var slider = $("div#mySliderTabs").sliderTabs({
-		  autoplay: 10000,
-		  mousewheel: false, //false
-		  defaultTab: 1,
-		  position: 'top',
-		  panelArrows: false,
-		  transition: 'slide',
-		  transitionSpeed: 500,
-		  transitionEasing: 'easeOutCubic',
-		  tabSlideSpeed: 200,
-		  indicators: false,
-		  tabHeight: 30,
-		  width: 940,
-		  //height: null,
-		  tabArrows: true
-		  //tabSlideLength: 150
+	      	var slider = $("div#mySliderTabs").sliderTabs({
+			autoplay: 10000,
+			panelArrows: true,
+			panelArrowsShowOnHover: true
 		});
 		
 	});

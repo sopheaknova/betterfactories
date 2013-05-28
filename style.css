@@ -1793,7 +1793,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
 /*	SliderTab sytle
 /* ---------------------------------------------------------------------- */
 .ui-slider-tabs{
-	
+	margin:10px 0 20px;
 }
 .ui-slider-tabs-list-wrapper{
 	position: relative;

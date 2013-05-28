@@ -313,7 +313,7 @@ if( !function_exists('sp_check_heading_image')) {
 			}// end foreach
 		
 		} else {
-			$output = '<img src="' . aq_resize( $heading_img_array[rand(1,7)], 980, 157, true ) . '" />';
+			$output = '<img src="' . $heading_img_array[rand(1,7)] . '" />';
 		}
 		
 		return $output;

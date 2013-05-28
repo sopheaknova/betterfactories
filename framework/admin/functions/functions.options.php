@@ -127,11 +127,6 @@ $of_options[] = array( "name" => "Custom favicon upload",
 					"mod" => "min",
 					"type" => "media");	
 					
-$of_options[] = array( "name" => 'Feedburner URL',
-						"id" => "feedburner",
-						"type" => "text",
-						);								
-
 $of_options[] = array( "name" => "Tracking Code",
 					"desc" => "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.",
 					"id" => "google_analytics",
