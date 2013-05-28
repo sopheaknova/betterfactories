@@ -25,7 +25,7 @@
     <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		
-		//featured home
+		//Timeline shortcode
 		
 	      var slider = $("div#mySliderTabs").sliderTabs({
 		  autoplay: 10000,
