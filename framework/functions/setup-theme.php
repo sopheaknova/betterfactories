@@ -60,7 +60,8 @@ if ( !WP_PRETTY_PHOTO_PLUGIN_ACTIVE ) {
     function autoinsert_rel_prettyPhoto ($content) {
         global $post;
         $rel = 'wp-prettyPhoto';
-        $image_match = '\.bmp|\.gif|\.jpg|\.jpeg|\.png';
+        //$image_match = '\.bmp|\.gif|\.jpg|\.jpeg|\.png';
+		$image_match = '\.bmp|\.jpg|\.jpeg|\.png';
         $movie_match = '\.mov.*?';
         $swf_match = '\.swf.*?';
         $youtube_match = 'http:\/\/www\.youtube\.com\/watch\?v=[A-Za-z0-9]*';
