@@ -264,10 +264,13 @@ if( !function_exists('sp_post_meta')) {
 
 	function sp_post_meta() {
 
-		global $post;
+		global $post, $data;
 		
+		$disable_post_by = $data['disable_post_by'];
+		if ( $disable_post_by == 'no' ) {
 		$output = '<span>' . __('By: ', 'sptheme') . '</span>';
 		$output .= '<span class="title">' . get_the_author() . ' &mdash; </span>';
+		}
 		$output .= sp_posted_on() . ' &mdash; ';
 		$output .= '<span class="post-categories">' . __(' in: ', 'sptheme') . ' ' . get_the_category_list(', ') . '</span>';
 		

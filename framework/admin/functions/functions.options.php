@@ -181,9 +181,9 @@ $of_options[] = array( "name" => 'timeout',
 $of_options[] = array( "name" => "Post Setting",
 					"type" => "heading");																		
 					
-$of_options[] = array( "name" => "Disable post meta",
+$of_options[] = array( "name" => "Disable Posted by",
 					"desc" => "Show or hide Posted By",
-					"id" => "disable_post_meta",
+					"id" => "disable_post_by",
 					"std" => "no",
 					"type" => "radio",
 					"options" => array(
