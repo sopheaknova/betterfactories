@@ -21,7 +21,7 @@ class sp_newsletter extends WP_Widget {
 ?>
 
 		<div id="email-subscribe">
-        <div class="icon-email-newsletter"><?php _e( 'Want to be notified when we updated? Enter your email address below to be the first to know.', 'sptheme' ); ?></div>
+        <div class="icon-email-newsletter"><?php _e( 'Want to be notified when our website is updated? Enter your email address below to be the first to know.', 'sptheme' ); ?></div>
         <form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=<?php echo $feed_url; ?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
             <label for="email"><?php _e( 'Email subscription', 'sptheme' ); ?></label>
             <input type="text" name="email" value="<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;" onblur="if (this.value == '') {this.value = '<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;';}" onfocus="if (this.value == '<?php _e( 'Enter your email', 'sptheme' ); ?>&#8230;') {this.value = '';}" class="youremail" />
