@@ -32,24 +32,61 @@
 
 
 		<?php if ( have_posts() ) : ?>
+		    <?php if(sp_get_custom_field( 'sp_video_id', $post->ID )){?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		        <article id="category-videos" <?php post_class('clearfix'); ?>>
+                    
+                   
+		        	<h1 class="title"><?php the_title(); ?></h1>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+                    <div class="entry-meta">
+                         <?php echo sp_post_meta(); ?>
+                    </div><!-- end .entry-meta -->
+                    <div class="entry-video">
+			            <iframe width="600" height="338" src="http://www.youtube.com/embed/<?php echo sp_get_custom_field( 'sp_video_id', $post->ID ); ?>?rel=0" frameborder="0" allowfullscreen></iframe>		
+				    </div><!-- end .entry-video -->
+				    <?php echo sp_post_content(); ?>
+                    <hr />
+                    <div class="clear"></div>
+                  
+                    <?php $category_name = $data['video_cat']; ?>
+			        <?php $category_id = get_cat_ID($category_name); ?>
+			        <?php $video_query = new WP_Query(array('cat' 	=> $category_id,'offset'=>1));?>
+		        	<?php while ( $video_query->have_posts() ) : $video_query->the_post(); ?>
+                        <?php //if( $post->ID == $do_not_duplicate ) continue;?>
+			            <div class="post-video">
+	                      <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+			              <img src="http://img.youtube.com/vi/<?php echo sp_get_custom_field( 'sp_video_id', $post->ID );?>/0.jpg" width="210" height="130" />
+			              </a>
+			            </div>
+			            <div class="post-description">
+			            <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+		                <h1 class="title"><?php the_title(); ?></h1>
+	                    </a>
+	                    <?php echo sp_post_meta(); ?>
+			            </div>
+			            <div class="clear"></div>
+			        <?php endwhile; ?>
+		        </article><!-- end .hentry -->
+		    <?php ;?>
+		    <?php }else{?>
 
-					<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				</article><!-- end .hentry -->
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
-			<?php endwhile; ?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
 
-			<?php // Pagination
-				if(function_exists('wp_pagenavi'))
-					wp_pagenavi();
-				else 
-					echo sp_pagination(); 
-			?>
-			
+					</article><!-- end .hentry -->
+
+				<?php endwhile; ?>
+            <?php }?>
+				<?php // Pagination
+					if(function_exists('wp_pagenavi'))
+						wp_pagenavi();
+					else 
+						echo sp_pagination(); 
+				?>
 		<?php else: ?>
 		
 			<article id="post-0" class="post no-results not-found">
