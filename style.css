@@ -1563,8 +1563,9 @@ table tbody tr:hover td {
 	margin: 30px 0; 
 
 }
+
 .post-video, .post-description{
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .post-video{
 	float: left;
