@@ -54,7 +54,8 @@
 			        <?php $video_query = new WP_Query(array('cat' 	=> $category_id,'offset'=>1));?>
 		        	<?php while ( $video_query->have_posts() ) : $video_query->the_post(); ?>
 
-                        
+                        <ul>
+                        	<li>
 			            <div class="post-video">
 	                      <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__('Permalink to %s', 'sptheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 			              <img src="http://img.youtube.com/vi/<?php echo sp_get_custom_field( 'sp_video_id', $post->ID );?>/0.jpg" width="210" height="130" />
@@ -66,8 +67,10 @@
 	                    </a>
 	                    <?php echo sp_post_meta(); ?>
 			            </div>
-			            <hr/>
-			            <div class="clear"></div>
+                            </li>
+                           
+                        </ul>
+			             <div class="clear"></div>
 
 			        <?php endwhile; ?>
 		        </article><!-- end .hentry -->
