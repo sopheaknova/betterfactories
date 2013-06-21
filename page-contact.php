@@ -30,14 +30,14 @@ if(isset($_POST['submitted'])) {
 			$hasError = true;
 		} else {
 			if(function_exists('stripslashes')) {
-				$messages = stripslashes(trim($_POST['comments']));
+				$messages = stripslashes(trim($_POST['message']));
 			} else {
-				$messages = trim($_POST['comments']);
+				$messages = trim($_POST['message']);
 			}
 		}
 			
 		if(!isset($hasError)) {
-			$emailTo = 'sopheak.peas@novacambodia.com'; //$data['email'];
+			$emailTo = $data['email'];
 			if (!isset($emailTo) || ($emailTo == '') ){
 				$emailTo = $data['email'];
 			}
